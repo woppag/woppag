@@ -469,10 +469,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const pIcon = p.icon || cat.icon || '📦';
         const pDescText = p.desc ? this.pickTranslation(p.desc) : `${pName} — ${this.pickTranslation(cat.desc)}`;
         const pSpecText = p.spec ? `${this.pickTranslation(p.spec.k)}: ${this.pickTranslation(p.spec.v)}` : (cat.specs && cat.specs[0] ? `${this.pickTranslation(cat.specs[0].k)}: ${this.pickTranslation(cat.specs[0].v)}` : '');
-        const safeName = pName.replace(/'/g, "\\'");
 
         return `
-          <article class="cat-card product-card-item" style="cursor: pointer; display: flex; flex-direction: column; justify-content: space-between;" onclick="APP.openProductModal(${cat.id}, ${idx})">
+          <article class="cat-card product-card-item" data-cat-id="${cat.id}" data-prod-idx="${idx}" role="button" tabindex="0" style="cursor: pointer; display: flex; flex-direction: column; justify-content: space-between;">
             <div>
               <div class="cat-img-wrapper" style="height: 180px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
                 <img src="${pImg}" alt="${pName}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
@@ -496,16 +495,50 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
 
             <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
-              <button type="button" class="btn btn-outline btn-sm" onclick="event.stopPropagation(); APP.openProductModal(${cat.id}, ${idx})" style="flex: 1; border-color: var(--border-gold); color: var(--accent-gold); text-align: center;">
+              <button type="button" class="btn btn-outline btn-sm btn-inspect-action" style="flex: 1; border-color: var(--border-gold); color: var(--accent-gold); text-align: center;">
                 ${inspectText}
               </button>
-              <button type="button" class="btn btn-primary btn-sm" onclick="event.stopPropagation(); APP.requestProductQuote('${safeName}', 'cat-${cat.id}')" style="padding: 0.4rem 0.7rem;">
+              <button type="button" class="btn btn-primary btn-sm btn-quote-action" style="padding: 0.4rem 0.7rem;">
                 ⚡
               </button>
             </div>
           </article>
         `;
       }).join('');
+
+      // Bind Event Listeners robustly
+      grid.querySelectorAll('.product-card-item').forEach(card => {
+        const catId = parseInt(card.getAttribute('data-cat-id'), 10);
+        const prodIdx = parseInt(card.getAttribute('data-prod-idx'), 10);
+        const p = cat.products[prodIdx];
+        const pName = p ? this.pickTranslation(p.name) : '';
+
+        const open = (e) => {
+          if (e) e.stopPropagation();
+          this.openProductModal(catId, prodIdx);
+        };
+
+        card.addEventListener('click', open);
+        card.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            open(e);
+          }
+        });
+
+        const inspectBtn = card.querySelector('.btn-inspect-action');
+        if (inspectBtn) {
+          inspectBtn.addEventListener('click', open);
+        }
+
+        const quoteBtn = card.querySelector('.btn-quote-action');
+        if (quoteBtn) {
+          quoteBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.requestProductQuote(pName, `cat-${catId}`);
+          });
+        }
+      });
     },
 
     openProductModal(catId, prodIdx) {
