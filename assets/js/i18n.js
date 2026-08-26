@@ -78,6 +78,7 @@ const I18N = {
     
     // Modal & Catalog Navigation
     btn_back_cats: { en: '← Back to All Categories', ru: '← Ко всем категориям', ro: '← Înapoi la toate categoriile', de: '← Zurück zu allen Kategorien', fr: '← Retour à toutes les catégories', ar: '← العودة إلى جميع الفئات' },
+    cat_view_specs: { en: 'Explore Lineup & Products', ru: 'Смотреть линейку и товары', ro: 'Explorează categoria și produsele', de: 'Kategorie & Produkte anzeigen', fr: 'Voir la gamme & produits', ar: 'استكشاف المعروضات والمنتجات' },
     btn_inspect_product: { en: 'Inspect Product →', ru: 'Посмотреть товар →', ro: 'Detalii produs →', de: 'Produkt Details →', fr: 'Voir le produit →', ar: 'تفاصيل المنتج ←' },
     modal_prod_specs: { en: 'Technical Specifications & Parameters', ru: 'Технические характеристики товара', ro: 'Specificații tehnice ale produsului', de: 'Technische Spezifikationen des Produkts', fr: 'Spécifications techniques du produit', ar: 'المواصفات الفنية والتقنية للمنتج' },
     btn_direct_quote: { en: 'Request Wholesale Quote for This Item →', ru: 'Запросить оптовый расчет по товару →', ro: 'Cere ofertă angro pentru acest produs →', de: 'Großhandelsangebot für diesen Artikel →', fr: 'Demander un devis en gros pour cet article →', ar: 'طلب عرض سعر بالجملة لهذا المنتج ←' },
