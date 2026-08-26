@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://woppag.com/</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://woppag.com/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://woppag.com/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://woppag.com/?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://woppag.com/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://woppag.com/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://woppag.com/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://woppag.com/"/>
+  </url>
+</urlset>
