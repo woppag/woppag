@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
 
           try {
-            const response = await fetch(this.backendEndpoint, {
+            let response = await fetch(this.backendEndpoint, {
               method: 'POST',
               headers: {
                 'Accept': 'application/json'
@@ -185,17 +185,48 @@ document.addEventListener('DOMContentLoaded', () => {
               body: formData
             });
 
-            const resData = await response.json();
+            let resData = await response.json();
             if (response.ok && resData.success) {
-              // (b) Success state
               this.showToast(I18N.getText('form_success'));
               rfqForm.reset();
             } else {
-              // (c) Error state
-              this.showToast(I18N.getText('form_error'), true);
+              // Fallback to FormSubmit AJAX backup endpoint
+              const fallbackData = new FormData(rfqForm);
+              fallbackData.append('_subject', 'Wholesale Inquiry — WOPPAG Website');
+              fallbackData.append('_captcha', 'false');
+              
+              const fallbackResponse = await fetch('https://formsubmit.co/ajax/woppag@gmail.com', {
+                method: 'POST',
+                headers: { 'Accept': 'application/json' },
+                body: fallbackData
+              });
+              
+              if (fallbackResponse.ok) {
+                this.showToast(I18N.getText('form_success'));
+                rfqForm.reset();
+              } else {
+                this.showToast(I18N.getText('form_error'), true);
+              }
             }
           } catch (err) {
-            this.showToast(I18N.getText('form_error'), true);
+            try {
+              const fallbackData = new FormData(rfqForm);
+              fallbackData.append('_subject', 'Wholesale Inquiry — WOPPAG Website');
+              fallbackData.append('_captcha', 'false');
+              const fbRes = await fetch('https://formsubmit.co/ajax/woppag@gmail.com', {
+                method: 'POST',
+                headers: { 'Accept': 'application/json' },
+                body: fallbackData
+              });
+              if (fbRes.ok) {
+                this.showToast(I18N.getText('form_success'));
+                rfqForm.reset();
+              } else {
+                this.showToast(I18N.getText('form_error'), true);
+              }
+            } catch (err2) {
+              this.showToast(I18N.getText('form_error'), true);
+            }
           } finally {
             if (submitBtn) {
               submitBtn.disabled = false;
