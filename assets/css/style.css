@@ -647,8 +647,12 @@ html[dir="rtl"] .search-icon {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), var(--shadow-gold);
 }
 
-.cat-card:hover .cat-card-img {
+/* Zero Image Scale or Enlargement on Mouse Hover & Shield against Browser Zoom Extensions */
+img, .cat-card-img, .product-card-img, .cat-card:hover img, .product-card:hover img, .cat-card:hover .cat-card-img, .cat-img-wrapper img {
   transform: none !important;
+  zoom: 1 !important;
+  pointer-events: none !important;
+  -webkit-user-drag: none;
 }
 
 .cat-card:hover::after {
