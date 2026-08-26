@@ -552,9 +552,89 @@ document.addEventListener('DOMContentLoaded', () => {
       const pImg = p.img || cat.img || './assets/images/og-image.jpg';
       const pDescText = p.desc ? this.pickTranslation(p.desc) : `${pName} — ${this.pickTranslation(cat.desc)}`;
       const safeName = pName.replace(/'/g, "\\'");
+      const quoteBtnText = I18N.getText('btn_direct_quote') || 'Request Wholesale Quote for This Item →';
+      const specsTitle = I18N.getText('modal_view_specs') || 'Specifications & Technical Parameters';
+      const closeText = I18N.getText('btn_close_inspect') || '✕ Close Product Inspection';
 
       this.activeCatId = catId;
 
+      // 1. RENDER INLINE DEDICATED PRODUCT INSPECTION PANEL (LEVEL 3)
+      const inlineView = document.getElementById('single-product-inspection-view');
+      if (inlineView) {
+        let inlineSpecsHtml = '';
+        if (p.spec) {
+          inlineSpecsHtml += `
+            <tr>
+              <th style="color: var(--text-muted); width: 40%; padding: 0.7rem 1rem; border-bottom: 1px solid var(--border-subtle);">${this.pickTranslation(p.spec.k)}</th>
+              <td style="color: var(--accent-gold); font-weight: 700; padding: 0.7rem 1rem; border-bottom: 1px solid var(--border-subtle);">${this.pickTranslation(p.spec.v)}</td>
+            </tr>
+          `;
+        }
+        if (cat.specs && cat.specs.length) {
+          inlineSpecsHtml += cat.specs.map(spec => `
+            <tr>
+              <th style="color: var(--text-muted); width: 40%; padding: 0.7rem 1rem; border-bottom: 1px solid var(--border-subtle);">${this.pickTranslation(spec.k)}</th>
+              <td style="color: var(--text-primary); font-weight: 500; padding: 0.7rem 1rem; border-bottom: 1px solid var(--border-subtle);">${this.pickTranslation(spec.v)}</td>
+            </tr>
+          `).join('');
+        }
+
+        inlineView.innerHTML = `
+          <div style="background: linear-gradient(135deg, rgba(7, 19, 30, 0.98), rgba(15, 33, 50, 0.98)); border: 2px solid var(--accent-gold); border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-lg); position: relative;">
+            
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-gold); padding-bottom: 1rem;">
+              <div style="display: flex; align-items: center; gap: 0.8rem;">
+                <span style="font-size: 1.8rem;">${p.icon || cat.icon || '📦'}</span>
+                <div>
+                  <span class="badge" style="background: var(--accent-gold-light); color: var(--accent-gold); border: 1px solid var(--border-gold);">${chip} • SKU #${prodIdx + 1}</span>
+                  <h3 style="font-size: 1.8rem; font-weight: 800; color: #fff; margin-top: 0.2rem;">${pName}</h3>
+                </div>
+              </div>
+              <button onclick="APP.closeProductInspection()" class="btn btn-outline btn-sm" style="border-color: rgba(255,255,255,0.2); color: #fff; cursor: pointer;">
+                ${closeText}
+              </button>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 320px 1fr; gap: 2rem; align-items: start;">
+              <!-- Large Product Cover Image -->
+              <div style="height: 320px; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-gold); background: #040c14; position: relative;">
+                <img src="${pImg}" alt="${pName}" style="width: 100%; height: 100%; object-fit: cover;">
+                <div style="position: absolute; bottom: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.3rem 0.75rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); border: 1px solid var(--border-gold);">
+                  ⚡ Verified Factory SKU #${prodIdx + 1}
+                </div>
+              </div>
+
+              <!-- Product Details & Specs Table -->
+              <div>
+                <p style="font-size: 1.1rem; color: var(--text-primary); line-height: 1.6; margin-bottom: 1.5rem;">
+                  ${pDescText}
+                </p>
+
+                <h4 style="color: var(--accent-gold); font-size: 1.1rem; margin-bottom: 0.8rem; font-weight: 700;">${specsTitle}</h4>
+                <table style="width: 100%; border-collapse: collapse; margin-bottom: 1.8rem; background: rgba(0,0,0,0.2); border-radius: var(--radius-md);">
+                  <tbody>
+                    ${inlineSpecsHtml}
+                  </tbody>
+                </table>
+
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                  <button onclick="APP.requestProductQuote('${safeName}', 'cat-${cat.id}')" class="btn btn-primary" style="flex: 1; padding: 0.85rem 1.5rem; font-size: 1rem; font-weight: 700;">
+                    ${quoteBtnText} (${pName})
+                  </button>
+                  <button onclick="APP.closeProductInspection()" class="btn btn-outline" style="border-color: var(--border-gold); color: var(--accent-gold);">
+                    ${closeText}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+
+        inlineView.style.display = 'block';
+        inlineView.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      // 2. ALSO POPULATE & OPEN MODAL BACKDROP DIALOG
       document.getElementById('modal-icon').textContent = p.icon || cat.icon || '📦';
       document.getElementById('modal-chip').textContent = `${chip} • SKU #${prodIdx + 1}`;
       document.getElementById('modal-title').textContent = pName;
@@ -566,7 +646,6 @@ document.addEventListener('DOMContentLoaded', () => {
         modalImg.alt = pName;
       }
 
-      // Specs Table
       const specsTable = document.getElementById('modal-specs-table');
       if (specsTable) {
         let specsHtml = '';
@@ -589,16 +668,13 @@ document.addEventListener('DOMContentLoaded', () => {
         specsTable.innerHTML = specsHtml;
       }
 
-      // Hide subproducts grid container when inspecting individual product
       const subprodsGrid = document.getElementById('modal-subproducts-grid');
       if (subprodsGrid && subprodsGrid.parentElement) {
         subprodsGrid.parentElement.style.display = 'none';
       }
 
-      // Direct Quote CTA
       const modalCtaBtn = document.getElementById('modal-cta-btn');
       if (modalCtaBtn) {
-        const quoteBtnText = I18N.getText('btn_direct_quote') || 'Request Wholesale Quote for This Item →';
         modalCtaBtn.textContent = `${quoteBtnText}`;
         modalCtaBtn.onclick = () => this.requestProductQuote(pName, `cat-${cat.id}`);
       }
@@ -609,6 +685,13 @@ document.addEventListener('DOMContentLoaded', () => {
         void backdrop.offsetWidth; // trigger reflow
         backdrop.classList.add('active');
         document.body.style.overflow = 'hidden';
+      }
+    },
+
+    closeProductInspection() {
+      const inlineView = document.getElementById('single-product-inspection-view');
+      if (inlineView) {
+        inlineView.style.display = 'none';
       }
     },
 
