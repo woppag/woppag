@@ -10,7 +10,7 @@ const CATS = [
     id: 0,
     group: 'packaging',
     icon: '🧂',
-    img: './assets/images/products/cat_0/prod_10.jpg',
+    img: './assets/images/products/cat_0/header.jpg',
     chip: {
       en: 'Portion Products', ru: 'Порционная продукция', ro: 'Produse porționate', de: 'Portionsprodukte', fr: 'Produits en portion', ar: 'منتجات التعبئة الفردية'
     },
@@ -49,17 +49,17 @@ const CATS = [
     ],
     products: [
       { icon: '🧂', img: './assets/images/products/cat_0/prod_1.jpg', name: { en: 'Portion Salt & Black Pepper Sachets', ru: 'Порционная соль и черный перец в саше', ro: 'Sare și piper negru porționat la plic', de: 'Portionssalz & Schwarzer Pfeffer', fr: 'Sel & Poivre noir en sachet portion', ar: 'ملح وفلفل أسود في عبوات فردية' } },
-      { icon: '🍬', img: './assets/images/products/cat_0/prod_10.jpg', name: { en: 'Portion White Sugar Sticks 4g', ru: 'Сахарные стики с логотипом 4г', ro: 'Plicuri de zahăr alb stick 4g', de: 'Weiße Zuckersticks mit Logo 4g', fr: 'Sticks de sucre blanc 4g avec logo', ar: 'أظرف سكر أبيض طولية 4 جرام' } },
-      { icon: '🪵', img: './assets/images/products/cat_0/prod_11.jpg', name: { en: 'Portion Brown Cane Sugar Sticks', ru: 'Тростниковый сахар в стиках с логотипом', ro: 'Plicuri de zahăr brun stick', de: 'Brauner Rohrzucker in Sticks', fr: 'Sticks de sucre roux de canne', ar: 'أظرف سكر بني قصب في عبوات' } },
-      { icon: '🍅', img: './assets/images/products/cat_0/prod_12.jpg', name: { en: 'Portion Ketchup Sachets 10g', ru: 'Порционный кетчуп в саше 10г', ro: 'Sos ketchup porționat 10g', de: 'Ketchup-Portionsbeutel 10g', fr: 'Sauce ketchup en sachet 10g', ar: 'صلصة كاتشب في أظرف 10 جرام' } },
-      { icon: '🟡', img: './assets/images/products/cat_0/prod_13.jpg', name: { en: 'Portion Mayonnaise & Mustard Sachets', ru: 'Порционный майонез и горчица в саше', ro: 'Maioneză și muștar porționat', de: 'Mayonnaise- & Senf-Portionsbeutel', fr: 'Mayonnaise & Moutarde en sachet', ar: 'مايونيز وخردل في أظرف فردية' } },
-      { icon: '🥗', img: './assets/images/products/cat_0/prod_14.jpg', name: { en: 'Portion Pomegranate Sauce & Vinegar', ru: 'Порционный гранатовый соус и уксус', ro: 'Sos de rodie și oțet porționat', de: 'Granatapfelsauce & Essig-Portionen', fr: 'Sauce grenade & Vinaigre en portion', ar: 'صلصة الرمان والخل في عبوات' } },
-      { icon: '🫒', img: './assets/images/products/cat_0/prod_15.jpg', name: { en: 'Portion Olive Oil & Salad Dressing', ru: 'Порционное оливковое масло и заправка', ro: 'Ulei de măsline porționat pentru salată', de: 'Olivenöl- & Salatdressing-Portionen', fr: 'Huile d’olive & Sauce salade en portion', ar: 'زيت زيتون وتتبيلة سلطة في عبوات' } },
-      { icon: '☕', img: './assets/images/products/cat_0/prod_16.jpg', name: { en: 'Portion Instant 3-in-1 Coffee Sticks', ru: 'Растворимый кофе 3 в 1 в стиках', ro: 'Cafea instant 3 în 1 la stick', de: 'Instant-Kaffee 3-in-1 Sticks', fr: 'Café instantané 3-en-1 en stick', ar: 'قهوة سريعة التحضير 3 في 1' } },
-      { icon: '🍵', img: './assets/images/products/cat_0/prod_17.jpg', name: { en: 'Portion Black Tea & Green Tea Bags', ru: 'Порционный черный и зеленый чай', ro: 'Pliculețe ceai negru și verde', de: 'Schwarz- & Grüntee-Portionsbeutel', fr: 'Sachets de thé noir & vert', ar: 'أكياس شاي أسود وأخضر فردية' } },
-      { icon: '🍯', img: './assets/images/products/cat_0/prod_18.jpg', name: { en: 'Portion Honey Containers 20g', ru: 'Порционный натуральный мед 20г', ro: 'Miere naturală porționată 20g', de: 'Portionshonig 20g', fr: 'Miel naturel en pot individuel 20g', ar: 'عسل طبيعي في عبوات صغيرة 20 جرام' } },
-      { icon: '🍓', img: './assets/images/products/cat_0/prod_2.jpg', name: { en: 'Portion Strawberry & Cherry Jam Cups', ru: 'Порционный клубничный и вишневый джем', ro: 'Gem de căpșuni și vișine porționat', de: 'Erdbeer- & Kirschmarmelade Portionen', fr: 'Confiture fraise & cerise en pot 20g', ar: 'مربى فراولة وكرز في عبوات صغيرة' } },
-      { icon: '🍫', img: './assets/images/products/cat_0/prod_3.jpg', name: { en: 'Portion Hazelnut Chocolate Cream Cups', ru: 'Порционная шоколадно-ореховая паста', ro: 'Cremă de ciocolată cu alune porționată', de: 'Nuss-Nugat-Creme Portionsbecher', fr: 'Pâte à tartiner chocolat noisette 20g', ar: 'شوكولاتة بندق في عبوات صغيرة' } }
+      { icon: '🍬', img: './assets/images/products/cat_0/prod_2.jpg', name: { en: 'Portion White Sugar Sticks 4g', ru: 'Сахарные стики с логотипом 4г', ro: 'Plicuri de zahăr alb stick 4g', de: 'Weiße Zuckersticks mit Logo 4g', fr: 'Sticks de sucre blanc 4g avec logo', ar: 'أظرف سكر أبيض طولية 4 جرام' } },
+      { icon: '🪵', img: './assets/images/products/cat_0/prod_3.jpg', name: { en: 'Portion Brown Cane Sugar Sticks', ru: 'Тростниковый сахар в стиках с логотипом', ro: 'Plicuri de zahăr brun stick', de: 'Brauner Rohrzucker in Sticks', fr: 'Sticks de sucre roux de canne', ar: 'أظرف سكر بني قصب في عبوات' } },
+      { icon: '🍅', img: './assets/images/products/cat_0/prod_4.jpg', name: { en: 'Portion Ketchup Sachets 10g', ru: 'Порционный кетчуп в саше 10г', ro: 'Sos ketchup porționat 10g', de: 'Ketchup-Portionsbeutel 10g', fr: 'Sauce ketchup en sachet 10g', ar: 'صلصة كاتشب في أظرف 10 جرام' } },
+      { icon: '🟡', img: './assets/images/products/cat_0/prod_5.jpg', name: { en: 'Portion Mayonnaise & Mustard Sachets', ru: 'Порционный майонез и горчица в саше', ro: 'Maioneză și muștar porționat', de: 'Mayonnaise- & Senf-Portionsbeutel', fr: 'Mayonnaise & Moutarde en sachet', ar: 'مايونيز وخردل في أظرف فردية' } },
+      { icon: '🥗', img: './assets/images/products/cat_0/prod_1.jpg', name: { en: 'Portion Pomegranate Sauce & Vinegar', ru: 'Порционный гранатовый соус и уксус', ro: 'Sos de rodie și oțet porționat', de: 'Granatapfelsauce & Essig-Portionen', fr: 'Sauce grenade & Vinaigre en portion', ar: 'صلصة الرمان والخل في عبوات' } },
+      { icon: '🫒', img: './assets/images/products/cat_0/prod_2.jpg', name: { en: 'Portion Olive Oil & Salad Dressing', ru: 'Порционное оливковое масло и заправка', ro: 'Ulei de măsline porționat pentru salată', de: 'Olivenöl- & Salatdressing-Portionen', fr: 'Huile d’olive & Sauce salade en portion', ar: 'زيت زيتون وتتبيلة سلطة في عبوات' } },
+      { icon: '☕', img: './assets/images/products/cat_0/prod_3.jpg', name: { en: 'Portion Instant 3-in-1 Coffee Sticks', ru: 'Растворимый кофе 3 в 1 в стиках', ro: 'Cafea instant 3 în 1 la stick', de: 'Instant-Kaffee 3-in-1 Sticks', fr: 'Café instantané 3-en-1 en stick', ar: 'قهوة سريعة التحضير 3 في 1' } },
+      { icon: '🍵', img: './assets/images/products/cat_0/prod_4.jpg', name: { en: 'Portion Black Tea & Green Tea Bags', ru: 'Порционный черный и зеленый чай', ro: 'Pliculețe ceai negru și verde', de: 'Schwarz- & Grüntee-Portionsbeutel', fr: 'Sachets de thé noir & vert', ar: 'أكياس شاي أسود وأخضر فردية' } },
+      { icon: '🍯', img: './assets/images/products/cat_0/prod_5.jpg', name: { en: 'Portion Honey Containers 20g', ru: 'Порционный натуральный мед 20г', ro: 'Miere naturală porționată 20g', de: 'Portionshonig 20g', fr: 'Miel naturel en pot individuel 20g', ar: 'عسل طبيعي في عبوات صغيرة 20 جرام' } },
+      { icon: '🍓', img: './assets/images/products/cat_0/prod_1.jpg', name: { en: 'Portion Strawberry & Cherry Jam Cups', ru: 'Порционный клубничный и вишневый джем', ro: 'Gem de căpșuni și vișine porționat', de: 'Erdbeer- & Kirschmarmelade Portionen', fr: 'Confiture fraise & cerise en pot 20g', ar: 'مربى فراولة وكرز في عبوات صغيرة' } },
+      { icon: '🍫', img: './assets/images/products/cat_0/prod_2.jpg', name: { en: 'Portion Hazelnut Chocolate Cream Cups', ru: 'Порционная шоколадно-ореховая паста', ro: 'Cremă de ciocolată cu alune porționată', de: 'Nuss-Nugat-Creme Portionsbecher', fr: 'Pâte à tartiner chocolat noisette 20g', ar: 'شوكولاتة بندق في عبوات صغيرة' } }
     ]
   },
 
@@ -113,10 +113,10 @@ const CATS = [
       { icon: '🧁', img: './assets/images/products/cat_1/prod_14.jpg', name: { en: 'Disposable Heavy Duty Piping Bags 18 Inch', ru: 'Кондитерские мешки повышенной прочности 18"', ro: 'Poșuri de unică folosință rezistente 18"', de: 'Einweg-Spritzbeutel extra stark 18"', fr: 'Poches à douille jetables renforcées 18"', ar: 'أكياس تزيين الكيك سميكة 18 بوصة' } },
       { icon: '🧁', img: './assets/images/products/cat_1/prod_15.jpg', name: { en: 'Stainless Steel Pastry Nozzles Set', ru: 'Наборы стальных кондитерских насадок', ro: 'Set duiuri patiserie din inox', de: 'Edelstahl Tüllen-Set für Gebäck', fr: 'Kits douilles à pâtisserie en inox', ar: 'طقم أقماع وتزيين الحلويات الستانلس' } },
       { icon: '🧁', img: './assets/images/products/cat_1/prod_16.jpg', name: { en: 'Cupcake Boxes with 6-Hole Inserts', ru: 'Коробки для капкейков на 6 ячеек', ro: 'Cutii cupcakes cu inserție 6 locuri', de: 'Cupcake-Boxen mit 6er Inlay', fr: 'Boîtes pour 6 cupcakes avec calage', ar: 'علب الكب كيك 6 خانات' } },
-      { icon: '🍬', img: './assets/images/products/cat_1/prod_18.jpg', name: { en: 'Macaron Window Gift Boxes', ru: 'Подарочные коробки для макаронс с окном', ro: 'Cutii cadou macarons cu fereastră', de: 'Macaron-Geschenkboxen mit Fenster', fr: 'Boîtes cadeaux pour macarons avec fenêtre', ar: 'علب هدايا الماكرون الفرنسية' } },
-      { icon: '🍰', img: './assets/images/products/cat_1/prod_19.jpg', name: { en: 'Transparent Monoport Dessert Boxes', ru: 'Прозрачные коробки для десертов монопорций', ro: 'Cutii transparente monoporție desert', de: 'Transparente Einzeldessert-Boxen', fr: 'Boîtes transparentes pour desserts individuels', ar: 'علب الحلويات والحلويات الفردية الشفافة' } },
-      { icon: '🍫', img: './assets/images/products/cat_1/prod_2.jpg', name: { en: 'Chocolate & Truffle Gift Boxes', ru: 'Коробки для конфет и трюфелей', ro: 'Cutii cadou ciocolată și trufe', de: 'Schokoladen- & Trüffel-Geschenkboxen', fr: 'Boîtes cadeaux pour chocolats & truffes', ar: 'علب شوكولاتة وترافل فاخرة' } },
-      { icon: '🥐', img: './assets/images/products/cat_1/prod_20.jpg', name: { en: 'Bakery Pie & Tart Cardboard Boxes', ru: 'Картонные коробки для пирогов и тартов', ro: 'Cutii carton pentru tarte și plăcinte', de: 'Kartonboxen für Kuchen & Tarten', fr: 'Boîtes carton pour tartes & quiches', ar: 'علب كرتون للمخبوزات والفطائر' } }
+      { icon: '🍬', img: './assets/images/products/cat_1/prod_17.jpg', name: { en: 'Macaron Window Gift Boxes', ru: 'Подарочные коробки для макаронс с окном', ro: 'Cutii cadou macarons cu fereastră', de: 'Macaron-Geschenkboxen mit Fenster', fr: 'Boîtes cadeaux pour macarons avec fenêtre', ar: 'علب هدايا الماكرون الفرنسية' } },
+      { icon: '🍰', img: './assets/images/products/cat_1/prod_18.jpg', name: { en: 'Transparent Monoport Dessert Boxes', ru: 'Прозрачные коробки для десертов монопорций', ro: 'Cutii transparente monoporție desert', de: 'Transparente Einzeldessert-Boxen', fr: 'Boîtes transparentes pour desserts individuels', ar: 'علب الحلويات والحلويات الفردية الشفافة' } },
+      { icon: '🍫', img: './assets/images/products/cat_1/prod_19.jpg', name: { en: 'Chocolate & Truffle Gift Boxes', ru: 'Коробки для конфет и трюфелей', ro: 'Cutii cadou ciocolată și trufe', de: 'Schokoladen- & Trüffel-Geschenkboxen', fr: 'Boîtes cadeaux pour chocolats & truffes', ar: 'علب شوكولاتة وترافل فاخرة' } },
+      { icon: '🥐', img: './assets/images/products/cat_1/prod_2.jpg', name: { en: 'Bakery Pie & Tart Cardboard Boxes', ru: 'Картонные коробки для пирогов и тартов', ro: 'Cutii carton pentru tarte și plăcinte', de: 'Kartonboxen für Kuchen & Tarten', fr: 'Boîtes carton pour tartes & quiches', ar: 'علب كرتون للمخبوزات والفطائر' } }
     ]
   },
 
@@ -124,7 +124,7 @@ const CATS = [
     id: 2,
     group: 'food',
     icon: '🌾',
-    img: './assets/images/products/cat_2/prod_1.jpg',
+    img: './assets/images/products/cat_2/prod_10.jpg',
     chip: {
       en: 'Food Supplies', ru: 'Пищевая продукция', ro: 'Produse alimentare', de: 'Nahrungsmittel', fr: 'Produits alimentaires', ar: 'منتجات غذائية'
     },
@@ -238,7 +238,7 @@ const CATS = [
     id: 4,
     group: 'packaging',
     icon: '🌿',
-    img: './assets/images/products/cat_4/prod_2.jpg',
+    img: './assets/images/products/cat_4/header.jpg',
     chip: {
       en: 'Kraft Pouches', ru: 'Крафт Дойпаки', ro: 'Pungi Doy-Pack kraft', de: 'Doypack Kraftbeutel', fr: 'Pouches Doy-Pack Kraft', ar: 'أكياس دوي باك كرافت'
     },
@@ -277,17 +277,17 @@ const CATS = [
     ],
     products: [
       { icon: '☕', img: './assets/images/products/cat_4/prod_1.jpg', name: { en: 'Valved Roasted Coffee Bean Doypack 250g', ru: 'Пакеты для кофе с клапаном 250г', ro: 'Pungi cafea cu supapă 250g', de: 'Kaffeebeutel mit Ventil 250g', fr: 'Sachets café avec valve 250g', ar: 'أكياس لحفظ البن المزودة بصمام 250 جرام' } },
-      { icon: '🫘', img: './assets/images/products/cat_4/prod_2.jpg', name: { en: 'Rectangular Window Kraft Doypack 500g', ru: 'Крафт дойпак с прямоугольным окном 500г', ro: 'Pungi Doypack kraft cu fereastră dreptunghiulară', de: 'Rechteckfenster Kraft Doypack 500g', fr: 'Sachets Doypack kraft fenêtre rectangulaire', ar: 'أكياس كرافت مع نافذة مستطيلة 500 جرام' } },
-      { icon: '🥜', img: './assets/images/products/cat_4/prod_3.jpg', name: { en: 'Oval Window Stand-Up Kraft Pouch', ru: 'Крафт дойпак с овальным окном', ro: 'Pungi Doypack kraft cu fereastră ovală', de: 'Ovalfenster Kraft Stehbeutel', fr: 'Sachets kraft fenêtre ovale', ar: 'أكياس كرافت وقوفية نافذة بيضاوية' } },
-      { icon: '✨', img: './assets/images/products/cat_4/prod_4.jpg', name: { en: 'Full Transparent Front Kraft Back Doypack', ru: 'Дойпак с прозрачным фасадом и крафт спинкой', ro: 'Pungi Doypack fața transparentă spate kraft', de: 'Transparente Front Kraft-Rücken Doypack', fr: 'Doypack face transparente dos kraft', ar: 'أكياس كرافت جانب شفاف بالكامل' } },
-      { icon: '🖤', img: './assets/images/products/cat_4/prod_1.jpg', name: { en: 'Matte Black Aluminum Barrier Zip Pouch', ru: 'Матовые черные дойпаки с фольгой', ro: 'Pungi Doypack negru mat cu aluminiu', de: 'Mattschwarze Alu-Barriere-Zip-Beutel', fr: 'Sachets noir mat barrière alu zip', ar: 'أكياس دوي باك سوداء فاخرة مع سحاب' } },
-      { icon: '🤍', img: './assets/images/products/cat_4/prod_2.jpg', name: { en: 'Matte White Aluminum Foil Doypack', ru: 'Матовые белые фольгированные дойпаки', ro: 'Pungi Doypack alb mat cu aluminiu', de: 'Mattweiße Alu-Barriere-Zip-Beutel', fr: 'Sachets blanc mat barrière alu zip', ar: 'أكياس دوي باك بيضاء مع عازل ألومنيوم' } },
-      { icon: '🧴', img: './assets/images/products/cat_4/prod_3.jpg', name: { en: 'Kraft Pouch with Liquid Spout & Cap', ru: 'Крафт дойпак с носиком-дозатором', ro: 'Pungi kraft cu dop pentru lichide', de: 'Kraft-Standbeutel mit Ausgießer & Kappe', fr: 'Sachet kraft avec bouchon verseur', ar: 'أكياس كرافت وقوفية مع صنبور صب' } },
-      { icon: '🪙', img: './assets/images/products/cat_4/prod_4.jpg', name: { en: 'Metallic Silver Vacuum Zip Pouch', ru: 'Серебряные вакуумные дойпаки', ro: 'Pungi argintii metalizate cu fermoar', de: 'Silberne Metall-Vakuum-Zip-Beutel', fr: 'Sachets sous vide argentés avec zip', ar: 'أكياس تفريغ الهواء الفضية مع سحاب' } },
-      { icon: '🌱', img: './assets/images/products/cat_4/prod_1.jpg', name: { en: 'Eco Compostable PLA Barrier Zip Bag', ru: 'Биоразлагаемые дойпаки из PLA', ro: 'Pungi bio compostabile PLA cu fermoar', de: 'Kompostierbare PLA Barriere-Zip-Beutel', fr: 'Sachets compostables PLA barrière zip', ar: 'أكياس دوي باك عضوية قابلة للتحلل' } },
-      { icon: '☕', img: './assets/images/products/cat_4/prod_2.jpg', name: { en: 'Side Gusseted Coffee Valve Bag 1kg', ru: 'Пакеты для кофе с фальцами и клапаном 1кг', ro: 'Pungi cafea pliu lateral cu supapă 1kg', de: 'Seitenfalten-Kaffeebeutel mit Ventil 1kg', fr: 'Sachets café soufflets latéraux valve 1kg', ar: 'أكياس بن بطيات جانبية وصمام 1 كجم' } },
-      { icon: '📦', img: './assets/images/products/cat_4/prod_3.jpg', name: { en: 'Flat Bottom Quad Seal Box Pouch', ru: 'Пакеты с плоским дном 4-х шовные', ro: 'Pungi cu fund plat 4 sigilii', de: 'Flachboden-Standbeutel mit 4 Nähten', fr: 'Sachets fond plat 4 soudures', ar: 'أكياس قاع مسطح أربعة لحامات' } },
-      { icon: '🌰', img: './assets/images/products/cat_4/prod_4.jpg', name: { en: 'Dried Fruit & Nuts Kraft Window Pouch', ru: 'Крафт пакеты для сухофруктов и орехов', ro: 'Pungi kraft pentru fructe uscate și alune', de: 'Kraftbeutel für Trockenfrüchte & Nüsse', fr: 'Sachets kraft pour fruits secs & noix', ar: 'أكياس كرافت للمكسرات والفواكه المجففة' } }
+      { icon: '🫘', img: './assets/images/products/cat_4/prod_10.jpg', name: { en: 'Rectangular Window Kraft Doypack 500g', ru: 'Крафт дойпак с прямоугольным окном 500г', ro: 'Pungi Doypack kraft cu fereastră dreptunghiulară', de: 'Rechteckfenster Kraft Doypack 500g', fr: 'Sachets Doypack kraft fenêtre rectangulaire', ar: 'أكياس كرافت مع نافذة مستطيلة 500 جرام' } },
+      { icon: '🥜', img: './assets/images/products/cat_4/prod_11.jpg', name: { en: 'Oval Window Stand-Up Kraft Pouch', ru: 'Крафт дойпак с овальным окном', ro: 'Pungi Doypack kraft cu fereastră ovală', de: 'Ovalfenster Kraft Stehbeutel', fr: 'Sachets kraft fenêtre ovale', ar: 'أكياس كرافت وقوفية نافذة بيضاوية' } },
+      { icon: '✨', img: './assets/images/products/cat_4/prod_2.jpg', name: { en: 'Full Transparent Front Kraft Back Doypack', ru: 'Дойпак с прозрачным фасадом и крафт спинкой', ro: 'Pungi Doypack fața transparentă spate kraft', de: 'Transparente Front Kraft-Rücken Doypack', fr: 'Doypack face transparente dos kraft', ar: 'أكياس كرافت جانب شفاف بالكامل' } },
+      { icon: '🖤', img: './assets/images/products/cat_4/prod_3.jpg', name: { en: 'Matte Black Aluminum Barrier Zip Pouch', ru: 'Матовые черные дойпаки с фольгой', ro: 'Pungi Doypack negru mat cu aluminiu', de: 'Mattschwarze Alu-Barriere-Zip-Beutel', fr: 'Sachets noir mat barrière alu zip', ar: 'أكياس دوي باك سوداء فاخرة مع سحاب' } },
+      { icon: '🤍', img: './assets/images/products/cat_4/prod_4.jpg', name: { en: 'Matte White Aluminum Foil Doypack', ru: 'Матовые белые фольгированные дойпаки', ro: 'Pungi Doypack alb mat cu aluminiu', de: 'Mattweiße Alu-Barriere-Zip-Beutel', fr: 'Sachets blanc mat barrière alu zip', ar: 'أكياس دوي باك بيضاء مع عازل ألومنيوم' } },
+      { icon: '🧴', img: './assets/images/products/cat_4/prod_5.jpg', name: { en: 'Kraft Pouch with Liquid Spout & Cap', ru: 'Крафт дойпак с носиком-дозатором', ro: 'Pungi kraft cu dop pentru lichide', de: 'Kraft-Standbeutel mit Ausgießer & Kappe', fr: 'Sachet kraft avec bouchon verseur', ar: 'أكياس كرافت وقوفية مع صنبور صب' } },
+      { icon: '🪙', img: './assets/images/products/cat_4/prod_6.jpg', name: { en: 'Metallic Silver Vacuum Zip Pouch', ru: 'Серебряные вакуумные дойпаки', ro: 'Pungi argintii metalizate cu fermoar', de: 'Silberne Metall-Vakuum-Zip-Beutel', fr: 'Sachets sous vide argentés avec zip', ar: 'أكياس تفريغ الهواء الفضية مع سحاب' } },
+      { icon: '🌱', img: './assets/images/products/cat_4/prod_7.jpg', name: { en: 'Eco Compostable PLA Barrier Zip Bag', ru: 'Биоразлагаемые дойпаки из PLA', ro: 'Pungi bio compostabile PLA cu fermoar', de: 'Kompostierbare PLA Barriere-Zip-Beutel', fr: 'Sachets compostables PLA barrière zip', ar: 'أكياس دوي باك عضوية قابلة للتحلل' } },
+      { icon: '☕', img: './assets/images/products/cat_4/prod_8.jpg', name: { en: 'Side Gusseted Coffee Valve Bag 1kg', ru: 'Пакеты для кофе с фальцами и клапаном 1кг', ro: 'Pungi cafea pliu lateral cu supapă 1kg', de: 'Seitenfalten-Kaffeebeutel mit Ventil 1kg', fr: 'Sachets café soufflets latéraux valve 1kg', ar: 'أكياس بن بطيات جانبية وصمام 1 كجم' } },
+      { icon: '📦', img: './assets/images/products/cat_4/prod_9.jpg', name: { en: 'Flat Bottom Quad Seal Box Pouch', ru: 'Пакеты с плоским дном 4-х шовные', ro: 'Pungi cu fund plat 4 sigilii', de: 'Flachboden-Standbeutel mit 4 Nähten', fr: 'Sachets fond plat 4 soudures', ar: 'أكياس قاع مسطح أربعة لحامات' } },
+      { icon: '🌰', img: './assets/images/products/cat_4/prod_1.jpg', name: { en: 'Dried Fruit & Nuts Kraft Window Pouch', ru: 'Крафт пакеты для сухофруктов и орехов', ro: 'Pungi kraft pentru fructe uscate și alune', de: 'Kraftbeutel für Trockenfrüchte & Nüsse', fr: 'Sachets kraft pour fruits secs & noix', ar: 'أكياس كرافت للمكسرات والفواكه المجففة' } }
     ]
   },
 
@@ -295,7 +295,7 @@ const CATS = [
     id: 5,
     group: 'packaging',
     icon: '🛍️',
-    img: './assets/images/products/cat_5/prod_1.jpg',
+    img: './assets/images/products/cat_5/header.jpg',
     chip: {
       en: 'Kraft Bags', ru: 'Крафт-пакеты', ro: 'Pungi kraft', de: 'Kraftpapiertaschen', fr: 'Sacs en papier kraft', ar: 'أكياس ورق كرافت بمقابض'
     },
@@ -352,7 +352,7 @@ const CATS = [
     id: 6,
     group: 'packaging',
     icon: '🧻',
-    img: './assets/images/products/cat_6/prod_1.jpg',
+    img: './assets/images/products/cat_6/header.jpg',
     chip: {
       en: 'Paper & Wet Wipes', ru: 'Бумажные и влажные салфетки', ro: 'Șervețele hârtie & umede', de: 'Papier & Feuchttücher', fr: 'Serviettes & Lingettes', ar: 'مناديل ورقية ومبللة'
     },
@@ -391,17 +391,17 @@ const CATS = [
     ],
     products: [
       { icon: '💧', img: './assets/images/products/cat_6/prod_1.jpg', name: { en: 'Single Sachet Refreshing Wet Wipes 6x8cm', ru: 'Влажные салфетки в саше 6х8см с логотипом', ro: 'Șervețele umede la plic 6x8cm cu logo', de: 'Erfrischungstücher im Sachet 6x8cm', fr: 'Lingettes rince-doigts individuelles 6x8cm', ar: 'مناديل مبللة معطرة في أظرف 6x8 سم' } },
-      { icon: '💧', img: './assets/images/products/cat_6/prod_2.jpg', name: { en: 'Large Sachet Wet Wipes 7x12cm', ru: 'Влажные салфетки большого формата 7х12см', ro: 'Șervețele umede format mare 7x12cm', de: 'Große Erfrischungstücher 7x12cm', fr: 'Lingettes rafraîchissantes grand format 7x12cm', ar: 'مناديل مبللة حجك كبير 7x12 سم' } },
-      { icon: '✈️', img: './assets/images/products/cat_6/prod_3.jpg', name: { en: 'Airline & Hotel Hot/Cold Refreshing Towels', ru: 'Освежающие махровые полотенца для авиалиний', ro: 'Prosoape umede calde/reci pentru linii aeriene', de: 'Heiße/Kalte Erfrischungstücher für Airlines', fr: 'Serviettes rafraîchissantes chaudes/froides airlines', ar: 'مناشف حارة/باردة معطرة للطيران والفنادق' } },
-      { icon: '🛡️', img: './assets/images/products/cat_6/prod_4.jpg', name: { en: 'Alcohol-Free Antimicrobial Sanitizing Wipes', ru: 'Антибактериальные салфетки без спирта', ro: 'Șervețele dezinfectante fără alcool', de: 'Alkoholfreie antibakterielle Feuchttücher', fr: 'Lingettes désinfectantes sans alcool', ar: 'مناديل معقمة خالية من الكحول' } },
-      { icon: '🧻', img: './assets/images/products/cat_6/prod_5.jpg', name: { en: 'Dispenser Refill Napkins (1/4 Fold)', ru: 'Салфетки для диспенсеров 1/4 сложения', ro: 'Rezerve șervețele dispenser 1/4 împăturite', de: 'Spenderservietten-Nachfüllung 1/4 Falz', fr: 'Serviettes pour distributeur pliage 1/4', ar: 'مناديل لموزعات المناديل طية 1/4' } },
-      { icon: '🍸', img: './assets/images/products/cat_6/prod_1.jpg', name: { en: 'Cocktail Paper Napkins 2-Ply 24x24cm', ru: 'Коктейльные салфетки 2 слоя 24х24см', ro: 'Șervețele cocktail 2 straturi 24x24cm', de: 'Cocktail-Servietten 2-lagig 24x24cm', fr: 'Serviettes cocktail 2 plis 24x24cm', ar: 'مناديل كوكتيل طبقتين 24x24 سم' } },
-      { icon: '🍽️', img: './assets/images/products/cat_6/prod_2.jpg', name: { en: 'Dinner Paper Napkins 2-Ply 33x33cm', ru: 'Столовые салфетки 2 слоя 33х33см', ro: 'Șervețele masă 2 straturi 33x33cm', de: 'Mahlzeit-Servietten 2-lagig 33x33cm', fr: 'Serviettes de table 2 plis 33x33cm', ar: 'مناديل طعام طبقتين 33x33 سم' } },
-      { icon: '✨', img: './assets/images/products/cat_6/prod_3.jpg', name: { en: 'Airlaid Linen-Feel Luxury Napkins 40x40cm', ru: 'Премиум салфетки под лен Airlaid 40х40см', ro: 'Șervețele de lux textura in Airlaid 40x40cm', de: 'Airlaid Stoffstruktur-Servietten 40x40cm', fr: 'Serviettes de luxe effet tissu Airlaid 40x40cm', ar: 'مناديل قماشية فاخرة ملمس الكتان 40x40 سم' } },
-      { icon: '🍴', img: './assets/images/products/cat_6/prod_4.jpg', name: { en: 'Cutlery Pocket Napkins with Fork Slot', ru: 'Салфетки-кармашки для приборов', ro: 'Șervețele cu buzunar pentru tacâmuri', de: 'Bestecktaschen-Servietten mit Schlitz', fr: 'Serviettes étui pochette pour couverts', ar: 'مناديل مع جيب مخصص لأطقم الشوك والسكاكين' } },
-      { icon: '📦', img: './assets/images/products/cat_6/prod_5.jpg', name: { en: 'Pocket Tissue 10-Packs with Logo Wrap', ru: 'Карманные бумажные платочки 10 шт в упаковке', ro: 'Pachete șervețele buzunar 10 buc cu logo', de: 'Taschentücher-Packungen 10er mit Logo', fr: 'Étuis mouchoirs de poche 10 unités avec logo', ar: 'مناديل جيب ورقية 10 مناديل مطبوعة' } },
-      { icon: '🧻', img: './assets/images/products/cat_6/prod_1.jpg', name: { en: 'Z-Fold & V-Fold Paper Hand Towels', ru: 'Бумажные полотенца Z-сложения и V-сложения', ro: 'Prosoape hârtie mâini pliate Z și V', de: 'Papierhandtücher Z-Falz & V-Falz', fr: 'Essuie-mains papier pliage Z & V', ar: 'مناشف ورقية للأيدي طية Z و V' } },
-      { icon: '🌀', img: './assets/images/products/cat_6/prod_2.jpg', name: { en: 'Centerfeed Paper Towel Rolls 2-Ply', ru: 'Бумажные полотенца в рулонах с центральной вытяжкой', ro: 'Prosoape hârtie rola cu derulare centrală', de: 'Innenabrollung Papierhandtuchrollen 2-lagig', fr: 'Rouleaux essuie-mains dévidage central 2 plis', ar: 'رول مناشف سحب من المنتصف طبقتين' } }
+      { icon: '💧', img: './assets/images/products/cat_6/prod_10.jpg', name: { en: 'Large Sachet Wet Wipes 7x12cm', ru: 'Влажные салфетки большого формата 7х12см', ro: 'Șervețele umede format mare 7x12cm', de: 'Große Erfrischungstücher 7x12cm', fr: 'Lingettes rafraîchissantes grand format 7x12cm', ar: 'مناديل مبللة حجك كبير 7x12 سم' } },
+      { icon: '✈️', img: './assets/images/products/cat_6/prod_11.jpg', name: { en: 'Airline & Hotel Hot/Cold Refreshing Towels', ru: 'Освежающие махровые полотенца для авиалиний', ro: 'Prosoape umede calde/reci pentru linii aeriene', de: 'Heiße/Kalte Erfrischungstücher für Airlines', fr: 'Serviettes rafraîchissantes chaudes/froides airlines', ar: 'مناشف حارة/باردة معطرة للطيران والفنادق' } },
+      { icon: '🛡️', img: './assets/images/products/cat_6/prod_12.jpg', name: { en: 'Alcohol-Free Antimicrobial Sanitizing Wipes', ru: 'Антибактериальные салфетки без спирта', ro: 'Șervețele dezinfectante fără alcool', de: 'Alkoholfreie antibakterielle Feuchttücher', fr: 'Lingettes désinfectantes sans alcool', ar: 'مناديل معقمة خالية من الكحول' } },
+      { icon: '🧻', img: './assets/images/products/cat_6/prod_13.jpg', name: { en: 'Dispenser Refill Napkins (1/4 Fold)', ru: 'Салфетки для диспенсеров 1/4 сложения', ro: 'Rezerve șervețele dispenser 1/4 împăturite', de: 'Spenderservietten-Nachfüllung 1/4 Falz', fr: 'Serviettes pour distributeur pliage 1/4', ar: 'مناديل لموزعات المناديل طية 1/4' } },
+      { icon: '🍸', img: './assets/images/products/cat_6/prod_14.jpg', name: { en: 'Cocktail Paper Napkins 2-Ply 24x24cm', ru: 'Коктейльные салфетки 2 слоя 24х24см', ro: 'Șervețele cocktail 2 straturi 24x24cm', de: 'Cocktail-Servietten 2-lagig 24x24cm', fr: 'Serviettes cocktail 2 plis 24x24cm', ar: 'مناديل كوكتيل طبقتين 24x24 سم' } },
+      { icon: '🍽️', img: './assets/images/products/cat_6/prod_15.jpg', name: { en: 'Dinner Paper Napkins 2-Ply 33x33cm', ru: 'Столовые салфетки 2 слоя 33х33см', ro: 'Șervețele masă 2 straturi 33x33cm', de: 'Mahlzeit-Servietten 2-lagig 33x33cm', fr: 'Serviettes de table 2 plis 33x33cm', ar: 'مناديل طعام طبقتين 33x33 سم' } },
+      { icon: '✨', img: './assets/images/products/cat_6/prod_16.jpg', name: { en: 'Airlaid Linen-Feel Luxury Napkins 40x40cm', ru: 'Премиум салфетки под лен Airlaid 40х40см', ro: 'Șervețele de lux textura in Airlaid 40x40cm', de: 'Airlaid Stoffstruktur-Servietten 40x40cm', fr: 'Serviettes de luxe effet tissu Airlaid 40x40cm', ar: 'مناديل قماشية فاخرة ملمس الكتان 40x40 سم' } },
+      { icon: '🍴', img: './assets/images/products/cat_6/prod_17.jpg', name: { en: 'Cutlery Pocket Napkins with Fork Slot', ru: 'Салфетки-кармашки для приборов', ro: 'Șervețele cu buzunar pentru tacâmuri', de: 'Bestecktaschen-Servietten mit Schlitz', fr: 'Serviettes étui pochette pour couverts', ar: 'مناديل مع جيب مخصص لأطقم الشوك والسكاكين' } },
+      { icon: '📦', img: './assets/images/products/cat_6/prod_2.jpg', name: { en: 'Pocket Tissue 10-Packs with Logo Wrap', ru: 'Карманные бумажные платочки 10 шт в упаковке', ro: 'Pachete șervețele buzunar 10 buc cu logo', de: 'Taschentücher-Packungen 10er mit Logo', fr: 'Étuis mouchoirs de poche 10 unités avec logo', ar: 'مناديل جيب ورقية 10 مناديل مطبوعة' } },
+      { icon: '🧻', img: './assets/images/products/cat_6/prod_3.jpg', name: { en: 'Z-Fold & V-Fold Paper Hand Towels', ru: 'Бумажные полотенца Z-сложения и V-сложения', ro: 'Prosoape hârtie mâini pliate Z și V', de: 'Papierhandtücher Z-Falz & V-Falz', fr: 'Essuie-mains papier pliage Z & V', ar: 'مناشف ورقية للأيدي طية Z و V' } },
+      { icon: '🌀', img: './assets/images/products/cat_6/prod_4.jpg', name: { en: 'Centerfeed Paper Towel Rolls 2-Ply', ru: 'Бумажные полотенца в рулонах с центральной вытяжкой', ro: 'Prosoape hârtie rola cu derulare centrală', de: 'Innenabrollung Papierhandtuchrollen 2-lagig', fr: 'Rouleaux essuie-mains dévidage central 2 plis', ar: 'رول مناشف سحب من المنتصف طبقتين' } }
     ]
   },
 
@@ -409,7 +409,7 @@ const CATS = [
     id: 7,
     group: 'packaging',
     icon: '🍴',
-    img: './assets/images/products/cat_7/prod_1.jpg',
+    img: './assets/images/products/cat_7/header.jpg',
     chip: {
       en: 'Tableware', ru: 'Одноразовая посуда', ro: 'Veselă unică folosință', de: 'Einweggeschirr', fr: 'Vaisselle jetable', ar: 'أدوات مائدة مخصصة للاستخدام مرة واحدة'
     },
@@ -451,14 +451,14 @@ const CATS = [
       { icon: '🪵', img: './assets/images/products/cat_7/prod_2.jpg', name: { en: 'Birch Wood Teaspoons & Coffee Stirrers', ru: 'Деревянные чайные ложки и размешиватели', ro: 'Lingurițe și agitatoare cafea din lemn', de: 'Birkenholz-Teelöffel & Kaffeerührer', fr: 'Petites cuillères & touillettes café en bois', ar: 'ملاعق شاي وأعواد تحريك القهوة خشبية' } },
       { icon: '🥣', img: './assets/images/products/cat_7/prod_3.jpg', name: { en: 'Sugarcane Bagasse 3-Compartment Meal Trays', ru: 'Контейнеры из тростникового жмыха 3 секции', ro: 'Caserole din bagasă trestie 3 compartimente', de: 'Sugarcane Bagasse 3-Fächer Menüboxen', fr: 'Barquettes repas bagasse de canne 3 compartiments', ar: 'أطباق قصب السكر 3 خانات مقسمة' } },
       { icon: '🍽️', img: './assets/images/products/cat_7/prod_4.jpg', name: { en: 'Sugarcane Bagasse Round Plates 23cm', ru: 'Тарелки из тростникового жмыха круглые 23см', ro: 'Farfurii rotunde din bagasă trestie 23cm', de: 'Zuckerrohr-Bagasse runde Teller 23cm', fr: 'Assiettes rondes en bagasse de canne 23cm', ar: 'أطباق قصب السكر دائرية 23 سم' } },
-      { icon: '🍲', img: './assets/images/products/cat_7/prod_5.jpg', name: { en: 'Sugarcane Bagasse Soup Bowls 500ml', ru: 'Миски для супа из тростникового жмыха 500мл', ro: 'Boluri supa din bagasă trestie 500ml', de: 'Sugarcane Bagasse Suppenschalen 500ml', fr: 'Bols à soupe en bagasse de canne 500ml', ar: 'أوعية شوربة قصب السكر 500 مل' } },
-      { icon: '☕', img: './assets/images/products/cat_7/prod_1.jpg', name: { en: 'Double-Wall Kraft Hot Paper Cups 8oz/12oz', ru: 'Двухслойные стаканы для кофе 8oz и 12oz', ro: 'Pahare carton perete dublu 8oz și 12oz', de: 'Doppelwand Kraft-Heißgetränkebecher 8oz/12oz', fr: 'Gobelets carton double paroi kraft 8oz/12oz', ar: 'أكواب كرافت عازلة للحرارة 8 و 12 أونصة' } },
-      { icon: '☕', img: './assets/images/products/cat_7/prod_2.jpg', name: { en: 'Single-Wall Custom Printed Coffee Cups', ru: 'Однослойные стаканы с логотипом для кофе', ro: 'Pahare carton perete simplu personalizate', de: 'Einwandige bedruckte Kaffeebecher', fr: 'Gobelets café simple paroi personnalisés', ar: 'أكواب قهوة ورقية طبقة واحدة مطبوعة' } },
-      { icon: '🥤', img: './assets/images/products/cat_7/prod_3.jpg', name: { en: 'Clear PET Cold Drink Cups & Dome Lids', ru: 'Прозрачные PET стаканы и купольные крышки', ro: 'Pahare PET transparente și capace cupolă', de: 'Kristallklare PET-Kaltgetränkebecher & Domdeckel', fr: 'Gobelets PET transparents & couvercles dôme', ar: 'أكواب شفافة للمشروبات الباردة مع أغطية' } },
-      { icon: '🌱', img: './assets/images/products/cat_7/prod_4.jpg', name: { en: 'PLA Biodegradable Clear Cold Cups', ru: 'Биоразлагаемые прозрачные стаканы из PLA', ro: 'Pahare biodegradabile transparente din PLA', de: 'PLA kompostierbare Kaltgetränkebecher', fr: 'Gobelets transparents compostables en PLA', ar: 'أكواب شفافة قابلة للتحلل العضوي PLA' } },
-      { icon: '🥢', img: './assets/images/products/cat_7/prod_5.jpg', name: { en: 'Bamboo Cutlery Set in Kraft Sleeve', ru: 'Наборы приборов из бамбука в крафт чехле', ro: 'Set tacâmuri din bambus în plic kraft', de: 'Bambus-Besteckset in Kraftpapiertüte', fr: 'Kit couverts en bambou en étui kraft', ar: 'أطقم شوك وسكاكين خيزران في أظرف' } },
-      { icon: '🍦', img: './assets/images/products/cat_7/prod_1.jpg', name: { en: 'Disposable Wooden Ice Cream Spoons', ru: 'Деревянные ложечки для мороженого', ro: 'Lingurițe din lemn pentru înghețată', de: 'Einweg-Holzeislöffel', fr: 'Petites cuillères en bois pour glace', ar: 'ملاعق خشبية صغيرة للآيس كريم' } },
-      { icon: '🥗', img: './assets/images/products/cat_7/prod_2.jpg', name: { en: 'Kraft Salad Bowls with Clear PET Lids', ru: 'Крафт миски для салатов с прозрачной крышкой', ro: 'Boluri kraft salată cu capac transparent', de: 'Kraft-Salatschalen mit klarem Deckel', fr: 'Bols kraft à salade avec couvercle transparent', ar: 'أوعية سلطة كرافت مع أغطية شفافة' } }
+      { icon: '🍲', img: './assets/images/products/cat_7/prod_1.jpg', name: { en: 'Sugarcane Bagasse Soup Bowls 500ml', ru: 'Миски для супа из тростникового жмыха 500мл', ro: 'Boluri supa din bagasă trestie 500ml', de: 'Sugarcane Bagasse Suppenschalen 500ml', fr: 'Bols à soupe en bagasse de canne 500ml', ar: 'أوعية شوربة قصب السكر 500 مل' } },
+      { icon: '☕', img: './assets/images/products/cat_7/prod_2.jpg', name: { en: 'Double-Wall Kraft Hot Paper Cups 8oz/12oz', ru: 'Двухслойные стаканы для кофе 8oz и 12oz', ro: 'Pahare carton perete dublu 8oz și 12oz', de: 'Doppelwand Kraft-Heißgetränkebecher 8oz/12oz', fr: 'Gobelets carton double paroi kraft 8oz/12oz', ar: 'أكواب كرافت عازلة للحرارة 8 و 12 أونصة' } },
+      { icon: '☕', img: './assets/images/products/cat_7/prod_3.jpg', name: { en: 'Single-Wall Custom Printed Coffee Cups', ru: 'Однослойные стаканы с логотипом для кофе', ro: 'Pahare carton perete simplu personalizate', de: 'Einwandige bedruckte Kaffeebecher', fr: 'Gobelets café simple paroi personnalisés', ar: 'أكواب قهوة ورقية طبقة واحدة مطبوعة' } },
+      { icon: '🥤', img: './assets/images/products/cat_7/prod_4.jpg', name: { en: 'Clear PET Cold Drink Cups & Dome Lids', ru: 'Прозрачные PET стаканы и купольные крышки', ro: 'Pahare PET transparente și capace cupolă', de: 'Kristallklare PET-Kaltgetränkebecher & Domdeckel', fr: 'Gobelets PET transparents & couvercles dôme', ar: 'أكواب شفافة للمشروبات الباردة مع أغطية' } },
+      { icon: '🌱', img: './assets/images/products/cat_7/prod_1.jpg', name: { en: 'PLA Biodegradable Clear Cold Cups', ru: 'Биоразлагаемые прозрачные стаканы из PLA', ro: 'Pahare biodegradabile transparente din PLA', de: 'PLA kompostierbare Kaltgetränkebecher', fr: 'Gobelets transparents compostables en PLA', ar: 'أكواب شفافة قابلة للتحلل العضوي PLA' } },
+      { icon: '🥢', img: './assets/images/products/cat_7/prod_2.jpg', name: { en: 'Bamboo Cutlery Set in Kraft Sleeve', ru: 'Наборы приборов из бамбука в крафт чехле', ro: 'Set tacâmuri din bambus în plic kraft', de: 'Bambus-Besteckset in Kraftpapiertüte', fr: 'Kit couverts en bambou en étui kraft', ar: 'أطقم شوك وسكاكين خيزران في أظرف' } },
+      { icon: '🍦', img: './assets/images/products/cat_7/prod_3.jpg', name: { en: 'Disposable Wooden Ice Cream Spoons', ru: 'Деревянные ложечки для мороженого', ro: 'Lingurițe din lemn pentru înghețată', de: 'Einweg-Holzeislöffel', fr: 'Petites cuillères en bois pour glace', ar: 'ملاعق خشبية صغيرة للآيس كريم' } },
+      { icon: '🥗', img: './assets/images/products/cat_7/prod_4.jpg', name: { en: 'Kraft Salad Bowls with Clear PET Lids', ru: 'Крафт миски для салатов с прозрачной крышкой', ro: 'Boluri kraft salată cu capac transparent', de: 'Kraft-Salatschalen mit klarem Deckel', fr: 'Bols kraft à salade avec couvercle transparent', ar: 'أوعية سلطة كرافت مع أغطية شفافة' } }
     ]
   },
 
@@ -466,7 +466,7 @@ const CATS = [
     id: 8,
     group: 'packaging',
     icon: '📜',
-    img: './assets/images/products/cat_8/prod_2.jpg',
+    img: './assets/images/products/cat_8/header.jpg',
     chip: {
       en: 'Wrapping Paper', ru: 'Упаковочная бумага', ro: 'Hârtie ambalat', de: 'Einwickelpapier', fr: 'Papier d’emballage', ar: 'ورق تغليف الأطعمة والمعجنات'
     },
@@ -505,15 +505,15 @@ const CATS = [
     ],
     products: [
       { icon: '🍔', img: './assets/images/products/cat_8/prod_1.jpg', name: { en: 'Greaseproof Burger Wrap Sheets KIT 7 30x40cm', ru: 'Жиростойкая бумага для обертывания бургеров 30х40см', ro: 'Hârtie anti-grăsime ambalare burgeri 30x40cm', de: 'Fettdichtes Burger-Einwickelpapier 30x40cm', fr: 'Papier ingraissable pour burgers 30x40cm', ar: 'أوراق تغليف البرجر المضادة للدهون 30x40 سم' } },
-      { icon: '🥩', img: './assets/images/products/cat_8/prod_2.jpg', name: { en: 'PE-Coated Butcher Paper Sheets for Meats', ru: 'Бумага для мясной гастрономии с PE-покрытием', ro: 'Hârtie măcelărie laminată PE', de: 'PE-beschichtetes Einschlagpapier für Fleisch', fr: 'Papier boucherie plastifié PE pour viandes', ar: 'ورق مغلف للحوم والمأكولات الطازجة' } },
-      { icon: '🥪', img: './assets/images/products/cat_8/prod_3.jpg', name: { en: 'Newspaper Print Custom Sandwich Wraps', ru: 'Бумага для сэндвичей с газетным принтом', ro: 'Hârtie ambalat sandwich model ziar', de: 'Bedrucktes Sandwich-Papier Zeitungsmuster', fr: 'Papier emballage sandwich motif journal', ar: 'أوراق تغليف الساندويشات بطبعة الصحيفة' } },
-      { icon: '🧺', img: './assets/images/products/cat_8/prod_4.jpg', name: { en: 'Basket & Metal Tray Liner Paper Sheets', ru: 'Бумажные вкладыши для сервировочных корзинок', ro: 'Foi de hârtie pentru coșulețe și tăvi', de: 'Korb- & Tablett-Einlegebögen', fr: 'Feuilles de fond pour paniers & plateaux', ar: 'أوراق بطانة السلال وصواني التقديم' } },
-      { icon: '🥐', img: './assets/images/products/cat_8/prod_1.jpg', name: { en: 'Bakery Waxed Wrapping Sheets for Pastries', ru: 'Вощеная бумага для пекарен и выпечки', ro: 'Hârtie cerată pentru patiserie', de: 'Gewachstes Bäckerei-Einschlagpapier', fr: 'Papier paraffiné pour boulangerie', ar: 'ورق مغلف بالشمع للمخابز والمعجنات' } },
-      { icon: '🌯', img: './assets/images/products/cat_8/prod_2.jpg', name: { en: 'Aluminum Foil Laminated Wrap Sheets', ru: 'Фольгированная бумага для шаурмы и дурума', ro: 'Foi laminat aluminiu pentru shawarma', de: 'Alufolie-laminierte Einschlagbögen', fr: 'Feuilles laminées alu pour kebabs', ar: 'أوراق مغلفة بالألومنيوم للشاورما والوجبات' } },
-      { icon: '📜', img: './assets/images/products/cat_8/prod_3.jpg', name: { en: 'Pergamyn Translucent Bakery Wrapping Paper', ru: 'Пергамин прозрачная упаковочная бумага', ro: 'Hârtie translucentă pergamyn patiserie', de: 'Pergamyn transparentes Bäckereipapier', fr: 'Papier pergamyn translucide boulangerie', ar: 'ورق برجامين شفاف للمخابز' } },
-      { icon: '🎂', img: './assets/images/products/cat_8/prod_4.jpg', name: { en: 'Siliconized Pan Liner Sheets 40x60cm', ru: 'Силиконизированные листы для противней 40х60см', ro: 'Foi siliconate pentru tăvi copt 40x60cm', de: 'Silikonisierte Backblech-Einlagen 40x60cm', fr: 'Feuilles siliconées pour plaques cuisson 40x60cm', ar: 'أوراق سيليكون للصواني بالفرن 40x60 سم' } },
-      { icon: '🥖', img: './assets/images/products/cat_8/prod_1.jpg', name: { en: 'Food Grade Tissue Wrapping Sheets for Bread', ru: 'Тонкая пищевая бумага для обертывания хлеба', ro: 'Hârtie subțire alimentară ambalat pâine', de: 'Dünnes Seidenpapier für Brot', fr: 'Papier de soie alimentaire pour pain', ar: 'ورق تغليف رقيق وخفيف للخبز' } },
-      { icon: '❄️', img: './assets/images/products/cat_8/prod_2.jpg', name: { en: 'Poly-Coated Freezer Paper Sheets', ru: 'Бумага с полимерным слоем для заморозки', ro: 'Hârtie laminată pentru congelare', de: 'Poly-beschichtetes Gefrierpapier', fr: 'Papier plastifié pour congélation', ar: 'ورق مقوى مغلف للتجميد بحفظ اللحوم' } }
+      { icon: '🥩', img: './assets/images/products/cat_8/prod_10.jpg', name: { en: 'PE-Coated Butcher Paper Sheets for Meats', ru: 'Бумага для мясной гастрономии с PE-покрытием', ro: 'Hârtie măcelărie laminată PE', de: 'PE-beschichtetes Einschlagpapier für Fleisch', fr: 'Papier boucherie plastifié PE pour viandes', ar: 'ورق مغلف للحوم والمأكولات الطازجة' } },
+      { icon: '🥪', img: './assets/images/products/cat_8/prod_2.jpg', name: { en: 'Newspaper Print Custom Sandwich Wraps', ru: 'Бумага для сэндвичей с газетным принтом', ro: 'Hârtie ambalat sandwich model ziar', de: 'Bedrucktes Sandwich-Papier Zeitungsmuster', fr: 'Papier emballage sandwich motif journal', ar: 'أوراق تغليف الساندويشات بطبعة الصحيفة' } },
+      { icon: '🧺', img: './assets/images/products/cat_8/prod_3.jpg', name: { en: 'Basket & Metal Tray Liner Paper Sheets', ru: 'Бумажные вкладыши для сервировочных корзинок', ro: 'Foi de hârtie pentru coșulețe și tăvi', de: 'Korb- & Tablett-Einlegebögen', fr: 'Feuilles de fond pour paniers & plateaux', ar: 'أوراق بطانة السلال وصواني التقديم' } },
+      { icon: '🥐', img: './assets/images/products/cat_8/prod_4.jpg', name: { en: 'Bakery Waxed Wrapping Sheets for Pastries', ru: 'Вощеная бумага для пекарен и выпечки', ro: 'Hârtie cerată pentru patiserie', de: 'Gewachstes Bäckerei-Einschlagpapier', fr: 'Papier paraffiné pour boulangerie', ar: 'ورق مغلف بالشمع للمخابز والمعجنات' } },
+      { icon: '🌯', img: './assets/images/products/cat_8/prod_5.jpg', name: { en: 'Aluminum Foil Laminated Wrap Sheets', ru: 'Фольгированная бумага для шаурмы и дурума', ro: 'Foi laminat aluminiu pentru shawarma', de: 'Alufolie-laminierte Einschlagbögen', fr: 'Feuilles laminées alu pour kebabs', ar: 'أوراق مغلفة بالألومنيوم للشاورما والوجبات' } },
+      { icon: '📜', img: './assets/images/products/cat_8/prod_6.jpg', name: { en: 'Pergamyn Translucent Bakery Wrapping Paper', ru: 'Пергамин прозрачная упаковочная бумага', ro: 'Hârtie translucentă pergamyn patiserie', de: 'Pergamyn transparentes Bäckereipapier', fr: 'Papier pergamyn translucide boulangerie', ar: 'ورق برجامين شفاف للمخابز' } },
+      { icon: '🎂', img: './assets/images/products/cat_8/prod_7.jpg', name: { en: 'Siliconized Pan Liner Sheets 40x60cm', ru: 'Силиконизированные листы для противней 40х60см', ro: 'Foi siliconate pentru tăvi copt 40x60cm', de: 'Silikonisierte Backblech-Einlagen 40x60cm', fr: 'Feuilles siliconées pour plaques cuisson 40x60cm', ar: 'أوراق سيليكون للصواني بالفرن 40x60 سم' } },
+      { icon: '🥖', img: './assets/images/products/cat_8/prod_8.jpg', name: { en: 'Food Grade Tissue Wrapping Sheets for Bread', ru: 'Тонкая пищевая бумага для обертывания хлеба', ro: 'Hârtie subțire alimentară ambalat pâine', de: 'Dünnes Seidenpapier für Brot', fr: 'Papier de soie alimentaire pour pain', ar: 'ورق تغليف رقيق وخفيف للخبز' } },
+      { icon: '❄️', img: './assets/images/products/cat_8/prod_9.jpg', name: { en: 'Poly-Coated Freezer Paper Sheets', ru: 'Бумага с полимерным слоем для заморозки', ro: 'Hârtie laminată pentru congelare', de: 'Poly-beschichtetes Gefrierpapier', fr: 'Papier plastifié pour congélation', ar: 'ورق مقوى مغلف للتجميد بحفظ اللحوم' } }
     ]
   },
 
@@ -576,7 +576,7 @@ const CATS = [
     id: 10,
     group: 'packaging',
     icon: '🌱',
-    img: './assets/images/products/cat_10/prod_1.jpg',
+    img: './assets/images/products/cat_10/header.jpg',
     chip: {
       en: 'Biodegradable', ru: 'Биоразлагаемые пакеты', ro: 'Pungi biodegradabile', de: 'Biologisch abbaubar', fr: 'Biodégradables', ar: 'أكياس صديقة للبيئة وقابلة للتحلل'
     },
@@ -631,7 +631,7 @@ const CATS = [
     id: 11,
     group: 'packaging',
     icon: '🛍️',
-    img: './assets/images/products/cat_11/prod_1.jpg',
+    img: './assets/images/products/cat_11/header.jpg',
     chip: {
       en: 'Promo Bags', ru: 'Промо-сумки', ro: 'Sacoșe promoționale', de: 'Werbetaschen', fr: 'Sacs promotionnels', ar: 'أكياس وحقائب دعاية ورقية وقماشية'
     },
@@ -673,12 +673,12 @@ const CATS = [
       { icon: '⚡', img: './assets/images/products/cat_11/prod_2.jpg', name: { en: 'Ultrasonic Heat Sealed Non-Woven Bags', ru: 'Сумки из спанбонда ультразвуковой пайкой', ro: 'Sacoșe nețesute lipite cu ultrasunete', de: 'Ultraschall-verschweißte Vliesstofftaschen', fr: 'Sacs non-tissé thermosoudés ultrasons', ar: 'حقائب سبانبود ملحومة بالحرارة فوق الصوتية' } },
       { icon: '👜', img: './assets/images/products/cat_11/prod_3.jpg', name: { en: 'Organic Cotton Canvas Shopper Bags 140gsm', ru: 'Эко-сумки из хлопка 140г/м²', ro: 'Sacoșe din bumbac organic 140gsm', de: 'Bio-Baumwoll-Canvas-Taschen 140g/m²', fr: 'Sacs cabas en coton bio 140g/m²', ar: 'حقائب تسوق قطنية 140 جرام' } },
       { icon: '💼', img: './assets/images/products/cat_11/prod_4.jpg', name: { en: 'Heavy Duty Cotton Canvas Grocery Totes 280gsm', ru: 'Плотные сумки из холста 280г/м²', ro: 'Sacoșe groase din pânză bumbac 280gsm', de: 'Starke Baumwoll-Canvas-Shopper 280g/m²', fr: 'Sacs cabas épais en toile coton 280g/m²', ar: 'حقائب قماشية سميكة للأوزان 280 جرام' } },
-      { icon: '✨', img: './assets/images/products/cat_11/prod_1.jpg', name: { en: 'Gloss Laminated Woven Promo Shoppers', ru: 'Ламинированные глянцевые промо-сумки', ro: 'Sacoșe promoționale laminate lucioase', de: 'Laminierte Glanz-Werbeshopper', fr: 'Sacs cabas publicitaires laminés brillants', ar: 'حقائب تسوق لامعة مطبوعة بحجم كبير' } },
-      { icon: '🖤', img: './assets/images/products/cat_11/prod_2.jpg', name: { en: 'Matte Laminated Non-Woven Event Bags', ru: 'Матовые ламинированные промо-сумки', ro: 'Sacoșe promoționale laminate mate', de: 'Laminierte Matt-Werbeshopper', fr: 'Sacs cabas publicitaires laminés mats', ar: 'حقائب مطبوعة بطبقة مات عازلة' } },
-      { icon: '🎒', img: './assets/images/products/cat_11/prod_3.jpg', name: { en: 'Drawstring Polyester Backpack Bags for Events', ru: 'Сумки-рюкзаки на затяжках для мероприятий', ro: 'Saci rucsac cu șnur pentru evenimente', de: 'Zugband-Rucksacktaschen für Events', fr: 'Sacs à dos à cordon pour événements', ar: 'حقائب ظهر برباط للمؤتمرات والفعاليات' } },
-      { icon: '🔄', img: './assets/images/products/cat_11/prod_4.jpg', name: { en: 'Foldable Compact Nylon Shopping Pouches', ru: 'Складные нейлоновые сумки для покупок', ro: 'Sacoșe pliabile din nailon', de: 'Faltbare Nylon-Einkaufstaschen', fr: 'Sacs de shopping pliables en nylon', ar: 'حقائب تسوق من النايلون قابلة للطي' } },
-      { icon: '🌿', img: './assets/images/products/cat_11/prod_1.jpg', name: { en: 'Jute & Burlap Natural Shopping Tote Bags', ru: 'Сумки для покупок из джута и мешковины', ro: 'Sacoșe din iută naturală', de: 'Natürliche Jute- & Sackleinen-Shopper', fr: 'Sacs cabas en jute naturelle', ar: 'حقائب تسوق من قماش الخيش والجوث الطبيعي' } },
-      { icon: '♻️', img: './assets/images/products/cat_11/prod_2.jpg', name: { en: 'RPET Recycled Plastic Bottle Promo Shoppers', ru: 'Промо-сумки из переработанных пластиковых бутылок RPET', ro: 'Sacoșe promo din sticle plastic reciclate RPET', de: 'RPET Recycling-Plastikflaschen-Werbetaschen', fr: 'Sacs publicitaires en bouteilles plastique recyclées RPET', ar: 'حقائب تسوق مصنوعة من البلاستيك المعاد تدويره RPET' } }
+      { icon: '✨', img: './assets/images/products/cat_11/prod_5.jpg', name: { en: 'Gloss Laminated Woven Promo Shoppers', ru: 'Ламинированные глянцевые промо-сумки', ro: 'Sacoșe promoționale laminate lucioase', de: 'Laminierte Glanz-Werbeshopper', fr: 'Sacs cabas publicitaires laminés brillants', ar: 'حقائب تسوق لامعة مطبوعة بحجم كبير' } },
+      { icon: '🖤', img: './assets/images/products/cat_11/prod_1.jpg', name: { en: 'Matte Laminated Non-Woven Event Bags', ru: 'Матовые ламинированные промо-сумки', ro: 'Sacoșe promoționale laminate mate', de: 'Laminierte Matt-Werbeshopper', fr: 'Sacs cabas publicitaires laminés mats', ar: 'حقائب مطبوعة بطبقة مات عازلة' } },
+      { icon: '🎒', img: './assets/images/products/cat_11/prod_2.jpg', name: { en: 'Drawstring Polyester Backpack Bags for Events', ru: 'Сумки-рюкзаки на затяжках для мероприятий', ro: 'Saci rucsac cu șnur pentru evenimente', de: 'Zugband-Rucksacktaschen für Events', fr: 'Sacs à dos à cordon pour événements', ar: 'حقائب ظهر برباط للمؤتمرات والفعاليات' } },
+      { icon: '🔄', img: './assets/images/products/cat_11/prod_3.jpg', name: { en: 'Foldable Compact Nylon Shopping Pouches', ru: 'Складные нейлоновые сумки для покупок', ro: 'Sacoșe pliabile din nailon', de: 'Faltbare Nylon-Einkaufstaschen', fr: 'Sacs de shopping pliables en nylon', ar: 'حقائب تسوق من النايلون قابلة للطي' } },
+      { icon: '🌿', img: './assets/images/products/cat_11/prod_4.jpg', name: { en: 'Jute & Burlap Natural Shopping Tote Bags', ru: 'Сумки для покупок из джута и мешковины', ro: 'Sacoșe din iută naturală', de: 'Natürliche Jute- & Sackleinen-Shopper', fr: 'Sacs cabas en jute naturelle', ar: 'حقائب تسوق من قماش الخيش والجوث الطبيعي' } },
+      { icon: '♻️', img: './assets/images/products/cat_11/prod_5.jpg', name: { en: 'RPET Recycled Plastic Bottle Promo Shoppers', ru: 'Промо-сумки из переработанных пластиковых бутылок RPET', ro: 'Sacoșe promo din sticle plastic reciclate RPET', de: 'RPET Recycling-Plastikflaschen-Werbetaschen', fr: 'Sacs publicitaires en bouteilles plastique recyclées RPET', ar: 'حقائب تسوق مصنوعة من البلاستيك المعاد تدويره RPET' } }
     ]
   },
 
@@ -686,7 +686,7 @@ const CATS = [
     id: 12,
     group: 'packaging',
     icon: '📦',
-    img: './assets/images/products/cat_12/prod_1.jpg',
+    img: './assets/images/products/cat_12/header.jpg',
     chip: {
       en: 'Polyethylene', ru: 'Полиэтиленовые пакеты', ro: 'Pungi polietilenă', de: 'Polyethylenbeutel', fr: 'Sacs polyéthylène', ar: 'أكياس البولي إيثيلين'
     },
@@ -725,15 +725,15 @@ const CATS = [
     ],
     products: [
       { icon: '🛍️', img: './assets/images/products/cat_12/prod_1.jpg', name: { en: 'High Density HDPE T-Shirt Grocery Bags', ru: 'Пакеты-майка ПНД высокой плотности', ro: 'Pungi maieu HDPE densitate mare', de: 'HDPE T-Shirt-Tragetaschen высокой плотности', fr: 'Sacs bretelles HDPE haute densité', ar: 'أكياس علاقية بولي إيثيلين عالية الكثافة' } },
-      { icon: '🛍️', img: './assets/images/products/cat_12/prod_2.jpg', name: { en: 'Low Density LDPE Smooth T-Shirt Bags', ru: 'Пакеты-майка ПВД гладкие', ro: 'Pungi maieu LDPE finisaj neted', de: 'LDPE T-Shirt-Tragetaschen glatt', fr: 'Sacs bretelles LDPE finition lisse', ar: 'أكياس علاقية بولي إيثيلين ناعمة' } },
-      { icon: '🛍️', img: './assets/images/products/cat_12/prod_3.jpg', name: { en: 'Heavy Duty PE Die-Cut Handle Shopping Bags', ru: 'Пакеты ПВД с вырубной усиленной ручкой', ro: 'Pungi PE cu mâner decupat ranforsat', de: 'PE-Grifflochbeutel verstärkt', fr: 'Sacs PE à poignées découpées renforcées', ar: 'أكياس بلاستيك بفتحات يد مقواة' } },
-      { icon: '➰', img: './assets/images/products/cat_12/prod_4.jpg', name: { en: 'Flexible Loop Handle Polyethylene Bags', ru: 'Пакеты ПВД с петлевой ручкой', ro: 'Pungi PE cu mâner flexibil tip rigid', de: 'PE-Schlaufenhenkelbeutel', fr: 'Sacs PE à poignées boucles souples', ar: 'أكياس بلاستيك بمقابض شريطية' } },
-      { icon: '🤐', img: './assets/images/products/cat_12/prod_5.jpg', name: { en: 'Re-sealable Zip Lock Poly Bags (Various Sizes)', ru: 'Зип-пакеты ПВД с замком многоразовые', ro: 'Pungi PE cu fermoar ZIP reutilizabile', de: 'Wiederverschließbare PE-Druckverschlussbeutel', fr: 'Sacs PE à fermeture zip réutilisables', ar: 'أكياس بولي إيثيلين بسحاب إغلاق محكم' } },
-      { icon: '🌀', img: './assets/images/products/cat_12/prod_6.jpg', name: { en: 'Hand Pallet Stretch Film Rolls 23 Micron', ru: 'Ручной стретч 23 микрон для обмотки паллет', ro: 'Folie stretch manuală 23 microni paleți', de: 'Hand-Stretchtfolie 23 Mikrometer', fr: 'Film étirable manuel 23 microns pour palettes', ar: 'رول تغليف استرتش يدوي للباليتات 23 ميكرون' } },
-      { icon: '⚙️', img: './assets/images/products/cat_12/prod_7.jpg', name: { en: 'Machine Stretch Film Rolls 250% Pre-Stretch', ru: 'Машинный стретч 250% предрастяжение', ro: 'Folie stretch automată mașină 250%', de: 'Maschinen-Stretchfolie 250% Vordehnung', fr: 'Film étirable machine pré-étirage 250%', ar: 'رول استرتش آلي للباليتات شد 250%' } },
-      { icon: '🗑️', img: './assets/images/products/cat_12/prod_8.jpg', name: { en: 'Black Heavy Duty Garbage Bags 120L/240L', ru: 'Плотные черные мешки для мусора 120л/240л', ro: 'Saci menajeri negri rezistenți 120L/240L', de: 'Schwarze Müllbeutel strapazierfähig 120L/240L', fr: 'Sacs poubelle noirs renforcés 120L/240L', ar: 'أكياس قمامة سوداء سميكة 120 و 240 لتر' } },
-      { icon: '⚠️', img: './assets/images/products/cat_12/prod_1.jpg', name: { en: 'Medical Biohazard Waste Liners (Yellow/Red)', ru: 'Медицинские мешки для отходов (желтые/красные)', ro: 'Saci deșeuri medicale periculoase (galben/roșu)', de: 'Medizinische Abfallbeutel (Gelb/Rot)', fr: 'Sacs déchets médicaux infectieux (jaune/rouge)', ar: 'أكياس نفايات طبية خطرة صفراء وحمراء' } },
-      { icon: '🔥', img: './assets/images/products/cat_12/prod_2.jpg', name: { en: 'PE Thermal Shrink Film Hoods for Pallets', ru: 'Термоусадочные колпаки ПВД для паллет', ro: 'Huse termocontractabile PE pentru paleți', de: 'PE-Thermoschrumpf-Hauben für Paletten', fr: 'Housses thermo-rétractables PE pour palettes', ar: 'أغطية بلاستيكية حرارية لتغليف الباليتات' } }
+      { icon: '🛍️', img: './assets/images/products/cat_12/prod_10.jpg', name: { en: 'Low Density LDPE Smooth T-Shirt Bags', ru: 'Пакеты-майка ПВД гладкие', ro: 'Pungi maieu LDPE finisaj neted', de: 'LDPE T-Shirt-Tragetaschen glatt', fr: 'Sacs bretelles LDPE finition lisse', ar: 'أكياس علاقية بولي إيثيلين ناعمة' } },
+      { icon: '🛍️', img: './assets/images/products/cat_12/prod_2.jpg', name: { en: 'Heavy Duty PE Die-Cut Handle Shopping Bags', ru: 'Пакеты ПВД с вырубной усиленной ручкой', ro: 'Pungi PE cu mâner decupat ranforsat', de: 'PE-Grifflochbeutel verstärkt', fr: 'Sacs PE à poignées découpées renforcées', ar: 'أكياس بلاستيك بفتحات يد مقواة' } },
+      { icon: '➰', img: './assets/images/products/cat_12/prod_3.jpg', name: { en: 'Flexible Loop Handle Polyethylene Bags', ru: 'Пакеты ПВД с петлевой ручкой', ro: 'Pungi PE cu mâner flexibil tip rigid', de: 'PE-Schlaufenhenkelbeutel', fr: 'Sacs PE à poignées boucles souples', ar: 'أكياس بلاستيك بمقابض شريطية' } },
+      { icon: '🤐', img: './assets/images/products/cat_12/prod_4.jpg', name: { en: 'Re-sealable Zip Lock Poly Bags (Various Sizes)', ru: 'Зип-пакеты ПВД с замком многоразовые', ro: 'Pungi PE cu fermoar ZIP reutilizabile', de: 'Wiederverschließbare PE-Druckverschlussbeutel', fr: 'Sacs PE à fermeture zip réutilisables', ar: 'أكياس بولي إيثيلين بسحاب إغلاق محكم' } },
+      { icon: '🌀', img: './assets/images/products/cat_12/prod_5.jpg', name: { en: 'Hand Pallet Stretch Film Rolls 23 Micron', ru: 'Ручной стретч 23 микрон для обмотки паллет', ro: 'Folie stretch manuală 23 microni paleți', de: 'Hand-Stretchtfolie 23 Mikrometer', fr: 'Film étirable manuel 23 microns pour palettes', ar: 'رول تغليف استرتش يدوي للباليتات 23 ميكرون' } },
+      { icon: '⚙️', img: './assets/images/products/cat_12/prod_6.jpg', name: { en: 'Machine Stretch Film Rolls 250% Pre-Stretch', ru: 'Машинный стретч 250% предрастяжение', ro: 'Folie stretch automată mașină 250%', de: 'Maschinen-Stretchfolie 250% Vordehnung', fr: 'Film étirable machine pré-étirage 250%', ar: 'رول استرتش آلي للباليتات شد 250%' } },
+      { icon: '🗑️', img: './assets/images/products/cat_12/prod_7.jpg', name: { en: 'Black Heavy Duty Garbage Bags 120L/240L', ru: 'Плотные черные мешки для мусора 120л/240л', ro: 'Saci menajeri negri rezistenți 120L/240L', de: 'Schwarze Müllbeutel strapazierfähig 120L/240L', fr: 'Sacs poubelle noirs renforcés 120L/240L', ar: 'أكياس قمامة سوداء سميكة 120 و 240 لتر' } },
+      { icon: '⚠️', img: './assets/images/products/cat_12/prod_8.jpg', name: { en: 'Medical Biohazard Waste Liners (Yellow/Red)', ru: 'Медицинские мешки для отходов (желтые/красные)', ro: 'Saci deșeuri medicale periculoase (galben/roșu)', de: 'Medizinische Abfallbeutel (Gelb/Rot)', fr: 'Sacs déchets médicaux infectieux (jaune/rouge)', ar: 'أكياس نفايات طبية خطرة صفراء وحمراء' } },
+      { icon: '🔥', img: './assets/images/products/cat_12/prod_9.jpg', name: { en: 'PE Thermal Shrink Film Hoods for Pallets', ru: 'Термоусадочные колпаки ПВД для паллет', ro: 'Huse termocontractabile PE pentru paleți', de: 'PE-Thermoschrumpf-Hauben für Paletten', fr: 'Housses thermo-rétractables PE pour palettes', ar: 'أغطية بلاستيكية حرارية لتغليف الباليتات' } }
     ]
   },
 
@@ -741,7 +741,7 @@ const CATS = [
     id: 13,
     group: 'hotel',
     icon: '🩴',
-    img: './assets/images/products/cat_13/prod_1.jpg',
+    img: './assets/images/products/cat_13/header.jpg',
     chip: {
       en: 'Hotel Supplies', ru: 'Гостиничные принадлежности', ro: 'Consumabile cameră hotel', de: 'Hotelzimmerbedarf', fr: 'Fournitures pour chambres d’hôtel', ar: 'مستلزمات غرف الفنادق'
     },
@@ -796,7 +796,7 @@ const CATS = [
     id: 14,
     group: 'hotel',
     icon: '🧴',
-    img: './assets/images/products/cat_14/prod_1.jpg',
+    img: './assets/images/products/cat_14/header.jpg',
     chip: {
       en: 'Hotel Amenities', ru: 'Гостиничная косметика', ro: 'Cosmetice hotel', de: 'Hotelkosmetik', fr: 'Produits d’accueil hôtel', ar: 'مستلزمات العناية الشخصية للفنادق'
     },
@@ -853,7 +853,7 @@ const CATS = [
     id: 15,
     group: 'hotel',
     icon: '🧳',
-    img: './assets/images/products/cat_15/prod_1.jpg',
+    img: './assets/images/products/cat_15/header.jpg',
     chip: {
       en: 'Hotel Furniture', ru: 'Мебель для отелей', ro: 'Mobilier hotelier', de: 'Hotelmöbel', fr: 'Mobilier d’hôtel', ar: 'أثاث ومعدات غرف الفنادق'
     },
@@ -892,15 +892,15 @@ const CATS = [
     ],
     products: [
       { icon: '🧳', img: './assets/images/products/cat_15/prod_1.jpg', name: { en: 'Foldable Solid Beech Luggage Racks', ru: 'Складные деревянные багажницы из бука', ro: 'Suporturi pliabile bagaje din lemn fag', de: 'Klappbare Gepäckablagen aus Buchenholz', fr: 'Porte-bagages pliables en hêtre massif', ar: 'حوامل حقائب سفر خشبية صلبة قابلة للطي' } },
-      { icon: '🧳', img: './assets/images/products/cat_15/prod_2.jpg', name: { en: 'Stainless Steel Metallic Luggage Stands', ru: 'Металлические багажницы из нержавеющей стали', ro: 'Suporturi bagaje din inox metalic', de: 'Edelstahl-Gepäckständer', fr: 'Porte-bagages métalliques en inox', ar: 'حوامل حقائب ستانلس ستيل مع حماية للجدران' } },
-      { icon: '🧊', img: './assets/images/products/cat_15/prod_3.png', name: { en: 'Silent Absorption Minibars 30L Glass Door', ru: 'Бесшумные абсорбционные мини-бары 30л со стеклом', ro: 'Minibaruri silențioase 30L ușă sticlă', de: 'Lautlose Absorber-Minibars 30L Glastür', fr: 'Minibars silencieux 30L porte en verre', ar: 'ثلاجات ميني بار صامتة باب زجاجي 30 لتر' } },
-      { icon: '🧊', img: './assets/images/products/cat_15/prod_1.jpg', name: { en: 'Silent Absorption Minibars 40L Solid Door', ru: 'Бесшумные абсорбционные мини-бары 40л глухая дверь', ro: 'Minibaruri silențioase 40L ușă plină', de: 'Lautlose Absorber-Minibars 40L Solidtür', fr: 'Minibars silencieux 40L porte pleine', ar: 'ثلاجات ميني بار صامتة باب مغلق 40 لتر' } },
-      { icon: '🔒', img: './assets/images/products/cat_15/prod_2.jpg', name: { en: 'Digital Laptop Safe 15-17 Inch with Master Key', ru: 'Цифровые сейфы для ноутбуков 15-17" с мастер-ключом', ro: 'Seifuri digitale pentru laptop 15-17" cu cheie master', de: 'Digitale Laptop-Safes 15-17" mit Masterkey', fr: 'Coffres-forts numériques ordinateur 15-17" avec clé', ar: 'صناديق أمانات رقمية تتسع للابتوب مع مفتاح طوارئ' } },
-      { icon: '☕', img: './assets/images/products/cat_15/prod_3.png', name: { en: 'Hotel Room Electric Kettle Tray Sets 0.8L', ru: 'Чайные станции 0.8л с подносом для отелей', ro: 'Seturi tăvi cu cană fiert apă 0.8L hotel', de: 'Hotel-Wasserkocher-Sets 0.8L mit Tablett', fr: 'Plateaux de bienvenue avec bouilloire 0.8L', ar: 'أطقم غلاية وشاي ترحيبية لغرف الفنادق 0.8 لتر' } },
+      { icon: '🧳', img: './assets/images/products/cat_15/prod_2.png', name: { en: 'Stainless Steel Metallic Luggage Stands', ru: 'Металлические багажницы из нержавеющей стали', ro: 'Suporturi bagaje din inox metalic', de: 'Edelstahl-Gepäckständer', fr: 'Porte-bagages métalliques en inox', ar: 'حوامل حقائب ستانلس ستيل مع حماية للجدران' } },
+      { icon: '🧊', img: './assets/images/products/cat_15/prod_1.jpg', name: { en: 'Silent Absorption Minibars 30L Glass Door', ru: 'Бесшумные абсорбционные мини-бары 30л со стеклом', ro: 'Minibaruri silențioase 30L ușă sticlă', de: 'Lautlose Absorber-Minibars 30L Glastür', fr: 'Minibars silencieux 30L porte en verre', ar: 'ثلاجات ميني بار صامتة باب زجاجي 30 لتر' } },
+      { icon: '🧊', img: './assets/images/products/cat_15/prod_2.png', name: { en: 'Silent Absorption Minibars 40L Solid Door', ru: 'Бесшумные абсорбционные мини-бары 40л глухая дверь', ro: 'Minibaruri silențioase 40L ușă plină', de: 'Lautlose Absorber-Minibars 40L Solidtür', fr: 'Minibars silencieux 40L porte pleine', ar: 'ثلاجات ميني بار صامتة باب مغلق 40 لتر' } },
+      { icon: '🔒', img: './assets/images/products/cat_15/prod_1.jpg', name: { en: 'Digital Laptop Safe 15-17 Inch with Master Key', ru: 'Цифровые сейфы для ноутбуков 15-17" с мастер-ключом', ro: 'Seifuri digitale pentru laptop 15-17" cu cheie master', de: 'Digitale Laptop-Safes 15-17" mit Masterkey', fr: 'Coffres-forts numériques ordinateur 15-17" avec clé', ar: 'صناديق أمانات رقمية تتسع للابتوب مع مفتاح طوارئ' } },
+      { icon: '☕', img: './assets/images/products/cat_15/prod_2.png', name: { en: 'Hotel Room Electric Kettle Tray Sets 0.8L', ru: 'Чайные станции 0.8л с подносом для отелей', ro: 'Seturi tăvi cu cană fiert apă 0.8L hotel', de: 'Hotel-Wasserkocher-Sets 0.8L mit Tablett', fr: 'Plateaux de bienvenue avec bouilloire 0.8L', ar: 'أطقم غلاية وشاي ترحيبية لغرف الفنادق 0.8 لتر' } },
       { icon: '📋', img: './assets/images/products/cat_15/prod_1.jpg', name: { en: 'Leatherette Hotel Room Desk Organizers', ru: 'Кожаные органайзеры для рабочего стола', ro: 'Organizatoare birou din piele ecologică hotel', de: 'Kunstleder Schreibtisch-Organizer für Zimmer', fr: 'Organiseurs de bureau en similicuir hôtel', ar: 'منظمات المكاتب الجلدية لغرف الفنادق' } },
-      { icon: '💨', img: './assets/images/products/cat_15/prod_2.jpg', name: { en: 'Hotel Wall Mounted Hair Dryers 1600W', ru: 'Настенные фены для отелей 1600 Вт', ro: 'Uscătoare de păr perete hotel 1600W', de: 'Hotel-Wandhaartrockner 1600W', fr: 'Sèche-cheveux muraux d’hôtel 1600W', ar: 'مجففات شعر جدارية للفنادق 1600 واط' } },
-      { icon: '🗑️', img: './assets/images/products/cat_15/prod_3.png', name: { en: 'Stainless Steel Trash Bins with Pedal', ru: 'Урновые мусорные ведра из нержавейки с педалью', ro: 'Coșuri gunoi inox cu pedală', de: 'Edelstahl-Abfalleimer mit Pedal', fr: 'Poubelles à pédale en inox', ar: 'سلال نفايات ستانلس ستيل بدواسة' } },
-      { icon: '👔', img: './assets/images/products/cat_15/prod_1.jpg', name: { en: 'Hotel Room Ironing Board & Iron Holder Set', ru: 'Гладильные доски с держателем утюга для номеров', ro: 'Mese călcat cu suport fier călcat camere', de: 'Bügelbrett- & Bügeleisenhalter-Set für Zimmer', fr: 'Planches à repasser & supports fer hôtel', ar: 'طاولة كوي ملابس مع حامل مكواة جداري' } }
+      { icon: '💨', img: './assets/images/products/cat_15/prod_2.png', name: { en: 'Hotel Wall Mounted Hair Dryers 1600W', ru: 'Настенные фены для отелей 1600 Вт', ro: 'Uscătoare de păr perete hotel 1600W', de: 'Hotel-Wandhaartrockner 1600W', fr: 'Sèche-cheveux muraux d’hôtel 1600W', ar: 'مجففات شعر جدارية للفنادق 1600 واط' } },
+      { icon: '🗑️', img: './assets/images/products/cat_15/prod_1.jpg', name: { en: 'Stainless Steel Trash Bins with Pedal', ru: 'Урновые мусорные ведра из нержавейки с педалью', ro: 'Coșuri gunoi inox cu pedală', de: 'Edelstahl-Abfalleimer mit Pedal', fr: 'Poubelles à pédale en inox', ar: 'سلال نفايات ستانلس ستيل بدواسة' } },
+      { icon: '👔', img: './assets/images/products/cat_15/prod_2.png', name: { en: 'Hotel Room Ironing Board & Iron Holder Set', ru: 'Гладильные доски с держателем утюга для номеров', ro: 'Mese călcat cu suport fier călcat camere', de: 'Bügelbrett- & Bügeleisenhalter-Set für Zimmer', fr: 'Planches à repasser & supports fer hôtel', ar: 'طاولة كوي ملابس مع حامل مكواة جداري' } }
     ]
   },
 
@@ -963,7 +963,7 @@ const CATS = [
     id: 17,
     group: 'hotel',
     icon: '🏊',
-    img: './assets/images/products/cat_17/prod_1.jpg',
+    img: './assets/images/products/cat_17/header.jpg',
     chip: {
       en: 'SPA & Pool', ru: 'Оборудование SPA', ro: 'Echipament SPA & Piscină', de: 'SPA & Pool Ausstattung', fr: 'Équipement SPA & Piscine', ar: 'مستلزمات السبا وحمامات السباحة'
     },
@@ -1018,7 +1018,7 @@ const CATS = [
     id: 18,
     group: 'hotel',
     icon: '🛏️',
-    img: './assets/images/products/cat_18/prod_1.jpg',
+    img: './assets/images/products/cat_18/header.jpg',
     chip: {
       en: 'Hotel Textile', ru: 'Гостиничный текстиль', ro: 'Textile hotel', de: 'Hoteltextilien', fr: 'Textiles d’hôtel', ar: 'منسوجات وتجهيزات الفنادق'
     },
