@@ -679,13 +679,7 @@ document.addEventListener('DOMContentLoaded', () => {
         modalCtaBtn.onclick = () => this.requestProductQuote(pName, `cat-${cat.id}`);
       }
 
-      const backdrop = document.getElementById('modal-backdrop');
-      if (backdrop) {
-        backdrop.style.display = 'flex';
-        void backdrop.offsetWidth; // trigger reflow
-        backdrop.classList.add('active');
-        document.body.style.overflow = 'hidden';
-      }
+      // Floating popup modal is disabled for clean UX
     },
 
     closeProductInspection() {

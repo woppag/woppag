@@ -4,6 +4,14 @@
    Supports: LTR (EN, RU, RO, DE, FR) & RTL (AR)
    ========================================================================== */
 
+/* Disable Floating Popup Modal Entirely */
+#modal-backdrop, .modal-backdrop {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
 :root {
   --bg-main: #07131e;
   --bg-surface: #0b1c2b;
