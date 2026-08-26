@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* 
       ======================================================================
-      FORMSUBMIT.CO ENDPOINT CONFIGURATION (Direct Wholesale Inquiry Email)
+      WEB3FORMS API ENDPOINT CONFIGURATION (Direct Wholesale Inquiry Email)
       ======================================================================
     */
-    backendEndpoint: 'https://formsubmit.co/ajax/woppag@gmail.com',
+    backendEndpoint: 'https://api.web3forms.com/submit',
 
     init() {
       window.APP = this;
@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
 
-      // RFQ Form Submission Handler with FormSubmit.co AJAX (Item 1)
+      // RFQ Form Submission Handler with Web3Forms API
       const rfqForm = document.getElementById('rfq-form');
       if (rfqForm) {
         rfqForm.addEventListener('submit', async (e) => {
@@ -172,10 +172,9 @@ document.addEventListener('DOMContentLoaded', () => {
           }
 
           const formData = new FormData(rfqForm);
-          // Add hidden FormSubmit configurations
-          formData.append('_subject', 'Wholesale Inquiry — WOPPAG');
-          formData.append('_captcha', 'false');
-          formData.append('_template', 'table');
+          if (!formData.has('access_key')) {
+            formData.append('access_key', '8b4bd640-4cf0-41ed-8d90-ea99fe57d599');
+          }
 
           try {
             const response = await fetch(this.backendEndpoint, {
@@ -186,7 +185,8 @@ document.addEventListener('DOMContentLoaded', () => {
               body: formData
             });
 
-            if (response.ok || response.status === 200) {
+            const resData = await response.json();
+            if (response.ok && resData.success) {
               // (b) Success state
               this.showToast(I18N.getText('form_success'));
               rfqForm.reset();

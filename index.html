@@ -51,7 +51,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css?v=v2026_08_26_user_custom_v17">
+  <link rel="stylesheet" href="./assets/css/style.css?v=v2026_08_26_web3forms_v18">
 
   <!-- Google Analytics (GA4) Placeholder - Commented Out -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -480,7 +480,10 @@
           <p class="section-subtitle" data-i18n="rfq_desc">Fill out the form below. Our export managers will respond with factory pricing within 24 hours.</p>
         </div>
 
-        <form id="rfq-form">
+        <form id="rfq-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="8b4bd640-4cf0-41ed-8d90-ea99fe57d599">
+          <input type="hidden" name="from_name" value="WOPPAG Website Inquiry">
+          <input type="hidden" name="subject" value="New Wholesale Quote Request from WOPPAG Website">
           <div class="form-grid">
             <div class="form-group">
               <label class="form-label" data-i18n="form_name">Full Name / Contact Person</label>
@@ -611,8 +614,8 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="./assets/js/data.js?v=v2026_08_26_user_custom_v17"></script>
-  <script src="./assets/js/i18n.js?v=v2026_08_26_user_custom_v17"></script>
-  <script src="./assets/js/app.js?v=v2026_08_26_user_custom_v17"></script>
+  <script src="./assets/js/data.js?v=v2026_08_26_web3forms_v18"></script>
+  <script src="./assets/js/i18n.js?v=v2026_08_26_web3forms_v18"></script>
+  <script src="./assets/js/app.js?v=v2026_08_26_web3forms_v18"></script>
 </body>
 </html>
