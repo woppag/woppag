@@ -148,7 +148,8 @@ const I18N = {
 
     // Contact Information Labels & Telegram
     contact_telegram_lbl: { en: 'Telegram:', ru: 'Telegram:', ro: 'Telegram:', de: 'Telegram:', fr: 'Telegram :', ar: 'تيليغرام:' },
-    contact_email_lbl: { en: 'Export Sales Email:', ru: 'Email экспорта:', ro: 'Email export:', de: 'Export-E-Mail:', fr: 'Email export :', ar: 'البريد الإلكتروني للتصدير:' },
+    contact_email_lbl: { en: 'Wholesale Inquiry:', ru: 'Запрос стоимости:', ro: 'Solicitare ofertă:', de: 'Großhandelsanfrage:', fr: 'Demande de prix :', ar: 'استفسار المبيعات والتسعير:' },
+    contact_form_link: { en: '⚡ Open Direct Inquiry Form', ru: '⚡ Открыть форму запроса цен', ro: '⚡ Deschide formularul de ofertă', de: '⚡ Anfrageformular öffnen', fr: '⚡ Ouvrir le formulaire de devis', ar: '⚡ فتح نموذج الطلب المباشر' },
     contact_address_lbl: { en: 'Factory & Head Office:', ru: 'Завод и главный офис:', ro: 'Fabrică & Sediu central:', de: 'Werk & Hauptsitz:', fr: 'Usine & Siège social :', ar: 'المصنع والمكتب الرئيسي:' },
     contact_address_val: { en: 'Istanbul • Worldwide Export Hub', ru: 'Стамбул • Мировой экспортный хаб', ro: 'Istanbul • Centru export', de: 'Istanbul • Weltweites Exportzentrum', fr: 'Istanbul • Hub d’exportation', ar: 'إسطنبول • مركز التصدير العالمي' },
 

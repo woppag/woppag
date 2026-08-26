@@ -7,7 +7,7 @@ Official repository for **WOPPAG KRAFT & FOODS** (`woppag.com`), a global factor
 - **6 Export Languages**: Full internationalization engine supporting English (EN), Russian (RU), Romanian (RO), German (DE), French (FR), and Arabic (AR with dynamic RTL layout & Cairo font).
 - **20 Manufacturing Product Categories**: 238+ detailed sub-products with authentic local image assets and technical spec tables.
 - **Lovable-Style 2-Level Inspection Architecture**: Level 1 overview grid + Level 2 dedicated category pages with smooth keyframe animations and instant product detail modal.
-- **FormSubmit.co & Telegram Integration**: Direct wholesale RFQ quote form submitting to `woppag@gmail.com` with toast notifications, loading states, and error handling.
+- **FormSubmit.co & Telegram Integration**: Direct wholesale RFQ quote form submitting to secure export sales inbox with toast notifications, loading states, and error handling.
 - **100/100 Technical SEO**: Full Schema.org JSON-LD graph (`Organization`, `WebSite`, `ItemList`), canonical tags, OpenGraph, Twitter cards, and multi-language `hreflang` tags.
 - **Fully Responsive**: Optimized for all devices from 320px smartphones to 4K displays.
 
