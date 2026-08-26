@@ -496,7 +496,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
 
             <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
-              <button type="button" class="btn btn-outline btn-sm" style="flex: 1; border-color: var(--border-gold); color: var(--accent-gold); text-align: center;">
+              <button type="button" class="btn btn-outline btn-sm" onclick="event.stopPropagation(); APP.openProductModal(${cat.id}, ${idx})" style="flex: 1; border-color: var(--border-gold); color: var(--accent-gold); text-align: center;">
                 ${inspectText}
               </button>
               <button type="button" class="btn btn-primary btn-sm" onclick="event.stopPropagation(); APP.requestProductQuote('${safeName}', 'cat-${cat.id}')" style="padding: 0.4rem 0.7rem;">
@@ -517,6 +517,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const catTitle = this.pickTranslation(cat.title);
       const chip = this.pickTranslation(cat.chip);
       const pImg = p.img || cat.img || './assets/images/og-image.jpg';
+      const pDescText = p.desc ? this.pickTranslation(p.desc) : `${pName} — ${this.pickTranslation(cat.desc)}`;
       const safeName = pName.replace(/'/g, "\\'");
 
       this.activeCatId = catId;
@@ -524,7 +525,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('modal-icon').textContent = p.icon || cat.icon || '📦';
       document.getElementById('modal-chip').textContent = `${chip} • SKU #${prodIdx + 1}`;
       document.getElementById('modal-title').textContent = pName;
-      document.getElementById('modal-desc').textContent = `${pName} — ${this.pickTranslation(cat.desc)}`;
+      document.getElementById('modal-desc').textContent = pDescText;
 
       const modalImg = document.getElementById('modal-img');
       if (modalImg) {
@@ -534,23 +535,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Specs Table
       const specsTable = document.getElementById('modal-specs-table');
-      if (cat.specs && cat.specs.length) {
-        specsTable.innerHTML = cat.specs.map(spec => `
-          <tr>
-            <th>${this.pickTranslation(spec.k)}</th>
-            <td>${this.pickTranslation(spec.v)}</td>
-          </tr>
-        `).join('');
+      if (specsTable) {
+        let specsHtml = '';
+        if (p.spec) {
+          specsHtml += `
+            <tr>
+              <th>${this.pickTranslation(p.spec.k)}</th>
+              <td>${this.pickTranslation(p.spec.v)}</td>
+            </tr>
+          `;
+        }
+        if (cat.specs && cat.specs.length) {
+          specsHtml += cat.specs.map(spec => `
+            <tr>
+              <th>${this.pickTranslation(spec.k)}</th>
+              <td>${this.pickTranslation(spec.v)}</td>
+            </tr>
+          `).join('');
+        }
+        specsTable.innerHTML = specsHtml;
       }
 
-      // Hide subproducts grid inside product detail modal
+      // Hide subproducts grid container when inspecting individual product
       const subprodsGrid = document.getElementById('modal-subproducts-grid');
-      if (subprodsGrid) subprodsGrid.innerHTML = '';
+      if (subprodsGrid && subprodsGrid.parentElement) {
+        subprodsGrid.parentElement.style.display = 'none';
+      }
 
       // Direct Quote CTA
       const modalCtaBtn = document.getElementById('modal-cta-btn');
       if (modalCtaBtn) {
-        modalCtaBtn.textContent = I18N.getText('btn_direct_quote') || 'Request Wholesale Quote for This Item →';
+        const quoteBtnText = I18N.getText('btn_direct_quote') || 'Request Wholesale Quote for This Item →';
+        modalCtaBtn.textContent = `${quoteBtnText}`;
         modalCtaBtn.onclick = () => this.requestProductQuote(pName, `cat-${cat.id}`);
       }
 
