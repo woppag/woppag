@@ -605,6 +605,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const backdrop = document.getElementById('modal-backdrop');
       if (backdrop) {
+        backdrop.style.display = 'flex';
+        void backdrop.offsetWidth; // trigger reflow
         backdrop.classList.add('active');
         document.body.style.overflow = 'hidden';
       }
@@ -618,6 +620,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const backdrop = document.getElementById('modal-backdrop');
       if (backdrop) {
         backdrop.classList.remove('active');
+        backdrop.style.display = 'none';
         document.body.style.overflow = '';
       }
     },
