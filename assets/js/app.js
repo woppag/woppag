@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       // Item 6: Localized "View Specifications" & Direction-aware arrow
-      const viewSpecsText = I18N.getText('cat_view_specs');
+      const viewSpecsText = I18N.getText('cat_view_specs') || 'Explore Category';
       const arrow = document.documentElement.dir === 'rtl' ? '←' : '→';
 
       grid.innerHTML = filtered.map(cat => {
