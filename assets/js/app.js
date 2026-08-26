@@ -12,10 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* 
       ======================================================================
-      WEB3FORMS API ENDPOINT CONFIGURATION (Direct Wholesale Inquiry Email)
+      FORMSUBMIT.CO ENDPOINT CONFIGURATION (Direct Wholesale Inquiry Email)
+      100% Free, Secure & Lifetime Direct Mail to woppag@gmail.com
       ======================================================================
     */
-    backendEndpoint: 'https://api.web3forms.com/submit',
+    backendEndpoint: 'https://formsubmit.co/ajax/woppag@gmail.com',
 
     init() {
       window.APP = this;
@@ -157,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
 
-      // RFQ Form Submission Handler with Web3Forms API
+      // RFQ Form Submission Handler with FormSubmit.co AJAX (100% Free & Direct Mail)
       const rfqForm = document.getElementById('rfq-form');
       if (rfqForm) {
         rfqForm.addEventListener('submit', async (e) => {
@@ -172,12 +173,12 @@ document.addEventListener('DOMContentLoaded', () => {
           }
 
           const formData = new FormData(rfqForm);
-          if (!formData.has('access_key')) {
-            formData.append('access_key', '8b4bd640-4cf0-41ed-8d90-ea99fe57d599');
-          }
+          formData.append('_subject', '⚡ New Wholesale Inquiry — WOPPAG Website');
+          formData.append('_captcha', 'false');
+          formData.append('_template', 'table');
 
           try {
-            let response = await fetch(this.backendEndpoint, {
+            const response = await fetch(this.backendEndpoint, {
               method: 'POST',
               headers: {
                 'Accept': 'application/json'
@@ -185,48 +186,14 @@ document.addEventListener('DOMContentLoaded', () => {
               body: formData
             });
 
-            let resData = await response.json();
-            if (response.ok && resData.success) {
+            if (response.ok || response.status === 200) {
               this.showToast(I18N.getText('form_success'));
               rfqForm.reset();
             } else {
-              // Fallback to FormSubmit AJAX backup endpoint
-              const fallbackData = new FormData(rfqForm);
-              fallbackData.append('_subject', 'Wholesale Inquiry — WOPPAG Website');
-              fallbackData.append('_captcha', 'false');
-              
-              const fallbackResponse = await fetch('https://formsubmit.co/ajax/woppag@gmail.com', {
-                method: 'POST',
-                headers: { 'Accept': 'application/json' },
-                body: fallbackData
-              });
-              
-              if (fallbackResponse.ok) {
-                this.showToast(I18N.getText('form_success'));
-                rfqForm.reset();
-              } else {
-                this.showToast(I18N.getText('form_error'), true);
-              }
-            }
-          } catch (err) {
-            try {
-              const fallbackData = new FormData(rfqForm);
-              fallbackData.append('_subject', 'Wholesale Inquiry — WOPPAG Website');
-              fallbackData.append('_captcha', 'false');
-              const fbRes = await fetch('https://formsubmit.co/ajax/woppag@gmail.com', {
-                method: 'POST',
-                headers: { 'Accept': 'application/json' },
-                body: fallbackData
-              });
-              if (fbRes.ok) {
-                this.showToast(I18N.getText('form_success'));
-                rfqForm.reset();
-              } else {
-                this.showToast(I18N.getText('form_error'), true);
-              }
-            } catch (err2) {
               this.showToast(I18N.getText('form_error'), true);
             }
+          } catch (err) {
+            this.showToast(I18N.getText('form_error'), true);
           } finally {
             if (submitBtn) {
               submitBtn.disabled = false;
