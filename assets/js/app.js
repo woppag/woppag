@@ -123,8 +123,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
 
+      // Brand logo and Home link handlers — resets category view and scrolls to page top
+      document.querySelectorAll('.brand, a[href="./"], a[data-i18n="nav_home"]').forEach(elem => {
+        elem.addEventListener('click', (e) => {
+          e.preventDefault();
+          this.resetToHomeView();
+        });
+      });
+
       // Navbar "Categories" link click handler
-      document.querySelectorAll('a[href="#categories"]').forEach(link => {
+      document.querySelectorAll('a[href="#categories"], a[data-i18n="nav_categories"]').forEach(link => {
         link.addEventListener('click', () => {
           this.closeCategoryView();
         });
@@ -466,6 +474,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Render Products Grid inside Category
       this.renderCategoryProducts(cat);
+    },
+
+    resetToHomeView() {
+      const allView = document.getElementById('all-categories-view');
+      const catView = document.getElementById('category-products-view');
+      if (allView && catView) {
+        catView.style.display = 'none';
+        allView.style.display = 'block';
+        allView.classList.remove('cat-view-fade-in');
+        void allView.offsetWidth;
+        allView.classList.add('cat-view-fade-in');
+      }
+
+      this.activeFilter = 'all';
+      this.searchQuery = '';
+      const searchInput = document.getElementById('search-input');
+      if (searchInput) searchInput.value = '';
+
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        if (b.getAttribute('data-filter') === 'all') {
+          b.classList.add('active');
+        } else {
+          b.classList.remove('active');
+        }
+      });
+
+      this.renderCategories();
+
+      const navMenu = document.getElementById('nav-menu');
+      if (navMenu) navMenu.classList.remove('active');
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      if (window.history && window.history.replaceState) {
+        window.history.replaceState(null, '', window.location.pathname + window.location.search);
+      }
     },
 
     closeCategoryView() {
