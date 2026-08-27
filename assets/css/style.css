@@ -299,16 +299,16 @@ a:hover {
   position: absolute;
   top: calc(100% + 8px);
   right: 0;
-  background: var(--bg-surface);
+  background: #091724;
   border: 1px solid var(--border-gold);
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.95);
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
-  min-width: 140px;
-  z-index: 120;
+  gap: 0.25rem;
+  min-width: 150px;
+  z-index: 1050;
   opacity: 0;
   visibility: hidden;
   transform: translateY(8px);
@@ -1325,50 +1325,6 @@ html[dir="rtl"] .footer-brand p {
 
   .nav-menu.active {
     transform: translateY(0);
-  }
-
-  .mobile-drawer-lang-header {
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-    background: rgba(14, 36, 56, 0.9);
-    border: 1px solid var(--border-gold);
-    border-radius: var(--radius-md);
-    padding: 0.85rem;
-  }
-
-  .mobile-drawer-title {
-    font-size: 0.82rem;
-    font-weight: 700;
-    color: var(--accent-gold);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .mobile-lang-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.45rem;
-  }
-
-  .mobile-lang-btn {
-    padding: 0.5rem 0.4rem;
-    font-size: 0.82rem;
-    font-weight: 700;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: var(--radius-sm);
-    color: var(--text-primary);
-    cursor: pointer;
-    text-align: center;
-    transition: all 0.2s ease;
-  }
-
-  .mobile-lang-btn:hover,
-  .mobile-lang-btn.active {
-    background: linear-gradient(135deg, var(--accent-gold), #b8860b);
-    color: #07131e;
-    border-color: var(--accent-gold);
   }
 
   .nav-links-list {
