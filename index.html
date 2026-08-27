@@ -51,7 +51,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css?v=v2026_08_26_final_scraped_v26">
+  <link rel="stylesheet" href="./assets/css/style.css?v=v2026_08_27_mobile_perfect_v27">
 
   <!-- Google Analytics (GA4) Placeholder - Commented Out -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -186,24 +186,46 @@
       </a>
 
       <nav>
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="./" class="nav-link active" data-i18n="nav_home" onclick="window.scrollTo({top:0, behavior:'smooth'}); if(history.replaceState){history.replaceState(null,'',window.location.pathname+window.location.search);} return false;">Home</a></li>
-          <li><a href="#why" class="nav-link" data-i18n="nav_why">Why WOPPAG</a></li>
-          <li><a href="#categories" class="nav-link" data-i18n="nav_categories">Categories</a></li>
-          <li><a href="#process" class="nav-link" data-i18n="nav_process">Workflow</a></li>
-          <li><a href="#quote" class="nav-link" data-i18n="nav_contact">Contact</a></li>
-        </ul>
+        <div class="nav-menu" id="nav-menu">
+          <!-- Mobile Drawer Language Selector Header -->
+          <div class="mobile-drawer-lang-header">
+            <span class="mobile-drawer-title" data-i18n="lang_select_title">🌐 Select Language / Язык</span>
+            <div class="mobile-lang-grid">
+              <button class="mobile-lang-btn lang-option" data-lang="en">🇬🇧 EN</button>
+              <button class="mobile-lang-btn lang-option" data-lang="ru">🇷🇺 RU</button>
+              <button class="mobile-lang-btn lang-option" data-lang="ro">🇷🇴 RO</button>
+              <button class="mobile-lang-btn lang-option" data-lang="de">🇩🇪 DE</button>
+              <button class="mobile-lang-btn lang-option" data-lang="fr">🇫🇷 FR</button>
+              <button class="mobile-lang-btn lang-option" data-lang="ar">🇸🇦 AR</button>
+            </div>
+          </div>
+
+          <ul class="nav-links-list">
+            <li><a href="./" class="nav-link active" data-i18n="nav_home" onclick="window.scrollTo({top:0, behavior:'smooth'}); if(history.replaceState){history.replaceState(null,'',window.location.pathname+window.location.search);} return false;">Home</a></li>
+            <li><a href="#why" class="nav-link" data-i18n="nav_why">Why WOPPAG</a></li>
+            <li><a href="#categories" class="nav-link" data-i18n="nav_categories">Categories</a></li>
+            <li><a href="#process" class="nav-link" data-i18n="nav_process">Workflow</a></li>
+            <li><a href="#quote" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+          </ul>
+
+          <div class="mobile-drawer-actions">
+            <a href="https://t.me/ambalajistanbul" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm mobile-tg-btn">
+              ✈️ Telegram Export Manager
+            </a>
+            <a href="#quote" class="btn btn-primary btn-sm mobile-quote-btn" data-i18n="btn_quote">Request Quote</a>
+          </div>
+        </div>
       </nav>
 
       <div class="header-actions">
         <!-- Telegram Contact Button -->
-        <a href="https://t.me/ambalajistanbul" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" style="display:inline-flex;align-items:center;gap:0.4rem;" title="Telegram Export Manager">
+        <a href="https://t.me/ambalajistanbul" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm header-tg-btn" title="Telegram Export Manager">
           ✈️ Telegram
         </a>
 
-        <!-- Language Switcher (EN, RU, RO, DE, FR, AR) -->
+        <!-- Desktop/Header Language Switcher -->
         <div class="lang-selector">
-          <button class="lang-btn" id="lang-btn">
+          <button class="lang-btn" id="lang-btn" aria-label="Select Language">
             🌐 <span id="current-lang-code">EN</span> ▾
           </button>
           <div class="lang-dropdown" id="lang-dropdown">
@@ -216,8 +238,10 @@
           </div>
         </div>
 
-        <a href="#quote" class="btn btn-primary btn-sm" data-i18n="btn_quote">Request Quote</a>
-        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">☰</button>
+        <a href="#quote" class="btn btn-primary btn-sm header-quote-btn" data-i18n="btn_quote">Request Quote</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+          <span class="hamburger-icon">☰</span>
+        </button>
       </div>
     </div>
   </header>
@@ -611,8 +635,8 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="./assets/js/data.js?v=v2026_08_26_final_scraped_v26"></script>
-  <script src="./assets/js/i18n.js?v=v2026_08_26_final_scraped_v26"></script>
-  <script src="./assets/js/app.js?v=v2026_08_26_final_scraped_v26"></script>
+  <script src="./assets/js/data.js?v=v2026_08_27_mobile_perfect_v27"></script>
+  <script src="./assets/js/i18n.js?v=v2026_08_27_mobile_perfect_v27"></script>
+  <script src="./assets/js/app.js?v=v2026_08_27_mobile_perfect_v27"></script>
 </body>
 </html>

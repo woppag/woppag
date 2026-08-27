@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
 
     bindEvents() {
-      // Language dropdown toggle
+      // Language dropdown & mobile drawer buttons
       const langBtn = document.getElementById('lang-btn');
       const langDropdown = document.getElementById('lang-dropdown');
       if (langBtn && langDropdown) {
@@ -59,17 +59,24 @@ document.addEventListener('DOMContentLoaded', () => {
           langDropdown.classList.toggle('show');
         });
         document.addEventListener('click', () => langDropdown.classList.remove('show'));
-
-        langDropdown.querySelectorAll('.lang-option').forEach(btn => {
-          btn.addEventListener('click', () => {
-            const lang = btn.getAttribute('data-lang');
-            I18N.setLanguage(lang);
-            langDropdown.classList.remove('show');
-          });
-        });
       }
 
-      // Mobile Menu Toggle & Click Outside Handler (Item 11)
+      // Bind all language options (desktop dropdown + mobile drawer grid)
+      document.querySelectorAll('.lang-option').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const lang = btn.getAttribute('data-lang');
+          if (lang) {
+            I18N.setLanguage(lang);
+            if (langDropdown) langDropdown.classList.remove('show');
+            const navMenu = document.getElementById('nav-menu');
+            if (navMenu) navMenu.classList.remove('active');
+            this.updateActiveLangButtons(lang);
+          }
+        });
+      });
+
+      // Mobile Menu Toggle & Click Outside Handler
       const mobileToggle = document.getElementById('mobile-toggle');
       const navMenu = document.getElementById('nav-menu');
       if (mobileToggle && navMenu) {
@@ -80,12 +87,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.addEventListener('click', (e) => {
           if (navMenu.classList.contains('active')) {
-            if (!navMenu.contains(e.target) && e.target !== mobileToggle) {
+            if (!navMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
               navMenu.classList.remove('active');
             }
           }
         });
+
+        // Close mobile drawer when tapping any navigation link inside it
+        navMenu.querySelectorAll('a, button:not(.mobile-lang-btn)').forEach(item => {
+          item.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+          });
+        });
       }
+
+      this.updateActiveLangButtons(this.getCurrentLang());
 
       // Filter Tabs
       document.querySelectorAll('.filter-btn').forEach(btn => {
@@ -206,6 +222,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     getCurrentLang() {
       return document.documentElement.lang || 'en';
+    },
+
+    updateActiveLangButtons(lang) {
+      document.querySelectorAll('.lang-option').forEach(btn => {
+        if (btn.getAttribute('data-lang') === lang) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+      const codeSpan = document.getElementById('current-lang-code');
+      if (codeSpan) {
+        codeSpan.textContent = (lang || 'en').toUpperCase();
+      }
     },
 
     pickTranslation(obj) {

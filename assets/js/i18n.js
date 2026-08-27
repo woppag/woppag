@@ -29,6 +29,7 @@ const I18N = {
     },
 
     // Navigation
+    lang_select_title: { en: '🌐 Select Language', ru: '🌐 Выберите язык', ro: '🌐 Selectează limba', de: '🌐 Sprache wählen', fr: '🌐 Choisir la langue', ar: '🌐 اختر اللغة' },
     nav_home: { en: 'Home', ru: 'Главная', ro: 'Acasă', de: 'Startseite', fr: 'Accueil', ar: 'الرئيسية' },
     nav_why: { en: 'Why WOPPAG', ru: 'Почему WOPPAG', ro: 'De ce WOPPAG', de: 'Warum WOPPAG', fr: 'Pourquoi WOPPAG', ar: 'لماذا WOPPAG' },
     nav_categories: { en: 'Categories', ru: 'Категории', ro: 'Categorii', de: 'Kategorien', fr: 'Catégories', ar: 'الفئات والمنتجات' },
