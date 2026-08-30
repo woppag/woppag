@@ -17,7 +17,9 @@ const I18N = {
       ro: 'WOPPAG KRAFT & FOODS — Producător de ambalaje angro | Direct din fabrică B2B',
       de: 'WOPPAG KRAFT & FOODS — Hersteller von Großhandelsverpackungen | Direkt vom Werk B2B',
       fr: 'WOPPAG KRAFT & FOODS — Fabricant d’emballages en gros | Direct usine B2B',
-      ar: 'WOPPAG KRAFT & FOODS — مص�    meta_description: {
+      ar: 'WOPPAG KRAFT & FOODS — المصنع المباشر لتصنيع مواد التعبئة والتغليف بالجملة | B2B'
+    },
+    meta_description: {
       en: 'WOPPAG KRAFT & FOODS — Direct factory wholesale packaging manufacturer. Kraft bags, biodegradable pouches, napkins, perfume bottles, HoReCa & hotel amenities. OEM custom branding. Worldwide B2B export.',
       ru: 'WOPPAG KRAFT & FOODS — Производитель упаковки напрямую с завода. Крафт пакеты, биоразлагаемые дойпаки, салфетки, отельный текстиль. OEM логотип. Международный экспорт B2B.',
       ro: 'WOPPAG KRAFT & FOODS — Producător direct de ambalaje angro. Pungi kraft, doypack biodegradabile, șervețele, consumabile hotel. Branding OEM. Export global B2B.',
