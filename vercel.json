@@ -23,6 +23,30 @@
   ],
   "rewrites": [
     {
+      "source": "/en",
+      "destination": "/en/index.html"
+    },
+    {
+      "source": "/ru",
+      "destination": "/ru/index.html"
+    },
+    {
+      "source": "/ro",
+      "destination": "/ro/index.html"
+    },
+    {
+      "source": "/de",
+      "destination": "/de/index.html"
+    },
+    {
+      "source": "/fr",
+      "destination": "/fr/index.html"
+    },
+    {
+      "source": "/ar",
+      "destination": "/ar/index.html"
+    },
+    {
       "source": "/products/packaging-and-portioning",
       "destination": "/products/packaging-and-portioning/index.html"
     },
@@ -105,30 +129,6 @@
     {
       "source": "/products",
       "destination": "/products/index.html"
-    },
-    {
-      "source": "/en",
-      "destination": "/en/index.html"
-    },
-    {
-      "source": "/ru",
-      "destination": "/ru/index.html"
-    },
-    {
-      "source": "/ro",
-      "destination": "/ro/index.html"
-    },
-    {
-      "source": "/de",
-      "destination": "/de/index.html"
-    },
-    {
-      "source": "/fr",
-      "destination": "/fr/index.html"
-    },
-    {
-      "source": "/ar",
-      "destination": "/ar/index.html"
     }
   ]
 }

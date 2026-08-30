@@ -192,9 +192,7 @@
 
   <!-- GDPR Cookie Banner -->
   <div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:500;background:var(--bg-surface);border-top:2px solid var(--border-gold);padding:1rem 2rem;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;">
-    <p style="color:var(--text-secondary);font-size:0.82rem;max-width:700px;" data-i18n="cookie_text">
-      We use cookies to improve your experience. By continuing, you agree to our cookie policy.
-    </p>
+    <p style="color:var(--text-secondary);font-size:0.82rem;max-width:700px;" data-i18n="cookie_text">We use cookies to improve your experience. By continuing, you agree to our cookie policy.</p>
     <div style="display:flex;gap:0.8rem;flex-shrink:0;">
       <button onclick="acceptCookies()" class="btn btn-primary btn-sm" data-i18n="cookie_accept">Accept</button>
       <button onclick="dismissCookies()" style="background:transparent;border:1px solid var(--border-subtle);color:var(--text-muted);padding:0.5rem 1rem;border-radius:var(--radius-full);cursor:pointer;font-family:inherit;font-size:0.82rem;" data-i18n="cookie_decline">Decline</button>
@@ -236,7 +234,7 @@
             <li><a href="#why" class="nav-link" data-i18n="nav_why">Why WOPPAG</a></li>
             <li><a href="#categories" class="nav-link" data-i18n="nav_categories">Categories</a></li>
             <li><a href="#process" class="nav-link" data-i18n="nav_process">Workflow</a></li>
-            <li><a href="#quote" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+            <li><a href="#quote" class="nav-link" data-i18n="nav_contact">Contact & Quote</a></li>
           </ul>
 
           <div class="mobile-drawer-actions">
@@ -260,12 +258,12 @@
             🌐 <span id="current-lang-code">EN</span> ▾
           </button>
           <div class="lang-dropdown" id="lang-dropdown">
-            <button class="lang-option" data-lang="en" onclick="I18N.setLanguage('en'); return false;">🇬🇧 English</button>
-            <button class="lang-option" data-lang="ru" onclick="I18N.setLanguage('ru'); return false;">🇷🇺 Русский</button>
-            <button class="lang-option" data-lang="ro" onclick="I18N.setLanguage('ro'); return false;">🇷🇴 Română</button>
-            <button class="lang-option" data-lang="de" onclick="I18N.setLanguage('de'); return false;">🇩🇪 Deutsch</button>
-            <button class="lang-option" data-lang="fr" onclick="I18N.setLanguage('fr'); return false;">🇫🇷 Français</button>
-            <button class="lang-option" data-lang="ar" onclick="I18N.setLanguage('ar'); return false;">🇸🇦 العربية</button>
+            <a href="/en/" class="lang-option" data-lang="en">🇬🇧 English</a>
+            <a href="/ru/" class="lang-option" data-lang="ru">🇷🇺 Русский</a>
+            <a href="/ro/" class="lang-option" data-lang="ro">🇷🇴 Română</a>
+            <a href="/de/" class="lang-option" data-lang="de">🇩🇪 Deutsch</a>
+            <a href="/fr/" class="lang-option" data-lang="fr">🇫🇷 Français</a>
+            <a href="/ar/" class="lang-option" data-lang="ar">🇸🇦 العربية</a>
           </div>
         </div>
 
@@ -287,12 +285,10 @@
           <br>
           <span class="gradient-text" data-i18n="hero_title_2">Built at the Factory Source.</span>
         </h1>
-        <p class="hero-description" data-i18n="hero_desc">
-          High-volume production of food portioning, biodegradable pouches, paper bags, custom wet wipes, perfume bottles, and luxury hotel amenities for international importers & distributors.
-        </p>
+        <p class="hero-description" data-i18n="hero_desc">High-volume production of food portioning, biodegradable pouches, paper bags, custom wet wipes, perfume bottles, and luxury hotel amenities for international importers & distributors.</p>
 
         <div class="hero-ctas">
-          <a href="#categories" class="btn btn-primary" data-i18n="hero_cta_cat">Explore 20 Categories →</a>
+          <a href="#categories" class="btn btn-primary" data-i18n="hero_cta_cat">Explore 20 Categories</a>
           <a href="#quote" class="btn btn-outline" data-i18n="hero_cta_rfq">Get Factory Pricing</a>
         </div>
       </div>
@@ -316,8 +312,8 @@
         <div class="visual-card">
           <div class="visual-icon">🌍</div>
           <div class="visual-info">
-            <h4 data-i18n="why_4_title">Global Logistics & Freight</h4>
-            <p data-i18n="hero_visual_3_desc">Full container load (FCL) and pallet shipping handling to global export markets.</p>
+            <h4 data-i18n="why_4_title">Global Logistics & Freight Handling</h4>
+            <p data-i18n="hero_visual_3_desc">Full container load (FCL) and pallet shipping handling for global export markets.</p>
           </div>
         </div>
       </div>
@@ -332,11 +328,11 @@
         </div>
         <div class="stat-item">
           <div class="stat-number" data-i18n="stat_countries_num">Global</div>
-          <div class="stat-label" data-i18n="stat_countries_lbl">Export Countries</div>
+          <div class="stat-label" data-i18n="stat_countries_lbl">Worldwide Export</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number" data-i18n="stat_units_num">Industrial</div>
-          <div class="stat-label" data-i18n="stat_units_lbl">Units Produced Yearly</div>
+          <div class="stat-number" data-i18n="stat_units_num">High</div>
+          <div class="stat-label" data-i18n="stat_units_lbl">Production Volume</div>
         </div>
         <div class="stat-item">
           <div class="stat-number" data-i18n="stat_moq_num">100%</div>
@@ -351,7 +347,7 @@
     <div class="container">
       <div class="section-header">
         <div class="badge" data-i18n="badge_b2b">B2B Manufacturing Advantage</div>
-        <h2 class="section-title" data-i18n="why_title">Why Global Distributors Choose WOPPAG</h2>
+        <h2 class="section-title" data-i18n="why_title">Why Global Distributors Choose WOPPAG KRAFT & FOODS</h2>
         <p class="section-subtitle" data-i18n="why_sub">Direct manufacturing capabilities engineered for high-volume B2B global trade.</p>
       </div>
 
@@ -373,14 +369,14 @@
         <div class="cat-card" style="cursor: default;">
           <div class="cat-icon">📜</div>
           <div class="cat-body">
-            <h3 data-i18n="why_3_title">Eco & Food Grade Certified</h3>
+            <h3 data-i18n="why_3_title">Quality & Food Grade Standards</h3>
             <p data-i18n="why_3_desc">Manufactured in compliance with international quality, food safety, and environmental standards.</p>
           </div>
         </div>
         <div class="cat-card" style="cursor: default;">
           <div class="cat-icon">🛳️</div>
           <div class="cat-body">
-            <h3 data-i18n="why_4_title">Global Logistics & Freight</h3>
+            <h3 data-i18n="why_4_title">Global Logistics & Freight Handling</h3>
             <p data-i18n="why_4_desc">Export documentation, customs clearance, and door-to-port container delivery.</p>
           </div>
         </div>
@@ -397,7 +393,7 @@
         <div class="section-header">
           <div class="badge" data-i18n="badge_catalog">Full Manufacturing Catalog</div>
           <h2 class="section-title" data-i18n="cat_header_title">Product Categories Showcase</h2>
-          <p class="section-subtitle" data-i18n="cat_header_sub">Click on any category card to enter the category and inspect products in detail.</p>
+          <p class="section-subtitle" data-i18n="cat_header_sub">Click on any category card to view specs, sub-products, and submit quote inquiries.</p>
         </div>
 
         <!-- Controls: Live Search & Filter Tabs -->
@@ -432,9 +428,7 @@
             <button id="btn-back-to-cats" class="btn btn-outline" style="display: inline-flex; align-items: center; gap: 0.5rem; cursor: pointer; border-color: var(--border-gold); color: var(--accent-gold);">
               <span data-i18n="btn_back_cats">← Back to All Categories</span>
             </button>
-            <div style="font-size: 0.82rem; color: var(--accent-gold); font-weight: 600;" data-i18n="quick_select_lbl">
-              ⚡ Quick Switch Category:
-            </div>
+            <div style="font-size: 0.82rem; color: var(--accent-gold); font-weight: 600;" data-i18n="quick_select_lbl">⚡ Quick Switch Category:</div>
           </div>
           
           <div id="cat-quick-switcher" class="cat-quick-nav-bar">
@@ -449,9 +443,7 @@
 
         <!-- Category Products Section Title -->
         <div style="margin: 2.5rem 0 1.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem;">
-          <h3 id="cat-view-products-title" data-i18n="cat_view_products_title" style="font-size: 1.5rem; color: #fff; font-weight: 700; margin: 0;">
-            Category Products & Lineup
-          </h3>
+          <h3 id="cat-view-products-title" data-i18n="cat_view_products_title" style="font-size: 1.5rem; color: #fff; font-weight: 700; margin: 0;">Category Products & Lineup</h3>
           <span id="cat-view-products-count" class="badge" style="background: var(--accent-gold-light); color: var(--accent-gold); border: 1px solid var(--border-gold);">
             12 Products Available
           </span>
@@ -471,13 +463,11 @@
         <div id="cat-bottom-switcher-section" style="margin-top: 3.5rem; padding-top: 2.5rem; border-top: 1px solid var(--border-subtle);">
           <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.8rem;">
             <div>
-              <div class="badge" data-i18n="badge_catalog">Explore More Lines</div>
-              <h3 style="font-size: 1.6rem; color: #fff; font-weight: 700; margin: 0.4rem 0 0;" data-i18n="bottom_cats_title">
-                Explore Other Categories & Manufacturing Lines
-              </h3>
+              <div class="badge" data-i18n="badge_catalog">Full Manufacturing Catalog</div>
+              <h3 style="font-size: 1.6rem; color: #fff; font-weight: 700; margin: 0.4rem 0 0;" data-i18n="bottom_cats_title">Explore Other Categories & Manufacturing Lines</h3>
             </div>
             <button class="btn btn-outline btn-sm" onclick="APP.closeCategoryView()" style="border-color: var(--border-gold); color: var(--accent-gold);">
-              <span data-i18n="btn_back_cats">← Back to All 20 Categories</span>
+              <span data-i18n="btn_back_cats">← Back to All Categories</span>
             </button>
           </div>
 
@@ -554,7 +544,7 @@
               <input type="text" name="telegram" class="form-input" placeholder="@yourusername" data-i18n-placeholder="form_telegram_ph" autocomplete="off">
             </div>
             <div class="form-group full">
-              <label class="form-label" data-i18n="form_cat_label">Select Primary Category of Interest</label>
+              <label class="form-label" data-i18n="form_cat_label">Primary Category of Interest</label>
               <select class="form-select" id="rfq-category" name="category" required>
                 <!-- Populated via app.js -->
               </select>
@@ -630,7 +620,7 @@
             <li><a href="#why" data-i18n="nav_why">Why WOPPAG</a></li>
             <li><a href="#categories" data-i18n="nav_categories">Categories</a></li>
             <li><a href="#process" data-i18n="nav_process">Workflow</a></li>
-            <li><a href="#quote" data-i18n="nav_contact">Contact</a></li>
+            <li><a href="#quote" data-i18n="nav_contact">Contact & Quote</a></li>
           </ul>
         </div>
 
@@ -673,9 +663,9 @@
 </html<div id="categories-grid" class="categories-grid">
           <article class="cat-card" data-cat-id="0" role="button" tabindex="0">
             <div class="cat-img-wrapper" style="height: 190px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
-              <img src="../assets/images/products/cat_0/header.jpg" alt="Packaging & Portioning - WOPPAG Wholesale B2B Packaging" width="800" height="533" loading="eager" fetchpriority="high" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
+              <img src=".../assets/images/products/cat_0/header.jpg" alt="Packaging & Portioning" width="800" height="533" loading="eager" fetchpriority="high" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
               <div style="position: absolute; top: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; color: #fff; border: 1px solid var(--border-subtle);">
-                📦 12 Products Available
+                📦 12 Products
               </div>
               <div style="position: absolute; top: 10px; right: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); border: 1px solid var(--border-gold);">
                 🧂 Portion Products
@@ -685,19 +675,19 @@
               <h3>Packaging & Portioning</h3>
               <p style="margin-bottom: 0.5rem;">Portioned salt, pepper, sugar, coffee, sauces, and spices branded with your logo for HoReCa and airline catering.</p>
               <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; margin-bottom: 0.6rem;">
-                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Portion Salt & Black Pepper Sachets</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Portion White Sugar Sticks 4g</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Portion Brown Cane Sugar Sticks</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Portion Ketchup Sachets 10g</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Portion Mayonnaise & Mustard Sachets</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+7 more</span>
+                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Portion Salt & Black Pepper Sachets</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Portion White Sugar Sticks 4g</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Portion Brown Cane Sugar Sticks</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Portion Ketchup Sachets 10g</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Portion Mayonnaise & Mustard Sachets</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+7</span>
               </div>
               <div style="margin-top: 0.5rem;">
-                <a href="../products/packaging-and-portioning/" onclick="if(window.APP){APP.openCategoryView(0);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Packaging & Portioning →</a>
+                <a href=".../products/packaging-and-portioning/" onclick="if(window.APP){APP.openCategoryView(0);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Lineup & Products →</a>
               </div>
             </div>
           </article>
 
           <article class="cat-card" data-cat-id="1" role="button" tabindex="0">
             <div class="cat-img-wrapper" style="height: 190px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
-              <img src="../assets/images/products/cat_1/header.jpg" alt="Everything for Confectioners - WOPPAG Wholesale B2B Packaging" width="800" height="533" loading="eager" fetchpriority="high" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
+              <img src=".../assets/images/products/cat_1/header.jpg" alt="Everything for Confectioners" width="800" height="533" loading="eager" fetchpriority="high" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
               <div style="position: absolute; top: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; color: #fff; border: 1px solid var(--border-subtle);">
-                📦 12 Products Available
+                📦 12 Products
               </div>
               <div style="position: absolute; top: 10px; right: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); border: 1px solid var(--border-gold);">
                 🎂 Confectionery
@@ -707,19 +697,19 @@
               <h3>Everything for Confectioners</h3>
               <p style="margin-bottom: 0.5rem;">Cake boxes, cake boards, baking parchment, piping bags, and pastry packaging for bakeries and cake shops.</p>
               <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; margin-bottom: 0.6rem;">
-                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Square Window Cake Boxes 25x25cm</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Tall Layer Cake Boxes with Handle</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Gold Round Cake Boards 3mm</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Silver Square Cake Boards 4mm</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Siliconized Baking Parchment Rolls</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+7 more</span>
+                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Square Window Cake Boxes 25x25cm</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Tall Layer Cake Boxes with Handle</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Gold Round Cake Boards 3mm</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Silver Square Cake Boards 4mm</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Siliconized Baking Parchment Rolls</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+7</span>
               </div>
               <div style="margin-top: 0.5rem;">
-                <a href="../products/everything-for-confectioners/" onclick="if(window.APP){APP.openCategoryView(1);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Everything for Confectioners →</a>
+                <a href=".../products/everything-for-confectioners/" onclick="if(window.APP){APP.openCategoryView(1);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Lineup & Products →</a>
               </div>
             </div>
           </article>
 
           <article class="cat-card" data-cat-id="2" role="button" tabindex="0">
             <div class="cat-img-wrapper" style="height: 190px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
-              <img src="../assets/images/products/cat_2/header.jpg" alt="Food Products & Ingredients - WOPPAG Wholesale B2B Packaging" width="800" height="533" loading="eager" fetchpriority="high" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
+              <img src=".../assets/images/products/cat_2/header.jpg" alt="Food Products & Ingredients" width="800" height="533" loading="eager" fetchpriority="high" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
               <div style="position: absolute; top: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; color: #fff; border: 1px solid var(--border-subtle);">
-                📦 12 Products Available
+                📦 12 Products
               </div>
               <div style="position: absolute; top: 10px; right: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); border: 1px solid var(--border-gold);">
                 🌾 Food Supplies
@@ -729,19 +719,19 @@
               <h3>Food Products & Ingredients</h3>
               <p style="margin-bottom: 0.5rem;">Bulk food ingredients, refined sugars, cooking oils, portioned honeys, and jams for commercial food manufacturing.</p>
               <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; margin-bottom: 0.6rem;">
-                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Portion Natural Honey 20g Jars</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Portion Strawberry Jam 20g Cups</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Refined White Sugar ICUMSA 45 (25kg)</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Brown Cane Sugar Bulk 25kg</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Refined Sunflower Cooking Oil 5L</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+7 more</span>
+                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Portion Natural Honey 20g Jars</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Portion Strawberry Jam 20g Cups</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Refined White Sugar ICUMSA 45 (25kg)</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Brown Cane Sugar Bulk 25kg</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Refined Sunflower Cooking Oil 5L</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+7</span>
               </div>
               <div style="margin-top: 0.5rem;">
-                <a href="../products/food-products-and-ingredients/" onclick="if(window.APP){APP.openCategoryView(2);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Food Products & Ingredients →</a>
+                <a href=".../products/food-products-and-ingredients/" onclick="if(window.APP){APP.openCategoryView(2);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Lineup & Products →</a>
               </div>
             </div>
           </article>
 
           <article class="cat-card" data-cat-id="3" role="button" tabindex="0">
             <div class="cat-img-wrapper" style="height: 190px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
-              <img src="../assets/images/products/cat_3/header.jpg" alt="Cleaning & Detergent Products - WOPPAG Wholesale B2B Packaging" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
+              <img src=".../assets/images/products/cat_3/header.jpg" alt="Cleaning & Detergent Products" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
               <div style="position: absolute; top: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; color: #fff; border: 1px solid var(--border-subtle);">
-                📦 12 Products Available
+                📦 12 Products
               </div>
               <div style="position: absolute; top: 10px; right: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); border: 1px solid var(--border-gold);">
                 🧼 Hygiene & Clean
@@ -751,19 +741,19 @@
               <h3>Cleaning & Detergent Products</h3>
               <p style="margin-bottom: 0.5rem;">Professional dishwashing liquids, surface disinfectants, industrial laundry detergents, and floor cleaners for HoReCa.</p>
               <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; margin-bottom: 0.6rem;">
-                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Concentrated Lemon Dishwashing Liquid 5L</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Commercial Dishwasher Rinse Aid 10L</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Floor Disinfectant Lavender 5L</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Surface Sanitizer Spray 750ml</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Industrial Laundry Powder Detergent 20kg</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+7 more</span>
+                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Concentrated Lemon Dishwashing Liquid 5L</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Commercial Dishwasher Rinse Aid 10L</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Floor Disinfectant Lavender 5L</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Surface Sanitizer Spray 750ml</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Industrial Laundry Powder Detergent 20kg</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+7</span>
               </div>
               <div style="margin-top: 0.5rem;">
-                <a href="../products/cleaning-and-detergent-products/" onclick="if(window.APP){APP.openCategoryView(3);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Cleaning & Detergent Products →</a>
+                <a href=".../products/cleaning-and-detergent-products/" onclick="if(window.APP){APP.openCategoryView(3);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Lineup & Products →</a>
               </div>
             </div>
           </article>
 
           <article class="cat-card" data-cat-id="4" role="button" tabindex="0">
             <div class="cat-img-wrapper" style="height: 190px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
-              <img src="../assets/images/products/cat_4/header.jpg" alt="Doy-Pack Kraft Pouches & Zip Bags - WOPPAG Wholesale B2B Packaging" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
+              <img src=".../assets/images/products/cat_4/header.jpg" alt="Doy-Pack Kraft Pouches & Zip Bags" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
               <div style="position: absolute; top: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; color: #fff; border: 1px solid var(--border-subtle);">
-                📦 12 Products Available
+                📦 12 Products
               </div>
               <div style="position: absolute; top: 10px; right: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); border: 1px solid var(--border-gold);">
                 🌿 Kraft Pouches
@@ -773,19 +763,19 @@
               <h3>Doy-Pack Kraft Pouches & Zip Bags</h3>
               <p style="margin-bottom: 0.5rem;">Stand-up kraft pouches with zip closure, transparent window, degassing valve for coffee beans, and aluminum barrier layer.</p>
               <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; margin-bottom: 0.6rem;">
-                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Valved Roasted Coffee Bean Doypack 250g</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Rectangular Window Kraft Doypack 500g</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Oval Window Stand-Up Kraft Pouch</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Full Transparent Front Kraft Back Doypack</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Matte Black Aluminum Barrier Zip Pouch</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+7 more</span>
+                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Valved Roasted Coffee Bean Doypack 250g</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Rectangular Window Kraft Doypack 500g</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Oval Window Stand-Up Kraft Pouch</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Full Transparent Front Kraft Back Doypack</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Matte Black Aluminum Barrier Zip Pouch</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+7</span>
               </div>
               <div style="margin-top: 0.5rem;">
-                <a href="../products/doy-pack-kraft-pouches/" onclick="if(window.APP){APP.openCategoryView(4);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Doy-Pack Kraft Pouches & Zip Bags →</a>
+                <a href=".../products/doy-pack-kraft-pouches/" onclick="if(window.APP){APP.openCategoryView(4);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Lineup & Products →</a>
               </div>
             </div>
           </article>
 
           <article class="cat-card" data-cat-id="5" role="button" tabindex="0">
             <div class="cat-img-wrapper" style="height: 190px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
-              <img src="../assets/images/products/cat_5/header.jpg" alt="Kraft Paper Bags with Handles - WOPPAG Wholesale B2B Packaging" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
+              <img src=".../assets/images/products/cat_5/header.jpg" alt="Kraft Paper Bags with Handles" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
               <div style="position: absolute; top: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; color: #fff; border: 1px solid var(--border-subtle);">
-                📦 12 Products Available
+                📦 12 Products
               </div>
               <div style="position: absolute; top: 10px; right: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); border: 1px solid var(--border-gold);">
                 🛍️ Kraft Bags
@@ -795,19 +785,19 @@
               <h3>Kraft Paper Bags with Handles</h3>
               <p style="margin-bottom: 0.5rem;">Brown and bleached white kraft paper bags with twisted, flat, or rope handles for retail fashion and food takeaway.</p>
               <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; margin-bottom: 0.6rem;">
-                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Brown Kraft Bags with Twisted Handles</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Bleached White Kraft Bags with Handles</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Flat Handle Takeaway Bags for Food Delivery</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Rope Handle Luxury Boutiques Shoppers</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">SOS Block Bottom Bakery Bags (No Handles)</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+7 more</span>
+                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Brown Kraft Bags with Twisted Handles</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Bleached White Kraft Bags with Handles</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Flat Handle Takeaway Bags for Food Delivery</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Rope Handle Luxury Boutiques Shoppers</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">SOS Block Bottom Bakery Bags (No Handles)</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+7</span>
               </div>
               <div style="margin-top: 0.5rem;">
-                <a href="../products/kraft-paper-bags/" onclick="if(window.APP){APP.openCategoryView(5);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Kraft Paper Bags with Handles →</a>
+                <a href=".../products/kraft-paper-bags/" onclick="if(window.APP){APP.openCategoryView(5);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Lineup & Products →</a>
               </div>
             </div>
           </article>
 
           <article class="cat-card" data-cat-id="6" role="button" tabindex="0">
             <div class="cat-img-wrapper" style="height: 190px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
-              <img src="../assets/images/products/cat_6/header.jpg" alt="Paper & Wet Napkins with Logo - WOPPAG Wholesale B2B Packaging" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
+              <img src=".../assets/images/products/cat_6/header.jpg" alt="Paper & Wet Napkins with Logo" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
               <div style="position: absolute; top: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; color: #fff; border: 1px solid var(--border-subtle);">
-                📦 12 Products Available
+                📦 12 Products
               </div>
               <div style="position: absolute; top: 10px; right: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); border: 1px solid var(--border-gold);">
                 🧻 Paper & Wet Wipes
@@ -817,19 +807,19 @@
               <h3>Paper & Wet Napkins with Logo</h3>
               <p style="margin-bottom: 0.5rem;">Custom logo wet wipes, sachet refreshers, dispenser napkins, towel rolls, and pocket tissues for restaurants & airlines.</p>
               <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; margin-bottom: 0.6rem;">
-                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Single Sachet Refreshing Wet Wipes 6x8cm</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Large Sachet Wet Wipes 7x12cm</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Airline & Hotel Hot/Cold Refreshing Towels</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Alcohol-Free Antimicrobial Sanitizing Wipes</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Dispenser Refill Napkins (1/4 Fold)</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+7 more</span>
+                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Single Sachet Refreshing Wet Wipes 6x8cm</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Large Sachet Wet Wipes 7x12cm</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Airline & Hotel Hot/Cold Refreshing Towels</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Alcohol-Free Antimicrobial Sanitizing Wipes</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Dispenser Refill Napkins (1/4 Fold)</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+7</span>
               </div>
               <div style="margin-top: 0.5rem;">
-                <a href="../products/paper-and-wet-napkins/" onclick="if(window.APP){APP.openCategoryView(6);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Paper & Wet Napkins with Logo →</a>
+                <a href=".../products/paper-and-wet-napkins/" onclick="if(window.APP){APP.openCategoryView(6);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Lineup & Products →</a>
               </div>
             </div>
           </article>
 
           <article class="cat-card" data-cat-id="7" role="button" tabindex="0">
             <div class="cat-img-wrapper" style="height: 190px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
-              <img src="../assets/images/products/cat_7/header.jpg" alt="Disposable Cutlery & Tableware - WOPPAG Wholesale B2B Packaging" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
+              <img src=".../assets/images/products/cat_7/header.jpg" alt="Disposable Cutlery & Tableware" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
               <div style="position: absolute; top: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; color: #fff; border: 1px solid var(--border-subtle);">
-                📦 12 Products Available
+                📦 12 Products
               </div>
               <div style="position: absolute; top: 10px; right: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); border: 1px solid var(--border-gold);">
                 🍴 Tableware
@@ -839,19 +829,19 @@
               <h3>Disposable Cutlery & Tableware</h3>
               <p style="margin-bottom: 0.5rem;">Wooden cutlery sets, double-wall hot paper cups, sugarcane bagasse meal trays, and takeaway soup bowls.</p>
               <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; margin-bottom: 0.6rem;">
-                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Birch Wood Cutlery Set (Fork, Knife, Spoon)</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Birch Wood Teaspoons & Coffee Stirrers</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Sugarcane Bagasse 3-Compartment Meal Trays</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Sugarcane Bagasse Round Plates 23cm</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Sugarcane Bagasse Soup Bowls 500ml</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+7 more</span>
+                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Birch Wood Cutlery Set (Fork, Knife, Spoon)</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Birch Wood Teaspoons & Coffee Stirrers</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Sugarcane Bagasse 3-Compartment Meal Trays</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Sugarcane Bagasse Round Plates 23cm</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Sugarcane Bagasse Soup Bowls 500ml</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+7</span>
               </div>
               <div style="margin-top: 0.5rem;">
-                <a href="../products/disposable-cutlery-and-tableware/" onclick="if(window.APP){APP.openCategoryView(7);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Disposable Cutlery & Tableware →</a>
+                <a href=".../products/disposable-cutlery-and-tableware/" onclick="if(window.APP){APP.openCategoryView(7);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Lineup & Products →</a>
               </div>
             </div>
           </article>
 
           <article class="cat-card" data-cat-id="8" role="button" tabindex="0">
             <div class="cat-img-wrapper" style="height: 190px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
-              <img src="../assets/images/products/cat_8/header.jpg" alt="Food Wrapping Paper & Sheets - WOPPAG Wholesale B2B Packaging" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
+              <img src=".../assets/images/products/cat_8/header.jpg" alt="Food Wrapping Paper & Sheets" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
               <div style="position: absolute; top: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; color: #fff; border: 1px solid var(--border-subtle);">
-                📦 10 Products Available
+                📦 10 Products
               </div>
               <div style="position: absolute; top: 10px; right: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); border: 1px solid var(--border-gold);">
                 📜 Wrapping Paper
@@ -861,19 +851,19 @@
               <h3>Food Wrapping Paper & Sheets</h3>
               <p style="margin-bottom: 0.5rem;">Greaseproof burger wrap paper, PE-coated butcher paper, basket liners, and printed parchment sheets.</p>
               <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; margin-bottom: 0.6rem;">
-                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Greaseproof Burger Wrap Sheets KIT 7 30x40cm</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">PE-Coated Butcher Paper Sheets for Meats</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Newspaper Print Custom Sandwich Wraps</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Basket & Metal Tray Liner Paper Sheets</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Bakery Waxed Wrapping Sheets for Pastries</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5 more</span>
+                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Greaseproof Burger Wrap Sheets KIT 7 30x40cm</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">PE-Coated Butcher Paper Sheets for Meats</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Newspaper Print Custom Sandwich Wraps</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Basket & Metal Tray Liner Paper Sheets</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Bakery Waxed Wrapping Sheets for Pastries</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5</span>
               </div>
               <div style="margin-top: 0.5rem;">
-                <a href="../products/food-wrapping-paper-and-sheets/" onclick="if(window.APP){APP.openCategoryView(8);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Food Wrapping Paper & Sheets →</a>
+                <a href=".../products/food-wrapping-paper-and-sheets/" onclick="if(window.APP){APP.openCategoryView(8);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Lineup & Products →</a>
               </div>
             </div>
           </article>
 
           <article class="cat-card" data-cat-id="9" role="button" tabindex="0">
             <div class="cat-img-wrapper" style="height: 190px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
-              <img src="../assets/images/products/cat_9/header.jpg" alt="Sushi & Asian Food Packaging - WOPPAG Wholesale B2B Packaging" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
+              <img src=".../assets/images/products/cat_9/header.jpg" alt="Sushi & Asian Food Packaging" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
               <div style="position: absolute; top: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; color: #fff; border: 1px solid var(--border-subtle);">
-                📦 10 Products Available
+                📦 10 Products
               </div>
               <div style="position: absolute; top: 10px; right: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); border: 1px solid var(--border-gold);">
                 🍱 Asian & Sushi
@@ -883,19 +873,19 @@
               <h3>Sushi & Asian Food Packaging</h3>
               <p style="margin-bottom: 0.5rem;">Bento trays with anti-fog PET lids, chopstick sleeves, soy sauce fish bottles, and takeaway noodle boxes.</p>
               <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; margin-bottom: 0.6rem;">
-                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Anti-Fog Bento Sushi Trays (Small)</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Large Party Size Sushi Platter Trays</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Bamboo Chopsticks in Printed Sleeves</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Soy Sauce Fish Bottles 8ml & 15ml</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Round Kraft Wok & Noodle Boxes</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5 more</span>
+                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Anti-Fog Bento Sushi Trays (Small)</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Large Party Size Sushi Platter Trays</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Bamboo Chopsticks in Printed Sleeves</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Soy Sauce Fish Bottles 8ml & 15ml</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Round Kraft Wok & Noodle Boxes</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5</span>
               </div>
               <div style="margin-top: 0.5rem;">
-                <a href="../products/sushi-and-asian-food-packaging/" onclick="if(window.APP){APP.openCategoryView(9);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Sushi & Asian Food Packaging →</a>
+                <a href=".../products/sushi-and-asian-food-packaging/" onclick="if(window.APP){APP.openCategoryView(9);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Lineup & Products →</a>
               </div>
             </div>
           </article>
 
           <article class="cat-card" data-cat-id="10" role="button" tabindex="0">
             <div class="cat-img-wrapper" style="height: 190px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
-              <img src="../assets/images/products/cat_10/header.jpg" alt="Biodegradable & Compostable Bags - WOPPAG Wholesale B2B Packaging" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
+              <img src=".../assets/images/products/cat_10/header.jpg" alt="Biodegradable & Compostable Bags" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
               <div style="position: absolute; top: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; color: #fff; border: 1px solid var(--border-subtle);">
-                📦 10 Products Available
+                📦 10 Products
               </div>
               <div style="position: absolute; top: 10px; right: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); border: 1px solid var(--border-gold);">
                 🌱 Biodegradable
@@ -905,19 +895,19 @@
               <h3>Biodegradable & Compostable Bags</h3>
               <p style="margin-bottom: 0.5rem;">100% home and industrial compostable bags made from cornstarch (PBAT/PLA) conforming to Compostable material</p>
               <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; margin-bottom: 0.6rem;">
-                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">OK Compost Certified Cornstarch T-Shirt Bags</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Bio Die-Cut Handle Retail Shopping Bags</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Compostable Produce Roll Bags for Supermarkets</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Organic Waste Compostable Trash Bags 30L/60L</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">PLA Bio Barrier Stretch Shrink Film</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5 more</span>
+                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">OK Compost Certified Cornstarch T-Shirt Bags</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Bio Die-Cut Handle Retail Shopping Bags</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Compostable Produce Roll Bags for Supermarkets</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Organic Waste Compostable Trash Bags 30L/60L</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">PLA Bio Barrier Stretch Shrink Film</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5</span>
               </div>
               <div style="margin-top: 0.5rem;">
-                <a href="../products/biodegradable-and-compostable-bags/" onclick="if(window.APP){APP.openCategoryView(10);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Biodegradable & Compostable Bags →</a>
+                <a href=".../products/biodegradable-and-compostable-bags/" onclick="if(window.APP){APP.openCategoryView(10);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Lineup & Products →</a>
               </div>
             </div>
           </article>
 
           <article class="cat-card" data-cat-id="11" role="button" tabindex="0">
             <div class="cat-img-wrapper" style="height: 190px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
-              <img src="../assets/images/products/cat_11/header.jpg" alt="Shopping & Promotional Bags - WOPPAG Wholesale B2B Packaging" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
+              <img src=".../assets/images/products/cat_11/header.jpg" alt="Shopping & Promotional Bags" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
               <div style="position: absolute; top: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; color: #fff; border: 1px solid var(--border-subtle);">
-                📦 10 Products Available
+                📦 10 Products
               </div>
               <div style="position: absolute; top: 10px; right: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); border: 1px solid var(--border-gold);">
                 🛍️ Promo Bags
@@ -927,19 +917,19 @@
               <h3>Shopping & Promotional Bags</h3>
               <p style="margin-bottom: 0.5rem;">Non-woven polypropylene bags, organic cotton tote bags, laminated promo shoppers with custom silk-screen printing.</p>
               <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; margin-bottom: 0.6rem;">
-                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Non-Woven Spunbond Shopping Bags 80gsm</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Ultrasonic Heat Sealed Non-Woven Bags</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Organic Cotton Canvas Shopper Bags 140gsm</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Heavy Duty Cotton Canvas Grocery Totes 280gsm</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Gloss Laminated Woven Promo Shoppers</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5 more</span>
+                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Non-Woven Spunbond Shopping Bags 80gsm</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Ultrasonic Heat Sealed Non-Woven Bags</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Organic Cotton Canvas Shopper Bags 140gsm</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Heavy Duty Cotton Canvas Grocery Totes 280gsm</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Gloss Laminated Woven Promo Shoppers</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5</span>
               </div>
               <div style="margin-top: 0.5rem;">
-                <a href="../products/shopping-and-promotional-bags/" onclick="if(window.APP){APP.openCategoryView(11);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Shopping & Promotional Bags →</a>
+                <a href=".../products/shopping-and-promotional-bags/" onclick="if(window.APP){APP.openCategoryView(11);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Lineup & Products →</a>
               </div>
             </div>
           </article>
 
           <article class="cat-card" data-cat-id="12" role="button" tabindex="0">
             <div class="cat-img-wrapper" style="height: 190px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
-              <img src="../assets/images/products/cat_12/header.jpg" alt="Polyethylene Bags (LDPE / HDPE) - WOPPAG Wholesale B2B Packaging" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
+              <img src=".../assets/images/products/cat_12/header.jpg" alt="Polyethylene Bags (LDPE / HDPE)" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
               <div style="position: absolute; top: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; color: #fff; border: 1px solid var(--border-subtle);">
-                📦 10 Products Available
+                📦 10 Products
               </div>
               <div style="position: absolute; top: 10px; right: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); border: 1px solid var(--border-gold);">
                 📦 Polyethylene
@@ -949,19 +939,19 @@
               <h3>Polyethylene Bags (LDPE / HDPE)</h3>
               <p style="margin-bottom: 0.5rem;">Heavy-duty HDPE/LDPE t-shirt bags, die-cut handle bags, zip lock bags, and industrial pallet shrink film.</p>
               <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; margin-bottom: 0.6rem;">
-                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">High Density HDPE T-Shirt Grocery Bags</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Low Density LDPE Smooth T-Shirt Bags</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Heavy Duty PE Die-Cut Handle Shopping Bags</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Flexible Loop Handle Polyethylene Bags</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Re-sealable Zip Lock Poly Bags (Various Sizes)</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5 more</span>
+                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">High Density HDPE T-Shirt Grocery Bags</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Low Density LDPE Smooth T-Shirt Bags</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Heavy Duty PE Die-Cut Handle Shopping Bags</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Flexible Loop Handle Polyethylene Bags</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Re-sealable Zip Lock Poly Bags (Various Sizes)</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5</span>
               </div>
               <div style="margin-top: 0.5rem;">
-                <a href="../products/polyethylene-bags/" onclick="if(window.APP){APP.openCategoryView(12);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Polyethylene Bags (LDPE / HDPE) →</a>
+                <a href=".../products/polyethylene-bags/" onclick="if(window.APP){APP.openCategoryView(12);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Lineup & Products →</a>
               </div>
             </div>
           </article>
 
           <article class="cat-card" data-cat-id="13" role="button" tabindex="0">
             <div class="cat-img-wrapper" style="height: 190px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
-              <img src="../assets/images/products/cat_13/header.jpg" alt="Guest Room Supplies & Accessories - WOPPAG Wholesale B2B Packaging" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
+              <img src=".../assets/images/products/cat_13/header.jpg" alt="Guest Room Supplies & Accessories" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
               <div style="position: absolute; top: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; color: #fff; border: 1px solid var(--border-subtle);">
-                📦 10 Products Available
+                📦 10 Products
               </div>
               <div style="position: absolute; top: 10px; right: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); border: 1px solid var(--border-gold);">
                 🩴 Hotel Supplies
@@ -971,19 +961,19 @@
               <h3>Guest Room Supplies & Accessories</h3>
               <p style="margin-bottom: 0.5rem;">Disposable velvet hotel slippers, non-woven laundry bags, shoe shine sponges, sewing kits, and velvet hangers.</p>
               <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; margin-bottom: 0.6rem;">
-                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Custom Logo Velour Closed Toe Hotel Slippers</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Waffle Weave Breathable Open Toe Slippers</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Non-Woven Spunbond Laundry Bags with Drawstring</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Organic Cotton Canvas Eco Laundry Bags</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Shoe Shine Sponges in Custom Paper Box</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5 more</span>
+                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Custom Logo Velour Closed Toe Hotel Slippers</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Waffle Weave Breathable Open Toe Slippers</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Non-Woven Spunbond Laundry Bags with Drawstring</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Organic Cotton Canvas Eco Laundry Bags</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Shoe Shine Sponges in Custom Paper Box</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5</span>
               </div>
               <div style="margin-top: 0.5rem;">
-                <a href="../products/guest-room-supplies/" onclick="if(window.APP){APP.openCategoryView(13);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Guest Room Supplies & Accessories →</a>
+                <a href=".../products/guest-room-supplies/" onclick="if(window.APP){APP.openCategoryView(13);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Lineup & Products →</a>
               </div>
             </div>
           </article>
 
           <article class="cat-card" data-cat-id="14" role="button" tabindex="0">
             <div class="cat-img-wrapper" style="height: 190px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
-              <img src="../assets/images/products/cat_14/header.jpg" alt="Hotel Cosmetics & Amenities - WOPPAG Wholesale B2B Packaging" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
+              <img src=".../assets/images/products/cat_14/header.jpg" alt="Hotel Cosmetics & Amenities" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
               <div style="position: absolute; top: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; color: #fff; border: 1px solid var(--border-subtle);">
-                📦 12 Products Available
+                📦 12 Products
               </div>
               <div style="position: absolute; top: 10px; right: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); border: 1px solid var(--border-gold);">
                 🧴 Hotel Amenities
@@ -993,19 +983,19 @@
               <h3>Hotel Cosmetics & Amenities</h3>
               <p style="margin-bottom: 0.5rem;">30ml mini bottles of shampoo, shower gel, conditioner, body lotion, pleated hotel soaps, and eco dental kits.</p>
               <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; margin-bottom: 0.6rem;">
-                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">30ml Hotel Nourishing Shampoo Bottles</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">30ml Refreshing Shower Gel Bottles</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">30ml Hair Conditioner Bottles</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">30ml Moisturizing Body Lotion Bottles</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Pleated Paper Wrapped Soaps 20g</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+7 more</span>
+                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">30ml Hotel Nourishing Shampoo Bottles</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">30ml Refreshing Shower Gel Bottles</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">30ml Hair Conditioner Bottles</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">30ml Moisturizing Body Lotion Bottles</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Pleated Paper Wrapped Soaps 20g</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+7</span>
               </div>
               <div style="margin-top: 0.5rem;">
-                <a href="../products/hotel-cosmetics-and-amenities/" onclick="if(window.APP){APP.openCategoryView(14);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Hotel Cosmetics & Amenities →</a>
+                <a href=".../products/hotel-cosmetics-and-amenities/" onclick="if(window.APP){APP.openCategoryView(14);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Lineup & Products →</a>
               </div>
             </div>
           </article>
 
           <article class="cat-card" data-cat-id="15" role="button" tabindex="0">
             <div class="cat-img-wrapper" style="height: 190px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
-              <img src="../assets/images/products/cat_15/header.jpg" alt="Hotel Room Furniture & Equipment - WOPPAG Wholesale B2B Packaging" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
+              <img src=".../assets/images/products/cat_15/header.jpg" alt="Hotel Room Furniture & Equipment" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
               <div style="position: absolute; top: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; color: #fff; border: 1px solid var(--border-subtle);">
-                📦 10 Products Available
+                📦 10 Products
               </div>
               <div style="position: absolute; top: 10px; right: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); border: 1px solid var(--border-gold);">
                 🧳 Hotel Furniture
@@ -1015,19 +1005,19 @@
               <h3>Hotel Room Furniture & Equipment</h3>
               <p style="margin-bottom: 0.5rem;">Foldable wooden luggage racks, silent hotel absorption minibars, digital room safes, and luxury wooden hangers.</p>
               <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; margin-bottom: 0.6rem;">
-                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Foldable Solid Beech Luggage Racks</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Stainless Steel Metallic Luggage Stands</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Silent Absorption Minibars 30L Glass Door</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Silent Absorption Minibars 40L Solid Door</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Digital Laptop Safe 15-17 Inch with Master Key</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5 more</span>
+                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Foldable Solid Beech Luggage Racks</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Stainless Steel Metallic Luggage Stands</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Silent Absorption Minibars 30L Glass Door</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Silent Absorption Minibars 40L Solid Door</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Digital Laptop Safe 15-17 Inch with Master Key</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5</span>
               </div>
               <div style="margin-top: 0.5rem;">
-                <a href="../products/hotel-room-furniture/" onclick="if(window.APP){APP.openCategoryView(15);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Hotel Room Furniture & Equipment →</a>
+                <a href=".../products/hotel-room-furniture/" onclick="if(window.APP){APP.openCategoryView(15);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Lineup & Products →</a>
               </div>
             </div>
           </article>
 
           <article class="cat-card" data-cat-id="16" role="button" tabindex="0">
             <div class="cat-img-wrapper" style="height: 190px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
-              <img src="../assets/images/products/cat_16/header.jpg" alt="Restaurant & Buffet Equipment - WOPPAG Wholesale B2B Packaging" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
+              <img src=".../assets/images/products/cat_16/header.jpg" alt="Restaurant & Buffet Equipment" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
               <div style="position: absolute; top: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; color: #fff; border: 1px solid var(--border-subtle);">
-                📦 10 Products Available
+                📦 10 Products
               </div>
               <div style="position: absolute; top: 10px; right: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); border: 1px solid var(--border-gold);">
                 🍽️ Restaurant Equip
@@ -1037,19 +1027,19 @@
               <h3>Restaurant & Buffet Equipment</h3>
               <p style="margin-bottom: 0.5rem;">Stainless steel chafing dishes, GN food pans, hydraulic roll-top warmers, waiter service trays, and leather menu covers.</p>
               <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; margin-bottom: 0.6rem;">
-                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Roll-Top Hydraulic Stainless Chafing Dishes GN 1/1</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Round Electric Soup Urns & Warmers 10L</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Stainless Steel Gastronorm Pans GN 1/1, 1/2, 1/3</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Perforated Stainless Steel Steam Pans</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Hydraulic Glass Lid Buffet Chafers</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5 more</span>
+                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Roll-Top Hydraulic Stainless Chafing Dishes GN 1/1</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Round Electric Soup Urns & Warmers 10L</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Stainless Steel Gastronorm Pans GN 1/1, 1/2, 1/3</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Perforated Stainless Steel Steam Pans</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Hydraulic Glass Lid Buffet Chafers</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5</span>
               </div>
               <div style="margin-top: 0.5rem;">
-                <a href="../products/restaurant-and-buffet-equipment/" onclick="if(window.APP){APP.openCategoryView(16);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Restaurant & Buffet Equipment →</a>
+                <a href=".../products/restaurant-and-buffet-equipment/" onclick="if(window.APP){APP.openCategoryView(16);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Lineup & Products →</a>
               </div>
             </div>
           </article>
 
           <article class="cat-card" data-cat-id="17" role="button" tabindex="0">
             <div class="cat-img-wrapper" style="height: 190px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
-              <img src="../assets/images/products/cat_17/header.jpg" alt="Wet Area & SPA Equipment - WOPPAG Wholesale B2B Packaging" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
+              <img src=".../assets/images/products/cat_17/header.jpg" alt="Wet Area & SPA Equipment" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
               <div style="position: absolute; top: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; color: #fff; border: 1px solid var(--border-subtle);">
-                📦 10 Products Available
+                📦 10 Products
               </div>
               <div style="position: absolute; top: 10px; right: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); border: 1px solid var(--border-gold);">
                 🏊 SPA & Pool
@@ -1059,19 +1049,19 @@
               <h3>Wet Area & SPA Equipment</h3>
               <p style="margin-bottom: 0.5rem;">Heavy GSM pool towels, waterproof EVA spa slippers, sauna headrests, and poolside lounge cushion covers.</p>
               <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; margin-bottom: 0.6rem;">
-                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Heavy Commercial Pool Towels 550-650 GSM</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Striped Cabana Resort Pool Towels 600 GSM</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Waterproof Anti-Slip Single-Mold EVA SPA Slippers</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Single-Mold Rubberized Poolside Sandals</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Ergonomic Abachi Wood Sauna Headrests</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5 more</span>
+                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Heavy Commercial Pool Towels 550-650 GSM</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Striped Cabana Resort Pool Towels 600 GSM</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Waterproof Anti-Slip Single-Mold EVA SPA Slippers</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Single-Mold Rubberized Poolside Sandals</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Ergonomic Abachi Wood Sauna Headrests</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5</span>
               </div>
               <div style="margin-top: 0.5rem;">
-                <a href="../products/wet-area-and-spa-equipment/" onclick="if(window.APP){APP.openCategoryView(17);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Wet Area & SPA Equipment →</a>
+                <a href=".../products/wet-area-and-spa-equipment/" onclick="if(window.APP){APP.openCategoryView(17);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Lineup & Products →</a>
               </div>
             </div>
           </article>
 
           <article class="cat-card" data-cat-id="18" role="button" tabindex="0">
             <div class="cat-img-wrapper" style="height: 190px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
-              <img src="../assets/images/products/cat_18/header.jpg" alt="Hotel Textile Products & Linens - WOPPAG Wholesale B2B Packaging" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
+              <img src=".../assets/images/products/cat_18/header.jpg" alt="Hotel Textile Products & Linens" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
               <div style="position: absolute; top: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; color: #fff; border: 1px solid var(--border-subtle);">
-                📦 10 Products Available
+                📦 10 Products
               </div>
               <div style="position: absolute; top: 10px; right: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); border: 1px solid var(--border-gold);">
                 🛏️ Hotel Textile
@@ -1081,19 +1071,19 @@
               <h3>Hotel Textile Products & Linens</h3>
               <p style="margin-bottom: 0.5rem;">100% Egyptian cotton satin bed sheets, bathrobes, heavy bath towels (500-700 gsm), and stain-resistant tablecloths.</p>
               <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; margin-bottom: 0.6rem;">
-                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Hotel Satin Stripe Bed Sheet Sets (300 TC)</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Percale Plain White Hotel Bed Sheets (200 TC)</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Hotel Pillowcases (Satin Stripe / Plain)</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Heavy Commercial Bath Towels 600 GSM</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Hotel Hand Towels & Face Washcloths</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5 more</span>
+                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Hotel Satin Stripe Bed Sheet Sets (300 TC)</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Percale Plain White Hotel Bed Sheets (200 TC)</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Hotel Pillowcases (Satin Stripe / Plain)</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Heavy Commercial Bath Towels 600 GSM</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Hotel Hand Towels & Face Washcloths</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5</span>
               </div>
               <div style="margin-top: 0.5rem;">
-                <a href="../products/hotel-textiles-and-linens/" onclick="if(window.APP){APP.openCategoryView(18);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Hotel Textile Products & Linens →</a>
+                <a href=".../products/hotel-textiles-and-linens/" onclick="if(window.APP){APP.openCategoryView(18);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Lineup & Products →</a>
               </div>
             </div>
           </article>
 
           <article class="cat-card" data-cat-id="19" role="button" tabindex="0">
             <div class="cat-img-wrapper" style="height: 190px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
-              <img src="../assets/images/products/cat_19/prod_1.jpg" alt="Perfume Bottles & Accessories - WOPPAG Wholesale B2B Packaging" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
+              <img src=".../assets/images/products/cat_19/prod_1.jpg" alt="Perfume Bottles & Accessories" width="800" height="533" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
               <div style="position: absolute; top: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; color: #fff; border: 1px solid var(--border-subtle);">
-                📦 10 Products Available
+                📦 10 Products
               </div>
               <div style="position: absolute; top: 10px; right: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); border: 1px solid var(--border-gold);">
                 🧴 Perfume Glass
@@ -1103,10 +1093,10 @@
               <h3>Perfume Bottles & Accessories</h3>
               <p style="margin-bottom: 0.5rem;">Premium glass perfume bottles, fine mist spray pumps, zamac caps, car diffusers, dropper bottles, and cosmetic cream jars.</p>
               <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; margin-bottom: 0.6rem;">
-                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Super Flint Square Glass Perfume Bottles 50ml</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Heavy Base Round Glass Perfume Bottles 100ml</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Zamac Heavy Metal Alloy Custom Caps</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Magnetic Click Lock Perfume Caps</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Fine Mist Spray Pumps FEA 15 (Gold/Silver)</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5 more</span>
+                <span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Super Flint Square Glass Perfume Bottles 50ml</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Heavy Base Round Glass Perfume Bottles 100ml</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Zamac Heavy Metal Alloy Custom Caps</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Magnetic Click Lock Perfume Caps</span><span style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 0.15rem 0.45rem; border-radius: 4px; font-size: 0.72rem; white-space: nowrap;">Fine Mist Spray Pumps FEA 15 (Gold/Silver)</span> <span style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 600;">+5</span>
               </div>
               <div style="margin-top: 0.5rem;">
-                <a href="../products/perfume-glass-bottles/" onclick="if(window.APP){APP.openCategoryView(19);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Perfume Bottles & Accessories →</a>
+                <a href=".../products/perfume-glass-bottles/" onclick="if(window.APP){APP.openCategoryView(19);}return false;" style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 600; text-decoration: none;">Explore Lineup & Products →</a>
               </div>
             </div>
           </article>
@@ -1115,9 +1105,7 @@
 
   <!-- GDPR Cookie Banner -->
   <div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:500;background:var(--bg-surface);border-top:2px solid var(--border-gold);padding:1rem 2rem;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;">
-    <p style="color:var(--text-secondary);font-size:0.82rem;max-width:700px;" data-i18n="cookie_text">
-      We use cookies to improve your experience. By continuing, you agree to our cookie policy.
-    </p>
+    <p style="color:var(--text-secondary);font-size:0.82rem;max-width:700px;" data-i18n="cookie_text">We use cookies to improve your experience. By continuing, you agree to our cookie policy.</p>
     <div style="display:flex;gap:0.8rem;flex-shrink:0;">
       <button onclick="acceptCookies()" class="btn btn-primary btn-sm" data-i18n="cookie_accept">Accept</button>
       <button onclick="dismissCookies()" style="background:transparent;border:1px solid var(--border-subtle);color:var(--text-muted);padding:0.5rem 1rem;border-radius:var(--radius-full);cursor:pointer;font-family:inherit;font-size:0.82rem;" data-i18n="cookie_decline">Decline</button>
@@ -1159,7 +1147,7 @@
             <li><a href="#why" class="nav-link" data-i18n="nav_why">Why WOPPAG</a></li>
             <li><a href="#categories" class="nav-link" data-i18n="nav_categories">Categories</a></li>
             <li><a href="#process" class="nav-link" data-i18n="nav_process">Workflow</a></li>
-            <li><a href="#quote" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+            <li><a href="#quote" class="nav-link" data-i18n="nav_contact">Contact & Quote</a></li>
           </ul>
 
           <div class="mobile-drawer-actions">
@@ -1183,12 +1171,12 @@
             🌐 <span id="current-lang-code">EN</span> ▾
           </button>
           <div class="lang-dropdown" id="lang-dropdown">
-            <button class="lang-option" data-lang="en" onclick="I18N.setLanguage('en'); return false;">🇬🇧 English</button>
-            <button class="lang-option" data-lang="ru" onclick="I18N.setLanguage('ru'); return false;">🇷🇺 Русский</button>
-            <button class="lang-option" data-lang="ro" onclick="I18N.setLanguage('ro'); return false;">🇷🇴 Română</button>
-            <button class="lang-option" data-lang="de" onclick="I18N.setLanguage('de'); return false;">🇩🇪 Deutsch</button>
-            <button class="lang-option" data-lang="fr" onclick="I18N.setLanguage('fr'); return false;">🇫🇷 Français</button>
-            <button class="lang-option" data-lang="ar" onclick="I18N.setLanguage('ar'); return false;">🇸🇦 العربية</button>
+            <a href="/en/" class="lang-option" data-lang="en">🇬🇧 English</a>
+            <a href="/ru/" class="lang-option" data-lang="ru">🇷🇺 Русский</a>
+            <a href="/ro/" class="lang-option" data-lang="ro">🇷🇴 Română</a>
+            <a href="/de/" class="lang-option" data-lang="de">🇩🇪 Deutsch</a>
+            <a href="/fr/" class="lang-option" data-lang="fr">🇫🇷 Français</a>
+            <a href="/ar/" class="lang-option" data-lang="ar">🇸🇦 العربية</a>
           </div>
         </div>
 
@@ -1210,12 +1198,10 @@
           <br>
           <span class="gradient-text" data-i18n="hero_title_2">Built at the Factory Source.</span>
         </h1>
-        <p class="hero-description" data-i18n="hero_desc">
-          High-volume production of food portioning, biodegradable pouches, paper bags, custom wet wipes, perfume bottles, and luxury hotel amenities for international importers & distributors.
-        </p>
+        <p class="hero-description" data-i18n="hero_desc">High-volume production of food portioning, biodegradable pouches, paper bags, custom wet wipes, perfume bottles, and luxury hotel amenities for international importers & distributors.</p>
 
         <div class="hero-ctas">
-          <a href="#categories" class="btn btn-primary" data-i18n="hero_cta_cat">Explore 20 Categories →</a>
+          <a href="#categories" class="btn btn-primary" data-i18n="hero_cta_cat">Explore 20 Categories</a>
           <a href="#quote" class="btn btn-outline" data-i18n="hero_cta_rfq">Get Factory Pricing</a>
         </div>
       </div>
@@ -1239,8 +1225,8 @@
         <div class="visual-card">
           <div class="visual-icon">🌍</div>
           <div class="visual-info">
-            <h4 data-i18n="why_4_title">Global Logistics & Freight</h4>
-            <p data-i18n="hero_visual_3_desc">Full container load (FCL) and pallet shipping handling to global export markets.</p>
+            <h4 data-i18n="why_4_title">Global Logistics & Freight Handling</h4>
+            <p data-i18n="hero_visual_3_desc">Full container load (FCL) and pallet shipping handling for global export markets.</p>
           </div>
         </div>
       </div>
@@ -1255,11 +1241,11 @@
         </div>
         <div class="stat-item">
           <div class="stat-number" data-i18n="stat_countries_num">Global</div>
-          <div class="stat-label" data-i18n="stat_countries_lbl">Export Countries</div>
+          <div class="stat-label" data-i18n="stat_countries_lbl">Worldwide Export</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number" data-i18n="stat_units_num">Industrial</div>
-          <div class="stat-label" data-i18n="stat_units_lbl">Units Produced Yearly</div>
+          <div class="stat-number" data-i18n="stat_units_num">High</div>
+          <div class="stat-label" data-i18n="stat_units_lbl">Production Volume</div>
         </div>
         <div class="stat-item">
           <div class="stat-number" data-i18n="stat_moq_num">100%</div>
@@ -1274,7 +1260,7 @@
     <div class="container">
       <div class="section-header">
         <div class="badge" data-i18n="badge_b2b">B2B Manufacturing Advantage</div>
-        <h2 class="section-title" data-i18n="why_title">Why Global Distributors Choose WOPPAG</h2>
+        <h2 class="section-title" data-i18n="why_title">Why Global Distributors Choose WOPPAG KRAFT & FOODS</h2>
         <p class="section-subtitle" data-i18n="why_sub">Direct manufacturing capabilities engineered for high-volume B2B global trade.</p>
       </div>
 
@@ -1296,14 +1282,14 @@
         <div class="cat-card" style="cursor: default;">
           <div class="cat-icon">📜</div>
           <div class="cat-body">
-            <h3 data-i18n="why_3_title">Eco & Food Grade Certified</h3>
+            <h3 data-i18n="why_3_title">Quality & Food Grade Standards</h3>
             <p data-i18n="why_3_desc">Manufactured in compliance with international quality, food safety, and environmental standards.</p>
           </div>
         </div>
         <div class="cat-card" style="cursor: default;">
           <div class="cat-icon">🛳️</div>
           <div class="cat-body">
-            <h3 data-i18n="why_4_title">Global Logistics & Freight</h3>
+            <h3 data-i18n="why_4_title">Global Logistics & Freight Handling</h3>
             <p data-i18n="why_4_desc">Export documentation, customs clearance, and door-to-port container delivery.</p>
           </div>
         </div>
@@ -1320,7 +1306,7 @@
         <div class="section-header">
           <div class="badge" data-i18n="badge_catalog">Full Manufacturing Catalog</div>
           <h2 class="section-title" data-i18n="cat_header_title">Product Categories Showcase</h2>
-          <p class="section-subtitle" data-i18n="cat_header_sub">Click on any category card to enter the category and inspect products in detail.</p>
+          <p class="section-subtitle" data-i18n="cat_header_sub">Click on any category card to view specs, sub-products, and submit quote inquiries.</p>
         </div>
 
         <!-- Controls: Live Search & Filter Tabs -->
@@ -1355,9 +1341,7 @@
             <button id="btn-back-to-cats" class="btn btn-outline" style="display: inline-flex; align-items: center; gap: 0.5rem; cursor: pointer; border-color: var(--border-gold); color: var(--accent-gold);">
               <span data-i18n="btn_back_cats">← Back to All Categories</span>
             </button>
-            <div style="font-size: 0.82rem; color: var(--accent-gold); font-weight: 600;" data-i18n="quick_select_lbl">
-              ⚡ Quick Switch Category:
-            </div>
+            <div style="font-size: 0.82rem; color: var(--accent-gold); font-weight: 600;" data-i18n="quick_select_lbl">⚡ Quick Switch Category:</div>
           </div>
           
           <div id="cat-quick-switcher" class="cat-quick-nav-bar">
@@ -1372,9 +1356,7 @@
 
         <!-- Category Products Section Title -->
         <div style="margin: 2.5rem 0 1.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem;">
-          <h3 id="cat-view-products-title" data-i18n="cat_view_products_title" style="font-size: 1.5rem; color: #fff; font-weight: 700; margin: 0;">
-            Category Products & Lineup
-          </h3>
+          <h3 id="cat-view-products-title" data-i18n="cat_view_products_title" style="font-size: 1.5rem; color: #fff; font-weight: 700; margin: 0;">Category Products & Lineup</h3>
           <span id="cat-view-products-count" class="badge" style="background: var(--accent-gold-light); color: var(--accent-gold); border: 1px solid var(--border-gold);">
             12 Products Available
           </span>
@@ -1394,13 +1376,11 @@
         <div id="cat-bottom-switcher-section" style="margin-top: 3.5rem; padding-top: 2.5rem; border-top: 1px solid var(--border-subtle);">
           <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.8rem;">
             <div>
-              <div class="badge" data-i18n="badge_catalog">Explore More Lines</div>
-              <h3 style="font-size: 1.6rem; color: #fff; font-weight: 700; margin: 0.4rem 0 0;" data-i18n="bottom_cats_title">
-                Explore Other Categories & Manufacturing Lines
-              </h3>
+              <div class="badge" data-i18n="badge_catalog">Full Manufacturing Catalog</div>
+              <h3 style="font-size: 1.6rem; color: #fff; font-weight: 700; margin: 0.4rem 0 0;" data-i18n="bottom_cats_title">Explore Other Categories & Manufacturing Lines</h3>
             </div>
             <button class="btn btn-outline btn-sm" onclick="APP.closeCategoryView()" style="border-color: var(--border-gold); color: var(--accent-gold);">
-              <span data-i18n="btn_back_cats">← Back to All 20 Categories</span>
+              <span data-i18n="btn_back_cats">← Back to All Categories</span>
             </button>
           </div>
 
@@ -1477,7 +1457,7 @@
               <input type="text" name="telegram" class="form-input" placeholder="@yourusername" data-i18n-placeholder="form_telegram_ph" autocomplete="off">
             </div>
             <div class="form-group full">
-              <label class="form-label" data-i18n="form_cat_label">Select Primary Category of Interest</label>
+              <label class="form-label" data-i18n="form_cat_label">Primary Category of Interest</label>
               <select class="form-select" id="rfq-category" name="category" required>
                 <!-- Populated via app.js -->
               </select>
@@ -1553,7 +1533,7 @@
             <li><a href="#why" data-i18n="nav_why">Why WOPPAG</a></li>
             <li><a href="#categories" data-i18n="nav_categories">Categories</a></li>
             <li><a href="#process" data-i18n="nav_process">Workflow</a></li>
-            <li><a href="#quote" data-i18n="nav_contact">Contact</a></li>
+            <li><a href="#quote" data-i18n="nav_contact">Contact & Quote</a></li>
           </ul>
         </div>
 

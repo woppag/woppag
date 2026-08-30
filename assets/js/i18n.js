@@ -182,17 +182,35 @@ const I18N = {
 
   init() {
     let savedLang = null;
-    try {
-      savedLang = localStorage.getItem('woppag_lang');
-    } catch (e) {}
 
+    // 1. Detect language from URL pathname (/ru/, /ar/, /de/, /fr/, /ro/, /en/)
     try {
-      const urlParams = new URLSearchParams(window.location.search);
-      const langParam = urlParams.get('lang');
-      if (langParam && this.supportedLangs.includes(langParam)) {
-        savedLang = langParam;
+      const path = window.location.pathname.toLowerCase();
+      for (const l of this.supportedLangs) {
+        if (path === `/${l}` || path.startsWith(`/${l}/`)) {
+          savedLang = l;
+          break;
+        }
       }
     } catch (e) {}
+
+    // 2. Query param fallback (?lang=ru)
+    if (!savedLang) {
+      try {
+        const urlParams = new URLSearchParams(window.location.search);
+        const langParam = urlParams.get('lang');
+        if (langParam && this.supportedLangs.includes(langParam)) {
+          savedLang = langParam;
+        }
+      } catch (e) {}
+    }
+
+    // 3. LocalStorage fallback
+    if (!savedLang) {
+      try {
+        savedLang = localStorage.getItem('woppag_lang');
+      } catch (e) {}
+    }
 
     if (!savedLang || !this.supportedLangs.includes(savedLang)) {
       savedLang = this.defaultLang;
