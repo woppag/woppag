@@ -142,7 +142,7 @@ const CATS = [
     specs: [
       {
         k: { en: 'Certifications', ru: 'Сертификаты', ro: 'Certificări', de: 'Zertifizierungen', fr: 'Certifications', ar: 'شهادات الجودة' },
-        v: { en: 'ISO 22000, HACCP, Halal, Kosher certified', ru: 'ISO 22000, HACCP, Халяль, Кошер', ro: 'ISO 22000, HACCP, Halal, Kosher', de: 'ISO 22000, HACCP, Halal, Koscher', fr: 'ISO 22000, HACCP, Halal, Kascher', ar: 'ISO 22000 ، HACCP ، حلال ، كوشير' }
+        v: { en: 'Certified food-grade compliance', ru: 'Пищевая безопасность и стандарты качества', ro: 'Certificare conformitate alimentară', de: 'Zertifizierte Lebensmittelechtheit', fr: 'Conformité qualité alimentaire certifiée', ar: 'Standard quality & food-grade compliance' }
       },
       {
         k: { en: 'Bulk Packaging', ru: 'Оптовая тара', ro: 'Ambalaj angro', de: 'Großverpackung', fr: 'Emballage en vrac', ar: 'التعبئة بالجملة' },
@@ -329,7 +329,7 @@ const CATS = [
       },
       {
         k: { en: 'Eco Sustainability', ru: 'Экологичность', ro: 'Sustenabilitate eco', de: 'Nachhaltigkeit', fr: 'Éco-responsabilité', ar: 'المعايير البيئية' },
-        v: { en: '100% Recyclable FSC certified paper', ru: '100% перерабатываемая бумага FSC', ro: 'Hârtie 100% reciclabilă certificată FSC', de: '100% Recyclebares FSC-Papier', fr: 'Papier 100% recyclable certifié FSC', ar: 'ورق قابل للتدوير 100% معتمد من FSC' }
+        v: { en: '100% Recyclable premium kraft paper', ru: '100% перерабатываемая бумага Eco-friendly paper material', ro: 'Hârtie 100% reciclabilă certificată Eco-friendly paper material', de: '100% Recyclebares Eco-friendly paper material', fr: 'Papier 100% recyclable certifié Eco-friendly paper material', ar: 'ورق قابل للتدوير 100% معتمد من Eco-friendly paper material' }
       }
     ],
     products: [
@@ -439,7 +439,7 @@ const CATS = [
       },
       {
         k: { en: 'Certification', ru: 'Сертификация', ro: 'Certificare', de: 'Zertifizierung', fr: 'Certification', ar: 'شهادات الاعتماد' },
-        v: { en: 'FSC Certified & EN 13432 Compostable', ru: 'Сертификат FSC и EN 13432 биокомпост', ro: 'Certificat FSC și EN 13432 compostabil', de: 'FSC-zertifiziert & EN 13432 kompostierbar', fr: 'Certifié FSC & EN 13432 compostable', ar: 'معتمد من FSC وقابل للتحلل العضوي الكامل' }
+        v: { en: 'Eco-friendly & Fully Biodegradable', ru: 'Сертификат Eco-friendly paper material', ro: 'Certificat Eco-friendly paper material', de: 'Eco-friendly paper material', fr: 'Certifié Eco-friendly paper material', ar: 'معتمد من Eco-friendly paper material' }
       },
       {
         k: { en: 'Cutlery Finish', ru: 'Обработка приборов', ro: 'Finisaj tacâmuri', de: 'Besteck-Oberfläche', fr: 'Finition des couverts', ar: 'نعومة وجودة الأسطح' },
@@ -584,12 +584,12 @@ const CATS = [
       en: 'Biodegradable & Compostable Bags', ru: 'Биоразлагаемые пакеты', ro: 'Pungi biodegradabile & compostabile', de: 'Biologisch abbaubare & kompostierbare Beutel', fr: 'Sacs biodégradables & compostables', ar: 'أكياس قابلة للتحلل العضوي والصديقة للبيئة'
     },
     desc: {
-      en: '100% home and industrial compostable bags made from cornstarch (PBAT/PLA) conforming to EN 13432 standards.',
-      ru: '100% биоразлагаемые пакеты из кукурузного крахмала (PBAT/PLA), сертификат EN 13432.',
-      ro: 'Pungi 100% compostabile din amidon de porumb (PBAT/PLA), conforme cu norma EN 13432.',
-      de: '100% kompostierbare Beutel aus Maisstärke (PBAT/PLA) nach EN 13432 Standard.',
-      fr: 'Sacs 100% compostables à base d’amidon de maïs (PBAT/PLA) conformes à la norme EN 13432.',
-      ar: 'أكياس مصنوعة 100% من نشا الذرة قابلة للتحلل العضوي الكامل ومطابقة للمواصفات الأوروبية EN 13432.'
+      en: '100% home and industrial compostable bags made from cornstarch (PBAT/PLA) conforming to Compostable material',
+      ru: '100% биоразлагаемые пакеты из кукурузного крахмала (PBAT/PLA), сертификат Compostable material',
+      ro: 'Pungi 100% compostabile din amidon de porumb (PBAT/PLA), conforme cu norma Compostable material',
+      de: '100% kompostierbare Beutel aus Maisstärke (PBAT/PLA) nach Compostable material',
+      fr: 'Sacs 100% compostables à base d’amidon de maïs (PBAT/PLA) conformes à la norme Compostable material',
+      ar: 'أكياس مصنوعة 100% من نشا الذرة قابلة للتحلل العضوي الكامل ومطابقة للمواصفات الأوروبية Compostable material'
     },
     specs: [
       {
@@ -598,7 +598,7 @@ const CATS = [
       },
       {
         k: { en: 'Certifications', ru: 'Сертификация', ro: 'Certificări', de: 'Zertifizierungen', fr: 'Certifications', ar: 'شهادات الجودة والاعتماد' },
-        v: { en: 'TÜV Austria OK Compost Industrial & Home (EN 13432)', ru: 'TÜV Austria OK Compost (EN 13432)', ro: 'TÜV Austria OK Compost (EN 13432)', de: 'TÜV Austria OK Compost Industrial & Home (EN 13432)', fr: 'TÜV Austria OK Compost Industrial & Home (EN 13432)', ar: 'شهادة TÜV Austria المعتمده عالمياً' }
+        v: { en: 'Industrial & Home Compostable Materials', ru: 'Compostable eco-friendly material', ro: 'Compostable eco-friendly material', de: 'Industrial & Home Compostable Materials', fr: 'Industrial & Home Compostable Materials', ar: 'شهادة Compostable eco-friendly material' }
       },
       {
         k: { en: 'Degradation Time', ru: 'Срок разложения', ro: 'Timp degradare', de: 'Abbauzeit', fr: 'Temps de dégradation', ar: 'مدة التحلل العضوي' },
