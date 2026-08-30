@@ -294,6 +294,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const arrow = document.documentElement.dir === 'rtl' ? '←' : '→';
 
       grid.innerHTML = filtered.map(cat => {
+        const isLCP = filtered.indexOf(cat) < 3;
         const title = this.pickTranslation(cat.title);
         const desc = this.pickTranslation(cat.desc);
         const chip = this.pickTranslation(cat.chip);
@@ -310,7 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return `
           <article class="cat-card" data-cat-id="${cat.id}" role="button" tabindex="0">
             <div class="cat-img-wrapper" style="height: 190px; width: 100%; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 1rem; position: relative; background: #07131e;">
-              <img src="${imgSrc}" alt="${title}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
+              <img src="${imgSrc}" alt="${title}" loading="${isLCP ? 'eager' : 'lazy'}" ${isLCP ? 'fetchpriority="high"' : ''} style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" class="cat-card-img">
               <div style="position: absolute; top: 10px; left: 10px; background: rgba(7, 19, 30, 0.85); backdrop-filter: blur(8px); padding: 0.25rem 0.65rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; color: #fff; border: 1px solid var(--border-subtle);">
                 📦 ${subCount} ${prodCountText}
               </div>

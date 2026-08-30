@@ -436,6 +436,17 @@ html[dir="rtl"] .lang-option {
   backdrop-filter: blur(12px);
 }
 
+.why-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+@media (max-width: 768px) {
+  .why-grid { grid-template-columns: 1fr 1fr !important; }
+}
+@media (max-width: 480px) {
+  .why-grid { grid-template-columns: 1fr !important; }
+}
+
 .stat-item {
   display: flex;
   flex-direction: column;
