@@ -178,13 +178,18 @@ const I18N = {
   },
 
   init() {
-    let savedLang = localStorage.getItem('woppag_lang');
-    const urlParams = new URLSearchParams(window.location.search);
-    const langParam = urlParams.get('lang');
+    let savedLang = null;
+    try {
+      savedLang = localStorage.getItem('woppag_lang');
+    } catch (e) {}
 
-    if (langParam && this.supportedLangs.includes(langParam)) {
-      savedLang = langParam;
-    }
+    try {
+      const urlParams = new URLSearchParams(window.location.search);
+      const langParam = urlParams.get('lang');
+      if (langParam && this.supportedLangs.includes(langParam)) {
+        savedLang = langParam;
+      }
+    } catch (e) {}
 
     if (!savedLang || !this.supportedLangs.includes(savedLang)) {
       savedLang = this.defaultLang;
@@ -195,7 +200,9 @@ const I18N = {
 
   setLanguage(lang) {
     if (!this.supportedLangs.includes(lang)) lang = this.defaultLang;
-    localStorage.setItem('woppag_lang', lang);
+    try {
+      localStorage.setItem('woppag_lang', lang);
+    } catch (e) {}
 
     document.documentElement.lang = lang;
     if (lang === 'ar') {
@@ -205,11 +212,13 @@ const I18N = {
     }
 
     // Clean URL query parameter if lang= exists
-    if (window.location.search.includes('lang=')) {
-      const url = new URL(window.location.href);
-      url.searchParams.delete('lang');
-      history.replaceState({}, '', url.toString());
-    }
+    try {
+      if (window.location.search.includes('lang=')) {
+        const url = new URL(window.location.href);
+        url.searchParams.delete('lang');
+        history.replaceState({}, '', url.toString());
+      }
+    } catch (e) {}
 
     // Translate DOM elements with data-i18n attribute
     document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -228,11 +237,11 @@ const I18N = {
     });
 
     // Update Meta Title & Description
-    if (this.translations.meta_title[lang]) {
+    if (this.translations.meta_title && this.translations.meta_title[lang]) {
       document.title = this.translations.meta_title[lang];
     }
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc && this.translations.meta_description[lang]) {
+    const metaDesc = document.querySelector('meta[name=description]');
+    if (metaDesc && this.translations.meta_description && this.translations.meta_description[lang]) {
       metaDesc.setAttribute('content', this.translations.meta_description[lang]);
     }
 
@@ -250,8 +259,22 @@ const I18N = {
       currentLangLabel.textContent = lang.toUpperCase();
     }
 
+    // Trigger dynamic UI re-renders
+    if (window.APP) {
+      if (typeof window.APP.populateCategoryDropdown === 'function') window.APP.populateCategoryDropdown();
+      if (typeof window.APP.renderCategories === 'function') window.APP.renderCategories();
+      if (window.APP.activeCatId !== null && typeof window.APP.openCategoryView === 'function') {
+        const catView = document.getElementById('category-products-view');
+        if (catView && catView.style.display !== 'none') {
+          window.APP.openCategoryView(window.APP.activeCatId);
+        }
+      }
+    }
+
     // Dispatch event for dynamic content re-renders
-    window.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang } }));
+    try {
+      window.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang } }));
+    } catch (e) {}
   },
 
   getText(key, lang) {
@@ -263,4 +286,8 @@ const I18N = {
   }
 };
 
+window.I18N = I18N;
 document.addEventListener('DOMContentLoaded', () => I18N.init());
+if (document.readyState === 'complete' || document.readyState === 'interactive') {
+  I18N.init();
+}
