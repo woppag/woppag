@@ -1,7 +1,7 @@
 {
   "version": 2,
   "cleanUrls": true,
-  "trailingSlash": true,
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)",
@@ -19,6 +19,116 @@
           "value": "1; mode=block"
         }
       ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/products/packaging-and-portioning",
+      "destination": "/products/packaging-and-portioning/index.html"
+    },
+    {
+      "source": "/products/everything-for-confectioners",
+      "destination": "/products/everything-for-confectioners/index.html"
+    },
+    {
+      "source": "/products/food-products-and-ingredients",
+      "destination": "/products/food-products-and-ingredients/index.html"
+    },
+    {
+      "source": "/products/cleaning-and-detergent-products",
+      "destination": "/products/cleaning-and-detergent-products/index.html"
+    },
+    {
+      "source": "/products/doy-pack-kraft-pouches",
+      "destination": "/products/doy-pack-kraft-pouches/index.html"
+    },
+    {
+      "source": "/products/kraft-paper-bags",
+      "destination": "/products/kraft-paper-bags/index.html"
+    },
+    {
+      "source": "/products/paper-and-wet-napkins",
+      "destination": "/products/paper-and-wet-napkins/index.html"
+    },
+    {
+      "source": "/products/disposable-cutlery-and-tableware",
+      "destination": "/products/disposable-cutlery-and-tableware/index.html"
+    },
+    {
+      "source": "/products/food-wrapping-paper-and-sheets",
+      "destination": "/products/food-wrapping-paper-and-sheets/index.html"
+    },
+    {
+      "source": "/products/sushi-and-asian-food-packaging",
+      "destination": "/products/sushi-and-asian-food-packaging/index.html"
+    },
+    {
+      "source": "/products/biodegradable-and-compostable-bags",
+      "destination": "/products/biodegradable-and-compostable-bags/index.html"
+    },
+    {
+      "source": "/products/shopping-and-promotional-bags",
+      "destination": "/products/shopping-and-promotional-bags/index.html"
+    },
+    {
+      "source": "/products/polyethylene-bags",
+      "destination": "/products/polyethylene-bags/index.html"
+    },
+    {
+      "source": "/products/guest-room-supplies",
+      "destination": "/products/guest-room-supplies/index.html"
+    },
+    {
+      "source": "/products/hotel-cosmetics-and-amenities",
+      "destination": "/products/hotel-cosmetics-and-amenities/index.html"
+    },
+    {
+      "source": "/products/hotel-room-furniture",
+      "destination": "/products/hotel-room-furniture/index.html"
+    },
+    {
+      "source": "/products/restaurant-and-buffet-equipment",
+      "destination": "/products/restaurant-and-buffet-equipment/index.html"
+    },
+    {
+      "source": "/products/wet-area-and-spa-equipment",
+      "destination": "/products/wet-area-and-spa-equipment/index.html"
+    },
+    {
+      "source": "/products/hotel-textiles-and-linens",
+      "destination": "/products/hotel-textiles-and-linens/index.html"
+    },
+    {
+      "source": "/products/perfume-glass-bottles",
+      "destination": "/products/perfume-glass-bottles/index.html"
+    },
+    {
+      "source": "/products",
+      "destination": "/products/index.html"
+    },
+    {
+      "source": "/en",
+      "destination": "/en/index.html"
+    },
+    {
+      "source": "/ru",
+      "destination": "/ru/index.html"
+    },
+    {
+      "source": "/ro",
+      "destination": "/ro/index.html"
+    },
+    {
+      "source": "/de",
+      "destination": "/de/index.html"
+    },
+    {
+      "source": "/fr",
+      "destination": "/fr/index.html"
+    },
+    {
+      "source": "/ar",
+      "destination": "/ar/index.html"
     }
   ]
 }

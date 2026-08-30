@@ -1006,6 +1006,7 @@ html[dir="rtl"] .specs-table th, html[dir="rtl"] .specs-table td {
 
 /* Toast Notification */
 .toast {
+  display: none;
   position: fixed;
   bottom: 2rem;
   right: 2rem;
@@ -1026,6 +1027,7 @@ html[dir="rtl"] .toast {
 }
 
 .toast.show {
+  display: block !important;
   opacity: 1;
   transform: translateY(0);
 }

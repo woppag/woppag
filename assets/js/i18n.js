@@ -51,9 +51,9 @@ const I18N = {
     // Stats
     stat_cats_num: { en: '20', ru: '20', ro: '20', de: '20', fr: '20', ar: '٢٠' },
     stat_cats_lbl: { en: 'Product Categories', ru: 'Категорий продукции', ro: 'Categorii produse', de: 'Produktkategorien', fr: 'Catégories de produits', ar: 'فئة منتجات متكاملة' },
-    stat_countries_num: { en: '50+', ru: '50+', ro: '50+', de: '50+', fr: '50+', ar: '+50' },
+    stat_countries_num: { en: 'Global', ru: 'Глобал', ro: 'Global', de: 'Global', fr: 'Global', ar: 'عالمي' },
     stat_countries_lbl: { en: 'Worldwide Export', ru: 'Международный экспорт', ro: 'Export global', de: 'Weltweiter Export', fr: 'Export international', ar: 'تصدير عالمي' },
-    stat_units_num: { en: '500M+', ru: '500M+', ro: '500M+', de: '500M+', fr: '500M+', ar: '+500M' },
+    stat_units_num: { en: 'High', ru: 'Опт', ro: 'Volum', de: 'Gross', fr: 'Gros', ar: 'عالي' },
     stat_units_lbl: { en: 'Production Volume', ru: 'Масштаб производства', ro: 'Capacitate producție', de: 'Produktionskapazität', fr: 'Capacité de production', ar: 'طاقة إنتاجية ضخمة' },
     stat_moq_num: { en: '100%', ru: '100%', ro: '100%', de: '100%', fr: '100%', ar: '١٠٠٪' },
     stat_moq_lbl: { en: 'OEM Custom Branding', ru: 'OEM Брендирование', ro: 'Branding OEM personalizat', de: 'OEM Eigenmarke', fr: 'Personnalisation OEM', ar: 'تصنيع حسب طلب الشعار' },
